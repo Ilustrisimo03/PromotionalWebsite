@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.medium {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.semi-bold {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 550;
+}
+
+.bold {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.logo{
+    font-size:x-large;
+}
+
+.main-color-hover:hover{
+    color: #ffffff;
+}
+
+.text-color{
+    color: #3d4a7e;
+}
+
+.main-color{
+    color: #3d4a7e;
+}
+.main-color-hover-text:hover{
+    color: #3d4a7e;
+}
+
+.nav-bar{
+    color:#000000;
+    font-weight: 550 ;
+    font-size: 15px;
+}
+.nav-bar-hover:hover{
+    color:#3d4a7e;
+    cursor: pointer;
+}
+.bg-button{
+    background-color:#3d4a7e;
+    cursor: pointer;
+}
+
+.bg-hover:hover{
+    background-color:#37426e;
+    cursor: pointer;
+}
+
+.bg-color{
+    background-color: #3d4a7e;
+}
+
+.bg-ring {
+    border: 2px solid #3d4a7e; /* Proper border styling */
+    
+    
+}
+
+.bg-ring:focus {
+    box-shadow: #3d4a7e;
+    outline: none; /* Removes default focus outline */
+}
+
+/* STYLE FOR BG IMAGE */
+.bg-img {
+    transition: opacity 1.5s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .bg-img.show {
+    opacity: 1;
+  }
+
+
+ /* STYLE FOR ABOUT
+  .tab-btn {
+    cursor: pointer;
+  }
+
+  .tab-panel {
+    display: none;
+  }
+
+  .tab-panel.active {
+    display: block;
+  } */
+
+
+  @keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+.scrolling-wrapper {
+    display: flex;
+    width: max-content;
+    animation: scroll 100s linear infinite;
+}
+
+.service-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 16px;
+    min-width: 220px;
+    border: 3px solid #ff0000; 
+    border-radius: 12px;
+
+    
+}
+
+.service-box:hover {
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
