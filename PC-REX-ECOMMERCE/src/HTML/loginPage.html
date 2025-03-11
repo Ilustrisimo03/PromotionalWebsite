@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC REX - Login</title>
+
+    <link rel="icon" type="image/x-icon" href="../ASSETS/Images/computer-white-tab.png">
+
+    <!-- TailwindCSS and other assets -->
+    <link href="../CSS/input.css" rel="stylesheet">
+    <link href="../CSS/output.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        .hidden {
+            display: none;
+        }
+        .transition {
+            transition: opacity 0.3s ease-in-out;
+        }
+        .glass-effect {
+            background: rgba(219, 219, 219, 0.096);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body class="flex justify-center items-center min-h-screen bg-red-900" style="background-image: url('../ASSETS/Images/pcblue.jpg'); background-size: cover; background-position: center;">
+
+    <div class="flex w-full max-w-5xl shadow-2xl rounded-lg overflow-hidden backdrop-blur-lg h-auto sm:h-[90vh] flex-col md:flex-row">
+        
+        <!-- Left Side -->
+        <div class="md:w-1/2 flex flex-col glass-effect justify-center items-center p-10 text-white">
+            <h1 class="text-3xl font-bold text-center transition-opacity duration-300" id="toggleText">Let's Get Started!</h1>
+        </div>
+        
+        <!-- Right Side -->
+        <div class="md:w-1/2 bg-white p-8 sm:p-10">
+            
+            <!-- Login Form -->
+            <div id="login-form">
+                <h2 class="text-2xl font-semibold text-center mb-4">Login</h2>
+                <p class="text-gray-600 text-center mb-6">Please enter your login details to log in.</p>
+                <form>
+                    <div class="relative">
+                        <input type="email" placeholder="Email Address" class="w-full p-3 border rounded-lg mb-4">
+                        <i class="fa-solid fa-envelope absolute right-3 top-4 text-gray-500"></i>
+                    </div>
+                    <div class="relative">
+                        <input type="password" id="login-password" placeholder="Password" class="w-full p-3 border rounded-lg mb-4">
+                        <i class="fa-solid fa-eye absolute right-3 top-4 cursor-pointer text-gray-500" onclick="togglePassword('login-password')"></i>
+                    </div>
+                    <div class="flex justify-between items-center mb-4">
+                        <label class="flex items-center text-sm">
+                            <input type="checkbox" class="mr-2"> Keep me logged in
+                        </label>
+                        <a href="#" class="text-red-500 text-sm">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="w-full border text-white bg-red-600 rounded-full py-2 px-4 shadow-md hover:shadow-lg transition duration-300">Sign in
+                    </button>
+                </form>
+                <p class="text-center text-sm mt-4">Don't have an account? <a href="#" class="text-red-500" onclick="toggleForm()">Create account</a></p>
+                <div class="flex items-center my-4">
+                    <hr class="flex-grow border-gray-300">
+                    <span class="px-3 text-gray-500 text-sm font-semibold">or continue with</span>
+                    <hr class="flex-grow border-gray-300">
+                </div>
+                <div class="flex justify-center space-x-4">
+                    <button class="p-2 border rounded-lg w-12 h-12 shadow-md hover:shadow-lg transition duration-300"><i class="fa-brands fa-google text-red-500 text-2xl"></i></button>
+                    <button class="p-2 border rounded-lg w-12 h-12 shadow-md hover:shadow-lg transition duration-300"><i class="fa-brands fa-facebook text-blue-600 text-2xl"></i></button>
+                    <button class="p-2 border rounded-lg w-12 h-12 shadow-md hover:shadow-lg transition duration-300"><i class="fa-brands fa-apple text-black text-2xl"></i></button>
+                    <button class="p-2 border rounded-lg w-12 h-12 shadow-md hover:shadow-lg transition duration-300"><i class="fa-brands fa-twitter text-blue-400 text-2xl"></i></button>
+                </div>
+            </div>
+            
+            <!-- Signup Form -->
+            <div id="signup-form" class="hidden">
+                <h2 class="text-2xl font-semibold text-center mb-4">Create Account</h2>
+                <p class="text-gray-600 text-center mb-6">Please enter your login details to log in.</p>
+                <form>
+                    <div class="flex space-x-2">
+                        <input type="text" placeholder="First name" class="w-1/2 p-3 border rounded-lg mb-4">
+                        <input type="text" placeholder="Last name" class="w-1/2 p-3 border rounded-lg mb-4">
+                    </div>
+                    <div class="relative">
+                        <input type="email" placeholder="Email" class="w-full p-3 border rounded-lg mb-4">
+                        <i class="fa-solid fa-envelope absolute right-3 top-4 text-gray-500"></i>
+                    </div>
+                    <div class="relative">
+                        <input type="password" id="signup-password" placeholder="Create password" class="w-full p-3 border rounded-lg mb-4">
+                        <i class="fa-solid fa-eye absolute right-3 top-4 cursor-pointer text-gray-500" onclick="togglePassword('signup-password')"></i>
+                    </div>
+                    <div class="flex items-center mb-4 text-sm">
+                        <input type="checkbox" class="mr-2"> I agree with <a href="#" class="text-red-500">Terms</a> and <a href="#" class="text-red-500">Privacy Policy</a>
+                    </div>
+                    <button type="submit" class="w-full border text-white bg-red-600 rounded-full py-2 px-4 shadow-md hover:shadow-lg transition duration-300">Create Account
+                    </button>
+                </form>
+                <p class="text-center text-sm mt-4">Already have an account? <a href="#" class="text-red-500" onclick="toggleForm()">Log in</a></p>
+                <div class="flex items-center my-4">
+                    <hr class="flex-grow border-gray-300">
+                    <span class="px-3 text-gray-500 text-sm font-semibold">OR</span>
+                    <hr class="flex-grow border-gray-300">
+                </div>
+                <button class="flex items-center justify-center w-full border border-gray-300 rounded-full py-2 px-4 shadow-md hover:shadow-lg transition duration-300">
+                    <img src="../ASSETS/Images/google (1).png" alt="Google Logo" class="w-5 h-5 mr-3">
+                    <span class="text-gray-600 font-medium">Sign up with Google</span>
+                </button>
+                
+            </div>
+            
+        </div>
+        
+        <script>
+            function toggleForm() {
+                document.getElementById('login-form').classList.toggle('hidden');
+                document.getElementById('signup-form').classList.toggle('hidden');
+                document.getElementById('toggleText').textContent =
+                    document.getElementById('signup-form').classList.contains('hidden') ? "Let's Get Started!" : "Welcome Back!";
+            }
+            
+            function togglePassword(id) {
+                const input = document.getElementById(id);
+                const icon = input.nextElementSibling;
+                if (input.type === 'password') {
+                    input.type = 'text';
+                    icon.classList.replace('fa-eye', 'fa-eye-slash');
+                } else {
+                    input.type = 'password';
+                    icon.classList.replace('fa-eye-slash', 'fa-eye');
+                }
+            }
+        </script>
+
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>

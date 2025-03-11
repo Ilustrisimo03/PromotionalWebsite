@@ -61,6 +61,11 @@ const mobileMenuButton = document.getElementById("mobile-menu-button");
 
 
 
+         // Function to toggle between login and sign-up form
+         function toggleForm() {
+            document.getElementById("login-form").classList.toggle("hidden");
+            document.getElementById("signup-form").classList.toggle("hidden");
+        }
 
 
 
