@@ -22,7 +22,7 @@
 <body class="bg-gray-50" >
 
  <!-- Navbar -->
-<nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50 text-lg font-medium transition-all duration-300">
+<nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50 text-lg font-medium transition-all duration-300 fade-in">
     <div class="p-5 flex justify-between items-center">
         <!-- Logo -->
         <a href="index.html" class="text-red-600 text-4xl font-extrabold tracking-wide hover:opacity-80 transition">PC REX</a>
@@ -57,7 +57,7 @@
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md p-4 transform transition-all duration-300 scale-95 opacity-0">
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md p-4 transform transition-all duration-300 scale-95 opacity-0 fade-in">
         <a href="index.html" class="block py-2 text-black hover:text-red-600 transition">Home</a>
         <div class="relative">
             <button id="mobile-dropdown-button" class="w-full text-left cursor-pointer py-2 text-black hover:text-red-600 flex justify-between transition">
@@ -77,7 +77,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 
-<div class="p-6 space-y-16 pt-32">
+<div class="p-6 space-y-16 pt-32 zoom-in">
     <!-- Hero Section -->
     <section id="home" class="h-[250px] sm:h-[400px] text-center flex items-center justify-center bg-gray-900 text-white bg-cover bg-center rounded-lg shadow-lg relative overflow-hidden">
         <div class="absolute inset-0 bg-cover bg-center bg-img show" id="hero-bg-1"></div>
@@ -88,9 +88,9 @@
 
     
  <!-- About Section -->
-<section id="about" class="text-center">
+<section id="about" class="text-center zoom-in">
     <!-- Features -->
-    <div class="p-6 sm:p-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-8 sm:gap-20">
+    <div class="p-6 sm:p-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-8 sm:gap-20 zoom-in">
         
         <!-- Feature Cards -->
         <a href="#custom-pc" class="group block rounded-2xl overflow-hidden relative shadow-lg hover:shadow-2xl transition duration-700">
@@ -161,8 +161,8 @@
 
 
 <!-- Services Section -->
-<section id="services" class="flex items-center justify-center overflow-hidden p-12 ">
-    <div class="text-center w-full">
+<section id="services" class="flex items-center justify-center overflow-hidden p-12 zoom-in ">
+    <div class="text-center w-full zoom-in">
         <h2 class="text-5xl font-extrabold text-gray-900 mb-10">Our Services</h2>
 
         <!-- Scrolling Services -->
@@ -260,7 +260,7 @@
   
 
 <!-- Products Section -->
-<div class="p-6 bg-gradient-to-br from-gray-50 to-gray-200">
+<div class="p-6 bg-gradient-to-br from-gray-50 to-gray-200 fade-in">
     <section id="products" class="text-center">
         <h2 class="text-5xl font-extrabold text-gray-900">Our Premium Products</h2>
         <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
@@ -300,7 +300,7 @@
         </div>
 
         <!-- Why Choose Us -->
-        <div class="mt-16">
+        <div class="mt-16 fade-in">
             <h2 class="text-5xl font-extrabold text-gray-900">Why Choose Us?</h2>
             <div class="grid md:grid-cols-3 gap-10 mt-8">
                 <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg">
@@ -334,8 +334,8 @@
 
 
 <!-- Contact Section -->
-<div  class="p-6 bg-gradient-to-br from-gray-100 to-gray-300 ">
-    <section  class="mx-auto">
+<div  class="p-6 bg-gradient-to-br from-gray-100 to-gray-300 zoom-in">
+    <section  class="mx-auto zoom-in">
         <!-- Title -->
         <div class="text-center">
             <h2 class="text-5xl font-extrabold text-gray-900">Get in Touch</h2>
@@ -408,8 +408,8 @@
 </div>
 
 <!-- Location Section -->
-<section id="location" class="flex items-center justify-center pt-20 pb-20">
-    <div class="text-center w-screen">
+<section id="location" class="flex items-center justify-center pt-20 pb-20 zoom-in">
+    <div class="text-center w-screen zoom-in">
         <h2 class="text-5xl font-extrabold text-gray-900">Location</h2>
         <p class="mt-4 text-gray-700">Visit us at our store to explore our products in person.</p>
         <iframe class="mt-6 w-full h-64" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509315!2d144.9537353153159!3d-37.81720997975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c920fd286a9f%3A0x1c6e3463e77d131d!2sPC%20Rex%20Computer%20Sales!5e0!3m2!1sen!2us!4v1640174211445" allowfullscreen="" loading="lazy"></iframe>
@@ -424,7 +424,7 @@
 
   <!-- Footer -->
 
-<footer class="bg-red-700 text-white border-t border-gray-700">
+<footer class="bg-white text-black border-t border-gray-700 zoom-in">
     <div class="p-4 md:p-5 lg:p-6">
         <div class="flex flex-col md:flex-row items-center justify-between pb-6 border-b border-gray-300">
             <h3 class="text-lg font-semibold">Join our newsletter for the latest PC deals and updates!</h3>
@@ -444,40 +444,45 @@
             <div>
                 <h3 class="font-semibold text-md uppercase">Shop</h3>
                 <ul class="mt-2 space-y-1 text-sm">
-                    <li><a href="#" class="hover:underline text-red-300">Gaming PCs</a></li>
-                    <li><a href="#" class="hover:underline text-red-300">Laptops</a></li>
-                    <li><a href="#" class="hover:underline text-red-300">Accessories</a></li>
-                    <li><a href="#" class="hover:underline text-red-300">Monitors</a></li>
+                    <li><a href="#" class="hover:underline hover:text-black text-gray-500">Gaming PCs</a></li>
+                    <li><a href="#" class="hover:underline hover:text-black text-gray-500">Laptops</a></li>
+                    <li><a href="#" class="hover:underline hover:text-black text-gray-500">Accessories</a></li>
+                    <li><a href="#" class="hover:underline hover:text-black text-gray-500">Monitors</a></li>
                 </ul>
             </div>
             <div>
                 <h3 class="font-semibold text-md uppercase">Customer Support</h3>
                 <ul class="mt-2 space-y-1 text-sm">
-                    <li><a href="#" class="hover:underline text-red-300">Help Center</a></li>
-                    <li><a href="#" class="hover:underline text-red-300">Warranty & Returns</a></li>
-                    <li><a href="#" class="hover:underline text-red-300">Shipping Info</a></li>
-                    <li><a href="#" class="hover:underline text-red-300">Contact Us</a></li>
+                    <li><a href="#" class="hover:underline hover:text-black  text-gray-500">Help Center</a></li>
+                    <li><a href="#" class="hover:underline hover:text-black text-gray-500">Warranty & Returns</a></li>
+                    <li><a href="#" class="hover:underline hover:text-black text-gray-500">Shipping Info</a></li>
+                    <li><a href="#" class="hover:underline hover:text-black text-gray-500">Contact Us</a></li>
                 </ul>
             </div>
             <div>
                 <h3 class="font-semibold text-md uppercase">Policies</h3>
                 <ul class="mt-2 space-y-1 text-sm">
-                    <li><a href="#" class="hover:underline text-red-300">Terms of Service</a></li>
-                    <li><a href="#" class="hover:underline text-red-300">Privacy Policy</a></li>
-                    <li><a href="#" class="hover:underline text-red-300">Refund Policy</a></li>
-                    <li><a href="#" class="hover:underline text-red-300">Cookies</a></li>
+                    <li><a href="#" class="hover:underline hover:text-black text-gray-500">Terms of Service</a></li>
+                    <li><a href="#" class="hover:underline hover:text-black text-gray-500">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:underline hover:text-black text-gray-500">Refund Policy</a></li>
+                    <li><a href="#" class="hover:underline hover:text-black text-gray-500">Cookies</a></li>
                 </ul>
             </div>
         </div>
-        <div class="flex justify-between mt-6 text-md border-t border-gray-300 pt-4">
-            <p class="text-gray-400">&copy; 2025 REX PC Inc.</p>
+    </div>
+        <div class="flex justify-between items-center w-full mt-6 p-6 text-sm border-t bg-red-600 border-gray-300">
+            <p class="text-white">&copy; <span id="year"></span> REX PC Inc.</p>
+            <script>
+                document.getElementById('year').textContent = new Date().getFullYear();
+            </script>
             <div class="flex space-x-4">
-                <a href="#" class="hover:underline text-red-300">Facebook</a>
-                <a href="#" class="hover:underline text-red-300">Twitter</a>
-                <a href="#" class="hover:underline text-red-300">Instagram</a>
+                <a href="#" class="hover:underline text-red-200">Facebook</a>
+                <a href="#" class="hover:underline text-red-200">Twitter</a>
+                <a href="#" class="hover:underline text-red-200">Instagram</a>
             </div>
         </div>
-    </div>
+        
+    
 </footer>
 
   

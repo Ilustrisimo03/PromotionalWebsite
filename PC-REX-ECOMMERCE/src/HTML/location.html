@@ -76,10 +76,10 @@
 
 
     <!-- Location Section -->
-    <div class="p-6 space-y-16">
+    <div class="flex justify-center items-center h-screen p-6  fade-in">
     <script src="https://cdn.tailwindcss.com"></script>
     <section id="location" class="w-full flex flex-col items-center justify-center">
-        <div class="text-center w-full h-full">
+        <div class="text-center w-full h-full zoom-in ">
             <h2 class="text-4xl font-bold">Our Location</h2>
             <p class="mt-4 text-gray-700">Visit us at our store to explore our products in person.</p>
             <iframe class="mt-6 w-full h-64 rounded-lg shadow-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509315!2d144.9537353153159!3d-37.81720997975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c920fd286a9f%3A0x1c6e3463e77d131d!2sPC%20Rex%20Computer%20Sales!5e0!3m2!1sen!2us!4v1640174211445" allowfullscreen="" loading="lazy"></iframe>
@@ -88,10 +88,10 @@
     </div>
 
 
- <!-- Footer -->
+  <!-- Footer -->
 
- <footer class="bg-red-700 text-white border-t border-gray-700">
-    <div class="p-4 md:p-5 lg:p-6">
+<footer class="bg-white text-black border-t border-gray-700 fade-in">
+    <div class="p-4 md:p-5 lg:p-6 zoom-in">
         <div class="flex flex-col md:flex-row items-center justify-between pb-6 border-b border-gray-300">
             <h3 class="text-lg font-semibold">Join our newsletter for the latest PC deals and updates!</h3>
             <div class="flex mt-4 md:mt-0">
@@ -105,49 +105,58 @@
                     <h1 class="text-4xl font-semibold">REX PC</h1>
                 </div>
                 <p class="mt-2 text-md">Your go-to store for high-performance PCs and accessories.</p>
-                <p class="mt-2 text-sm text-gray-400">&copy; 2025 REX PC Inc.</p>
+                <p class="text-gray-600">&copy; <span id="year"></span> REX PC Inc.</p>
+                <script>
+                    document.getElementById('year').textContent = new Date().getFullYear();
+                </script>
             </div>
             <div>
                 <h3 class="font-semibold text-md uppercase">Shop</h3>
                 <ul class="mt-2 space-y-1 text-sm">
-                    <li><a href="#" class="hover:underline text-red-300">Gaming PCs</a></li>
-                    <li><a href="#" class="hover:underline text-red-300">Laptops</a></li>
-                    <li><a href="#" class="hover:underline text-red-300">Accessories</a></li>
-                    <li><a href="#" class="hover:underline text-red-300">Monitors</a></li>
+                    <li><a href="#" class="hover:underline hover:text-black text-gray-500">Gaming PCs</a></li>
+                    <li><a href="#" class="hover:underline hover:text-black text-gray-500">Laptops</a></li>
+                    <li><a href="#" class="hover:underline hover:text-black text-gray-500">Accessories</a></li>
+                    <li><a href="#" class="hover:underline hover:text-black text-gray-500">Monitors</a></li>
                 </ul>
             </div>
             <div>
                 <h3 class="font-semibold text-md uppercase">Customer Support</h3>
                 <ul class="mt-2 space-y-1 text-sm">
-                    <li><a href="#" class="hover:underline text-red-300">Help Center</a></li>
-                    <li><a href="#" class="hover:underline text-red-300">Warranty & Returns</a></li>
-                    <li><a href="#" class="hover:underline text-red-300">Shipping Info</a></li>
-                    <li><a href="#" class="hover:underline text-red-300">Contact Us</a></li>
+                    <li><a href="#" class="hover:underline hover:text-black  text-gray-500">Help Center</a></li>
+                    <li><a href="#" class="hover:underline hover:text-black text-gray-500">Warranty & Returns</a></li>
+                    <li><a href="#" class="hover:underline hover:text-black text-gray-500">Shipping Info</a></li>
+                    <li><a href="#" class="hover:underline hover:text-black text-gray-500">Contact Us</a></li>
                 </ul>
             </div>
             <div>
                 <h3 class="font-semibold text-md uppercase">Policies</h3>
                 <ul class="mt-2 space-y-1 text-sm">
-                    <li><a href="#" class="hover:underline text-red-300">Terms of Service</a></li>
-                    <li><a href="#" class="hover:underline text-red-300">Privacy Policy</a></li>
-                    <li><a href="#" class="hover:underline text-red-300">Refund Policy</a></li>
-                    <li><a href="#" class="hover:underline text-red-300">Cookies</a></li>
+                    <li><a href="#" class="hover:underline hover:text-black text-gray-500">Terms of Service</a></li>
+                    <li><a href="#" class="hover:underline hover:text-black text-gray-500">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:underline hover:text-black text-gray-500">Refund Policy</a></li>
+                    <li><a href="#" class="hover:underline hover:text-black text-gray-500">Cookies</a></li>
                 </ul>
             </div>
         </div>
-        <div class="flex justify-between mt-6 text-md border-t border-gray-300 pt-4">
-            <p class="text-gray-400">&copy; 2025 REX PC Inc.</p>
+    </div>
+        <div class="flex justify-between items-center w-full mt-6 p-6 text-sm border-t bg-red-600 border-gray-300">
+            <p class="text-white">&copy; <span id="year"></span> REX PC Inc.</p>
+            <script>
+                document.getElementById('year').textContent = new Date().getFullYear();
+            </script>
             <div class="flex space-x-4">
-                <a href="#" class="hover:underline text-red-300">Facebook</a>
-                <a href="#" class="hover:underline text-red-300">Twitter</a>
-                <a href="#" class="hover:underline text-red-300">Instagram</a>
+                <a href="#" class="hover:underline text-red-200">Facebook</a>
+                <a href="#" class="hover:underline text-red-200">Twitter</a>
+                <a href="#" class="hover:underline text-red-200">Instagram</a>
             </div>
         </div>
-    </div>
+        
+    
 </footer>
+
   
   
-  
-      <script src="../JS/script.js"></script>
+<script src="../JS/location.js"></script>  
+<script src="../JS/script.js"></script>
 </body>
 </html>
