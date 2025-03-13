@@ -17,22 +17,7 @@ function togglePasswordVisibility(id) {
     }
 }
 
-// Carousel Logic
-let slides = document.querySelectorAll('.slide');
-let currentSlide = 0;
 
-function showSlide(index) {
-    slides.forEach(slide => slide.classList.add('hidden'));
-    slides[index].classList.remove('hidden');
-}
-
-function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-}
-
-showSlide(currentSlide); // Show the first slide initially
-setInterval(nextSlide, 3000); // Auto change every 3 seconds
 
 const animatedElements = document.querySelectorAll('.fade-in, .fade-left, .fade-right, .zoom-in, .rotate-in');
 const observer = new IntersectionObserver(entries => {
