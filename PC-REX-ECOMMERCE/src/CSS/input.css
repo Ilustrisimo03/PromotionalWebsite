@@ -145,14 +145,8 @@ body {
 .fade-in {
     opacity: 0;
     transform: translateY(10px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.zoom-in {
-    opacity: 0;
-    transform: scale(0.9);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition: opacity 1s ease-out;
 }
 
 
-.visible { opacity: 1; transform: translateY(0) translateX(0) scale(1) rotate(0); }
+.visible { opacity: 1; transform: translateY(0); }

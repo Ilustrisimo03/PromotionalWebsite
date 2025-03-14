@@ -19,13 +19,13 @@ function togglePasswordVisibility(id) {
 
 
 
-const animatedElements = document.querySelectorAll('.fade-in, .fade-left, .fade-right, .zoom-in, .rotate-in');
+const animatedElements = document.querySelectorAll('.fade-in');
+
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
-        } else {
-            entry.target.classList.remove('visible');
+            observer.unobserve(entry.target); // Tumigil na sa pag-observe kapag nakita na
         }
     });
 }, { threshold: 0.1 });
