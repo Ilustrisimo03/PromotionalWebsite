@@ -19,11 +19,12 @@
 
 
 </head>
-<body class="bg-gray-50" >
+<body >
 
  <!-- Navbar -->
-<nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50 text-lg font-medium transition-all duration-300 fade-in">
-    <div class="p-5 flex justify-between items-center">
+ <nav class="bg-white shadow-md sticky top-2 left-2 right-2 rounded-2xl w-auto max-w-[91%] mx-auto sm:max-w-[50%] text-lg font-medium z-50">
+
+    <div class="p-6 flex justify-between items-center">
         <!-- Logo -->
         <a href="index.html" class="text-red-600 text-4xl font-extrabold tracking-wide hover:opacity-80 transition">PC REX</a>
 
@@ -57,7 +58,9 @@
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md p-4 transform transition-all duration-300 scale-95 opacity-0 fade-in">
+    <div id="mobile-menu" 
+     class="invisible opacity-0 scale-95 absolute top-16 left-0 w-full bg-white shadow-md p-4 transition-all duration-300">
+
         <a href="index.html" class="block py-2 text-black hover:text-red-600 transition">Home</a>
         <div class="relative">
             <button id="mobile-dropdown-button" class="w-full text-left cursor-pointer py-2 text-black hover:text-red-600 flex justify-between transition">
@@ -77,7 +80,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 
-<div class="p-6 space-y-16 pt-32 fade-in">
+<div class="p-6 sm:p-20 sm:py-2 space-y-16 fade-in">
     <!-- Hero Section -->
     <section id="home" class="h-[250px] sm:h-[400px] text-center flex items-center justify-center bg-gray-900 text-white bg-cover bg-center rounded-lg shadow-lg relative overflow-hidden">
         <div class="absolute inset-0 bg-cover bg-center bg-img show" id="hero-bg-1"></div>
@@ -161,7 +164,7 @@
 
 
 <!-- Services Section -->
-<section id="services" class="flex items-center justify-center overflow-hidden p-12 fade-in ">
+<section id="services" class="flex items-center justify-center overflow-hidden p-6 sm:p-20 fade-in ">
     <div class="text-center w-full fade-in">
         <h2 class="text-5xl font-extrabold text-gray-900 mb-10">Our Services</h2>
 
@@ -260,7 +263,7 @@
   
 
 <!-- Products Section -->
-<div class="p-6 bg-gradient-to-br from-gray-50 to-gray-200 fade-in">
+<div class="p-6 sm:p-20 bg-gradient-to-br from-gray-50 to-gray-200 fade-in">
     <section id="products" class="text-center">
         <h2 class="text-5xl font-extrabold text-gray-900">Our Premium Products</h2>
         <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
@@ -334,7 +337,7 @@
 
 
 <!-- Contact Section -->
-<div  class="p-6 bg-gradient-to-br from-gray-100 to-gray-300 fade-in">
+<div  class="p-6 sm:p-20 bg-gradient-to-br from-gray-100 to-gray-300 fade-in">
     <section  class="mx-auto fade-in">
         <!-- Title -->
         <div class="text-center">
@@ -425,7 +428,7 @@
   <!-- Footer -->
 
 <footer class="bg-white text-black border-t border-gray-700 fade-in">
-    <div class="p-4 md:p-5 lg:p-6">
+    <div class="p-6 sm:p-20">
         <div class="flex flex-col md:flex-row items-center justify-between pb-6 border-b border-gray-300">
             <h3 class="text-lg font-semibold">Join our newsletter for the latest PC deals and updates!</h3>
             <div class="flex mt-4 md:mt-0">

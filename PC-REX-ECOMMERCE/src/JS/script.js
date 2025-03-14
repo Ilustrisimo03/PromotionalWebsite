@@ -1,19 +1,19 @@
 const mobileMenuButton = document.getElementById("mobile-menu-button");
-        const mobileMenu = document.getElementById("mobile-menu");
-        const mobileDropdownButton = document.getElementById("mobile-dropdown-button");
-        const mobileDropdown = document.getElementById("mobile-dropdown");
+const mobileMenu = document.getElementById("mobile-menu");
+const mobileDropdownButton = document.getElementById("mobile-dropdown-button");
+const mobileDropdown = document.getElementById("mobile-dropdown");
 
-        mobileMenuButton.addEventListener("click", () => {
-            mobileMenu.classList.toggle("hidden");
-            setTimeout(() => {
-                mobileMenu.classList.toggle("opacity-0");
-                mobileMenu.classList.toggle("scale-95");
-            }, 10);
-        });
+// Toggle Mobile Menu Visibility
+mobileMenuButton.addEventListener("click", () => {
+    mobileMenu.classList.toggle("invisible"); // Prevents layout shift
+    mobileMenu.classList.toggle("opacity-0"); // Smooth fade effect
+    mobileMenu.classList.toggle("scale-95");  // Slight zoom-out effect
+});
 
-        mobileDropdownButton.addEventListener("click", () => {
-            mobileDropdown.classList.toggle("hidden");
-        });
+// Toggle Mobile Dropdown Visibility
+mobileDropdownButton.addEventListener("click", () => {
+    mobileDropdown.classList.toggle("hidden");
+});
 
 
 
@@ -82,8 +82,3 @@ const mobileMenuButton = document.getElementById("mobile-menu-button");
         }, { threshold: 0.1 });
 
         animatedElements.forEach(element => observer.observe(element));
-
-
-
-
-      
