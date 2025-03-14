@@ -1,21 +1,19 @@
-function toggleSection() {
-    document.getElementById('signup-section').classList.toggle('hidden');
-    document.getElementById('login-section').classList.toggle('hidden');
+function toggleForms() {
+    const signInForm = document.getElementById('signin-form');
+    const signUpForm = document.getElementById('signup-form');
+    signInForm.classList.toggle('hidden');
+    signUpForm.classList.toggle('hidden');
 }
 
-function togglePasswordVisibility(id) {
-    const passwordInput = document.getElementById(id);
-    const eyeIcon = passwordInput.nextElementSibling;
-    if (passwordInput.type === 'password' ) {
-        passwordInput.type = 'text';
-        eyeIcon.classList.remove('fa-eye');
-        eyeIcon.classList.add('fa-eye-slash');
+function togglePasswordVisibility(inputId, iconElement) {
+    const input = document.getElementById(inputId);
+    if (input.type === 'password') {
+        input.type = 'text';
+        iconElement.classList.replace('fa-eye', 'fa-eye-slash');
     } else {
-        passwordInput.type = 'password';
-        eyeIcon.classList.remove('fa-eye-slash');
-        eyeIcon.classList.add('fa-eye');
+        input.type = 'password';
+        iconElement.classList.replace('fa-eye-slash', 'fa-eye');
     }
 }
-
 
 
