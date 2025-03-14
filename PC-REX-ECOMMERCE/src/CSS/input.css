@@ -2,8 +2,25 @@
 
 
 
+.bg-custom-gradient {
+    background: linear-gradient(to right, #DC2626, #B91C1C); /* Tailwind's red-600 shade */
+}
+
+.bg-product-section{
+    background: #1E1E1E;
+}
+
+.text-color-hover:hover{
+    color: #1E1E1E;
+}
+
+.bg-product-section-hover:hover{
+    background: #1E1E1E;
+}
+
+
 body {
-    background: #F5F5F5;
+    background: #FBFBFB;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
 }
@@ -123,19 +140,32 @@ body {
 }
 
 .service-box {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 16px;
-    min-width: 220px;
-    border: 3px solid #ff0000; 
-    border-radius: 12px;
-
-    
+    background: #1E1E1E;
+    border: 2px solid #DC2626;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .service-box:hover {
-    cursor: pointer;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    background: #B91C1C;
+    color: #FFFFFF;
 }
+
+.service-box span {
+    color: #FFFFFF;
+}
+
+.service-box h3 {
+    color: #FFFFFF;
+}
+
+.service-box p {
+    color: #E5E7EB;
+}
+
 
 
 
