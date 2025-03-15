@@ -22,9 +22,9 @@
 <body >
 
  <!-- Navbar -->
-<nav class="bg-custom-gradient shadow-md sticky top-2 left-2 right-2 rounded-2xl w-auto max-w-[91%] mx-auto sm:max-w-[70%]  lg:max-w-[75%] md:max-w-[85%] text-lg font-medium z-50">
+<nav class="bg-custom-gradient shadow-md sticky top-2 left-2 right-2 rounded-2xl w-auto text-lg font-medium z-50">
 
-    <div class="p-6 flex justify-between items-center">
+    <div class="p-6 py-5 flex justify-between items-center">
         <!-- Logo -->
         <a href="index.html" class="text-white text-4xl font-extrabold tracking-wide hover:opacity-80 transition">PC REX</a>
 
@@ -80,93 +80,108 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 
-<div class="p-6 sm:p-20 sm:py-2 space-y-16">
+<div class="p-6 sm:p-20 sm:py-8 space-y-16">
     <!-- Hero Section -->
-    <section id="home" class="h-[250px] sm:h-[400px] text-center flex items-center justify-center bg-gray-900 text-white bg-cover bg-center rounded-lg shadow-lg relative overflow-hidden">
+    <section id="home" class="h-[250px] sm:h-[350px] text-center flex items-center justify-center bg-gray-900 text-white bg-cover bg-center rounded-lg shadow-lg relative overflow-hidden">
         <div class="absolute inset-0 bg-cover bg-center bg-img show" id="hero-bg-1"></div>
         <div class="absolute inset-0 bg-cover bg-center bg-img" id="hero-bg-2"></div>
     </section>
 </div>
 
 
+<div class="p-6 sm:p-8 space-y-8">
+    <h2 class="text-center text-4xl font-bold text-red-500 dark:text-white">Shop by Categories</h2>
+    <section id="categories" class="flex flex-wrap justify-center gap-6">
+        <!-- Category Card -->
+        <div class=" p-4 w-28 sm:w-32 lg:w-36 flex flex-col items-center">
+            <img src="../ASSETS/Images/pc.webp" alt="Gaming PCs" class="20 sm:w-24 h-20 sm:h-24 object-cover rounded-full border-2  mb-2">
+            <h3 class="text- font-bold text-gray-900 dark:text-white">Gaming PCs</h3>
+        </div>
+
+        <div class=" p-4 w-28 sm:w-32 lg:w-36 flex flex-col items-center">
+            <img src="../ASSETS/Images/pc.webp" alt="Office PCs" class="20 sm:w-24 h-20 sm:h-24 object-cover rounded-full border-2  mb-2">
+            <h3 class="text- font-bold text-gray-900 dark:text-white">Office PCs</h3>
+        </div>
+
+        <div class=" p-4 w-28 sm:w-32 lg:w-36 flex flex-col items-center">
+            <img src="../ASSETS/Images/pc.webp" alt="Custom Builds" class="20 sm:w-24 h-20 sm:h-24 object-cover rounded-full border-2  mb-2">
+            <h3 class="text- font-bold text-gray-900 dark:text-white">Custom Builds</h3>
+        </div>
+
+        <div class=" p-4 w-28 sm:w-32 lg:w-36 flex flex-col items-center">
+            <img src="../ASSETS/Images/pc.webp" alt="Workstations" class="20 sm:w-24 h-20 sm:h-24 object-cover rounded-full border-2  mb-2">
+            <h3 class="text- font-bold text-gray-900 dark:text-white">Workstations</h3>
+        </div>
+
+        <div class=" p-4 w-28 sm:w-32 lg:w-36 flex flex-col items-center">
+            <img src="../ASSETS/Images/pc.webp" alt="Servers" class="20 sm:w-24 h-20 sm:h-24 object-cover rounded-full border-2  mb-2">
+            <h3 class="text- font-bold text-gray-900 dark:text-white">Servers</h3>
+        </div>
+
+        <div class=" p-4 w-28 sm:w-32 lg:w-36 flex flex-col items-center">
+            <img src="../ASSETS/Images/pc.webp" alt="Accessories" class="20 sm:w-24 h-20 sm:h-24 object-cover rounded-full border-2  mb-2">
+            <h3 class="text- font-bold text-gray-900 dark:text-white">Accessories</h3>
+        </div>
+
+        <div class=" p-4 w-28 sm:w-32 lg:w-36 flex flex-col items-center">
+            <img src="../ASSETS/Images/pc.webp" alt="Laptops" class="20 sm:w-24 h-20 sm:h-24 object-cover rounded-full border-2  mb-2">
+            <h3 class="text- font-bold text-gray-900 dark:text-white">Laptops</h3>
+        </div>
+    </section>
+</div>
+
+
     
- <!-- About Section -->
-<section id="about" class="text-center">
-    <!-- Features -->
-    <div class="p-6 sm:p-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-8 sm:gap-20">
+<!-- About Us Section -->
+<section id="about" class="text-center text-black py-20 bg-product-section">
+    <div class="max-w-full mx-auto px-10 sm:px-20">
+        <h2 class="text-4xl font-bold text-red-500 mb-6">About PC REX</h2>
+        <p class="text-lg leading-relaxed text-gray-300 mb-12">
+            At <span class="text-red-500 font-semibold">PC REX</span>, we build more than just PCs — we create powerful experiences. From custom-built rigs to tailored upgrades, our goal is to provide gamers, creatives, and professionals with systems designed to perform. Every PC we craft is optimized for speed, reliability, and personalized to your exact needs.
+        </p>
+        <p class="text-lg leading-relaxed text-gray-300 mb-12">
+            Our team of experienced engineers and tech enthusiasts is passionate about innovation. We stay connected with the latest trends in hardware and software to ensure our builds are future-proof and cutting-edge. By collaborating with top brands and being actively involved in the tech community, we deliver solutions that exceed expectations.
+        </p>
         
-        <!-- Feature Cards -->
-        <a href="#custom-pc" class="group block rounded-2xl overflow-hidden relative shadow-lg hover:shadow-2xl transition duration-700">
-            <div class="overflow-hidden rounded-2xl relative">
-                <img src="../ASSETS/Images/computer.jpg" alt="Custom PC Builds" class="w-[1226px] h-[250px] object-cover transition-transform duration-700 group-hover:scale-110">
-                <div class="absolute inset-0 bg-gradient-to-t from-red-600/60 to-transparent"></div>
-                <div class="absolute bottom-3 left-0 right-0 text-white text-center">
-                    <h3 class="text-lg font-semibold transition duration-700 ">Custom PC Builds</h3>
-                </div>
-            </div>
-        </a>
+        
+        
 
-        <a href="#gaming-accessories" class="group block rounded-2xl overflow-hidden relative shadow-lg hover:shadow-2xl transition duration-700">
-            <div class="overflow-hidden rounded-2xl relative">
-                <img src="../ASSETS/Images/computer.jpg" alt="Gaming Accessories" class="w-[1226px] h-[250px] object-cover transition-transform duration-700 group-hover:scale-110">
-                <div class="absolute inset-0 bg-gradient-to-t from-red-600/60 to-transparent"></div>
-                <div class="absolute bottom-3 left-0 right-0 text-white text-center">
-                    <h3 class="text-lg font-semibold transition duration-700 ">Gaming Accessories</h3>
-                </div>
-            </div>
-        </a>
+        <div id="hiddenContent" class="hidden text-lg leading-relaxed text-gray-300 mt-4">
+            <p class="text-lg leading-relaxed text-gray-300 mb-12">
+                What sets us apart is our dedication to customer satisfaction. We believe in building not just PCs, but long-term relationships with our clients. Our team provides ongoing support, ensuring your system continues to perform at its best. Whether you're a hardcore gamer, a creative professional, or a business seeking top-tier hardware, we've got you covered.
+            </p>
+            <p>We are committed to sustainability by incorporating eco-friendly components and minimizing electronic waste. Our team also offers educational resources and guidance for those looking to build their own PC or enhance their current setup. By fostering a community of tech enthusiasts, we empower our customers with the knowledge they need to make informed decisions.</p>
+            <p>At <span class="text-red-500 font-semibold">PC REX</span>, our journey is driven by passion, innovation, and an unwavering dedication to customer success.</p>
+        </div>
 
-        <a href="#products" class="group block rounded-2xl overflow-hidden relative shadow-lg hover:shadow-2xl transition duration-700">
-            <div class="overflow-hidden rounded-2xl relative">
-                <img src="../ASSETS/Images/computer.jpg" alt="Our Products" class="w-[1226px] h-[250px] object-cover transition-transform duration-700 group-hover:scale-110">
-                <div class="absolute inset-0 bg-gradient-to-t from-red-600/60 to-transparent"></div>
-                <div class="absolute bottom-3 left-0 right-0 text-white text-center">
-                    <h3 class="text-lg font-semibold transition duration-700 ">Our Products</h3>
-                </div>
-            </div>
-        </a>
+        <div class="mt-4">
+            <button id="showMoreBtn" class="text-red-500 underline cursor-pointer">Read More</button>
+        </div>
 
-        <a href="location.html" class="group block rounded-2xl overflow-hidden relative shadow-lg hover:shadow-2xl transition duration-700">
-            <div class="overflow-hidden rounded-2xl relative">
-                <img src="../ASSETS/Images/computer.jpg" alt="Our Location" class="w-[1226px] h-[250px] object-cover transition-transform duration-700 group-hover:scale-110">
-                <div class="absolute inset-0 bg-gradient-to-t from-red-600/60 to-transparent"></div>
-                <div class="absolute bottom-3 left-0 right-0 text-white text-center">
-                    <h3 class="text-lg font-semibold transition duration-700 ">Our Location</h3>
-                </div>
-            </div>
-        </a>
-
-        <a href="#services" class="group block rounded-2xl overflow-hidden relative shadow-lg hover:shadow-2xl transition duration-700">
-            <div class="overflow-hidden rounded-2xl relative">
-                <img src="../ASSETS/Images/computer.jpg" alt="Services" class="w-[1226px] h-[250px] object-cover transition-transform duration-700 group-hover:scale-110">
-                <div class="absolute inset-0 bg-gradient-to-t from-red-600/60 to-transparent"></div>
-                <div class="absolute bottom-3 left-0 right-0 text-white text-center">
-                    <h3 class="text-lg font-semibold transition duration-700 ">Services</h3>
-                </div>
-            </div>
-        </a>
-
-        <a href="#Contact" class="group block rounded-2xl overflow-hidden relative shadow-lg hover:shadow-2xl transition duration-700">
-            <div class="overflow-hidden rounded-2xl relative">
-                <img src="../ASSETS/Images/computer.jpg" alt="Contact" class="w-[1226px] h-[250px] object-cover transition-transform duration-700 group-hover:scale-110">
-                <div class="absolute inset-0 bg-gradient-to-t from-red-600/60 to-transparent"></div>
-                <div class="absolute bottom-3 left-0 right-0 text-white text-center">
-                    <h3 class="text-lg font-semibold transition duration-700 ">Contact</h3>
-                </div>
-            </div>
-        </a>
-
+        <div class="mt-12">
+            <a href="#Contact" class="inline-block bg-red-600 hover:bg-red-700 text-white py-3 px-8 rounded-xl text-lg transition duration-500">Contact Us</a>
+        </div>
     </div>
 </section>
+
+<script>
+    document.getElementById('showMoreBtn').addEventListener('click', function() {
+        const hiddenContent = document.getElementById('hiddenContent');
+        hiddenContent.classList.toggle('hidden');
+        this.innerText = hiddenContent.classList.contains('hidden') ? 'Read More' : 'Read Less';
+    });
+</script>
+
+
 
 
 
 
 
 <!-- Services Section -->
-<section id="services" class="flex items-center justify-center overflow-hidden pb-20">
+<section id="services" class="flex items-center justify-center overflow-hidden py-20">
     <div class="text-center w-full">
-        <h2 class="text-5xl font-extrabold text-gray-900 mb-10">Our Services</h2>
+        <h2 class="text-4xl font-extrabold text-red-500 mb-10">Our Services</h2>
 
         <!-- Scrolling Services -->
         <div class="relative w-full">
@@ -265,72 +280,65 @@
 
 
 <!-- Products Section -->
-<div class="p-6 sm:p-20">
-    <section id="products" class="text-center text-black">
-        <h2 class="text-5xl font-extrabold">Power Up Your Performance</h2>
-        <p class="text-lg mt-4 max-w-2xl mx-auto">
-            Experience top-tier PC performance with our high-performance components, designed to push your limits.
+<div class="p-6 sm:p-20 text-black">
+    <section id="products" class="text-center">
+        <h2 class="text-4xl font-bold text-red-500">Power Up Your Performance</h2>
+        <p class="text-base mt-3 max-w-xl mx-auto text-gray-600">
+            Boost your PC experience with performance-driven components designed for excellence.
         </p>
 
-        <div class="grid md:grid-cols-3 gap-10 mt-14">
-            <!-- Product Highlight -->
-            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300">
-                <img src="../ASSETS/Images/computer.jpg" alt="CPU" class="w-full h-56 object-cover rounded-xl">
-                <h3 class="text-3xl font-bold mt-6 text-red-600">Blazing-Fast CPUs</h3>
-                <p class="text-gray-600 mt-3">
-                    Turbocharge your PC with powerful processors designed for gamers and creators alike.
-                </p>
-                <div class="mt-5 text-red-500 font-semibold text-lg flex items-center justify-center gap-2">
-                    <span class="material-icons text-2xl">bolt</span> Unmatched Speed. Maximum Power.
-                </div>
+        <div class="grid md:grid-cols-3 gap-8 mt-10">
+            <div class="bg-white p-6 rounded-xl border border-red-500 shadow-sm">
+                <span class="material-icons text-red-500 text-4xl">speed</span>
+                <h3 class="text-2xl font-bold text-red-500 mt-2">Blazing-Fast CPUs</h3>
+                <p class="text-gray-600 mt-2">Unmatched speed for seamless gaming and multitasking.</p>
             </div>
 
-            <!-- Product Highlight -->
-            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300">
-                <img src="../ASSETS/Images/computer.jpg" alt="GPU" class="w-full h-56 object-cover rounded-xl">
-                <h3 class="text-3xl font-bold mt-6 text-red-600">Immersive Graphics Cards</h3>
-                <p class="text-gray-600 mt-3">
-                    Enjoy lifelike visuals with GPUs optimized for seamless performance.
-                </p>
-                <div class="mt-5 text-red-500 font-semibold text-lg flex items-center justify-center gap-2">
-                    <span class="material-icons text-2xl">sports_esports</span> Stunning Visuals. Seamless Gameplay.
-                </div>
+            <div class="bg-white p-6 rounded-xl border border-red-500 shadow-sm">
+                <span class="material-icons text-red-500 text-4xl">monitor</span>
+                <h3 class="text-2xl font-bold text-red-500 mt-2">Immersive Graphics</h3>
+                <p class="text-gray-600 mt-2">Crystal-clear visuals with high-performance GPUs.</p>
             </div>
 
-            <!-- Product Highlight -->
-            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300">
-                <img src="../ASSETS/Images/computer.jpg" alt="RAM" class="w-full h-56 object-cover rounded-xl">
-                <h3 class="text-3xl font-bold mt-6 text-red-600">High-Speed RAM</h3>
-                <p class="text-gray-600 mt-3">
-                    Unlock faster multitasking and smoother performance with premium memory solutions.
-                </p>
-                <div class="mt-5 text-red-500 font-semibold text-lg flex items-center justify-center gap-2">
-                    <span class="material-icons text-2xl">rocket_launch</span> Instant Response. Zero Lag.
-                </div>
+            <div class="bg-white p-6 rounded-xl border border-red-500 shadow-sm">
+                <span class="material-icons text-red-500 text-4xl">memory</span>
+                <h3 class="text-2xl font-bold text-red-500 mt-2">High-Speed RAM</h3>
+                <p class="text-gray-600 mt-2">Faster data access for improved system performance.</p>
             </div>
         </div>
 
-        <!-- Why Choose Us -->
-        <div class="mt-16">
-            <h2 class="text-5xl font-extrabold">Why REX PC?</h2>
-            <div class="grid md:grid-cols-3 gap-10 mt-8">
-                <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg">
-                    <span class="material-icons text-red-600 text-5xl">rocket_launch</span>
-                    <p class="text-lg text-gray-700 mt-3 font-medium">Revolutionary Technology</p>
+        <div class="mt-12 text-center">
+            <h2 class="text-5xl font-bold text-black">Why <span class="text-red-500">REX PC?</span></h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 justify-center">
+                <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl border border-red-500 shadow-lg">
+                    <span class="material-icons text-red-500 text-5xl">autorenew</span>
+                    <p class="mt-4 text-xl text-gray-700 font-medium">Revolutionary Technology</p>
                 </div>
-                <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg">
-                    <span class="material-icons text-red-600 text-5xl">build</span>
-                    <p class="text-lg text-gray-700 mt-3 font-medium">Built to Last</p>
+                <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl border border-red-500 shadow-lg">
+                    <span class="material-icons text-red-500 text-5xl">build</span>
+                    <p class="mt-4 text-xl text-gray-700 font-medium">Built to Last</p>
                 </div>
-                <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg">
-                    <span class="material-icons text-red-600 text-5xl">thumb_up</span>
-                    <p class="text-lg text-gray-700 mt-3 font-medium">Trusted by Pros Worldwide</p>
+                <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl border border-red-500 shadow-lg">
+                    <span class="material-icons text-red-500 text-5xl">stars</span>
+                    <p class="mt-4 text-xl text-gray-700 font-medium">Trusted by Pros Worldwide</p>
+                </div>
+                <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl border border-red-500 shadow-lg">
+                    <span class="material-icons text-red-500 text-5xl">security</span>
+                    <p class="mt-4 text-xl text-gray-700 font-medium">Enhanced Security Solutions</p>
+                </div>
+                <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl border border-red-500 shadow-lg">
+                    <span class="material-icons text-red-500 text-5xl">support_agent</span>
+                    <p class="mt-4 text-xl text-gray-700 font-medium">24/7 Customer Support</p>
+                </div>
+                <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl border border-red-500 shadow-lg">
+                    <span class="material-icons text-red-500 text-5xl">verified</span>
+                    <p class="mt-4 text-xl text-gray-700 font-medium">Quality Assurance</p>
                 </div>
             </div>
         </div>
+        
     </section>
 </div>
-
 
 
 
@@ -348,9 +356,9 @@
 <div  class="p-6 sm:p-20 py-20 bg-product-section ">
     <section  class="mx-auto">
         <!-- Title -->
-        <div class="text-center text-white">
-            <h2 class="text-5xl font-extrabold">Get in Touch</h2>
-            <p class="text-lg mt-4 max-w-2xl mx-auto">
+        <div class="text-center ">
+            <h2 class="text-4xl text-red-600 font-bold">Get in Touch</h2>
+            <p class="text-lg mt-4 max-w-2xl text-gray-300 mx-auto">
                 We're here to assist you. Feel free to contact us for inquiries or collaborations.
             </p>
         </div>
@@ -361,15 +369,15 @@
                 <h3 class="text-3xl font-semibold text-black">Send Us a Message</h3>
                 <form class="mt-6 space-y-6 text-black">
                     <div class="grid grid-cols-2 gap-4">
-                        <input type="text" placeholder="First Name" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
-                        <input type="text" placeholder="Last Name" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+                        <input type="text" placeholder="First Name" class="w-full p-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+                        <input type="text" placeholder="Last Name" class="w-full p-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
                     </div>
                     <div class="grid grid-cols-2 gap-4">
-                        <input type="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
-                        <input type="text" placeholder="Phone Number" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+                        <input type="email" placeholder="Email" class="w-full p-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+                        <input type="text" placeholder="Phone Number" class="w-full p-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
                     </div>
-                    <input type="text" placeholder="Subject" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
-                    <textarea placeholder="Message" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 h-40"></textarea>
+                    <input type="text" placeholder="Subject" class="w-full p-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+                    <textarea placeholder="Message" class="w-full p-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 h-40"></textarea>
                     <button class="w-full bg-red-600 text-white py-3 rounded-lg font-semibold shadow-md hover:bg-red-700 transition flex items-center justify-center">
                         <span class="material-icons mr-2">send</span> Send Message
                     </button>
@@ -380,7 +388,7 @@
             <div class="bg-white text-black p-8 rounded-2xl shadow-lg">
                 <h3 class="text-3xl font-semibold">Visit Our Location</h3>
                 <p class="mt-4">Come see us in person and explore our products firsthand.</p>
-                <a href="location.html" class="mt-4 bg-red-600 text-black px-6 py-3 rounded-lg shadow-md font-semibold transition hover:bg-red-700 flex items-center justify-center">
+                <a href="location.html" class="mt-4 bg-red-600 text-white px-6 py-3 rounded-lg shadow-md font-semibold transition hover:bg-red-700 flex items-center justify-center">
                     <span class="material-icons mr-2">location_on</span> Find Us
                 </a>
 
@@ -422,8 +430,8 @@
 <!-- Location Section -->
 <section id="location" class="flex items-center justify-center pt-20 pb-20">
     <div class="text-center w-screen">
-        <h2 class="text-5xl font-extrabold text-gray-900">Location</h2>
-        <p class="mt-4 text-gray-700">Visit us at our store to explore our products in person.</p>
+        <h2 class="text-4xl font-extrabold text-red-500">Location</h2>
+        <p class="mt-4 text-gray-600">Visit us at our store to explore our products in person.</p>
         <iframe class="mt-6 w-full h-64" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509315!2d144.9537353153159!3d-37.81720997975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c920fd286a9f%3A0x1c6e3463e77d131d!2sPC%20Rex%20Computer%20Sales!5e0!3m2!1sen!2us!4v1640174211445" allowfullscreen="" loading="lazy"></iframe>
     </div>
 </section>
@@ -435,10 +443,10 @@
   
 
  <!-- Footer -->
-<footer class="bg-white text-black border-t border-gray-700">
+<footer class="bg-product-section text-black border-t border-gray-700">
     <div class="p-6 sm:p-20">
         <div class="flex flex-col md:flex-row items-center justify-between pb-6 border-b border-gray-300">
-            <h3 class="text-lg font-semibold">Join our newsletter for the latest PC deals and updates!</h3>
+            <h3 class="text-lg font-semibold text-white">Join our newsletter for the latest PC deals and updates!</h3>
             <div class="flex mt-4 md:mt-0">
                 <input 
                     type="email" 
@@ -454,39 +462,39 @@
         <div class="grid md:grid-cols-4 gap-8 mt-6">
             <div>
                 <div class="flex items-center space-x-2">
-                    <h1 class="text-4xl font-semibold">REX PC</h1>
+                    <h1 class="text-4xl font-semibold text-white">REX PC</h1>
                 </div>
-                <p class="mt-2 text-md">Your go-to store for high-performance PCs and accessories.</p>
+                <p class="mt-2 text-md text-gray-300">Your go-to store for high-performance PCs and accessories.</p>
                 <p class="mt-2 text-sm text-gray-400">&copy; 2025 REX PC Inc.</p>
             </div>
 
             <div>
-                <h3 class="font-semibold text-md uppercase">Shop</h3>
+                <h3 class="font-semibold text-md uppercase text-white">Shop</h3>
                 <ul class="mt-2 space-y-1 text-sm">
-                    <li><a href="#" class=" hover:text-gray-900 text-gray-600 text-md">Gaming PCs</a></li>
-                    <li><a href="#" class=" hover:text-gray-900 text-gray-600 text-md">Laptops</a></li>
-                    <li><a href="#" class=" hover:text-gray-900 text-gray-600 text-md">Accessories</a></li>
-                    <li><a href="#" class=" hover:text-gray-900 text-gray-600 text-md">Monitors</a></li>
+                    <li><a href="#" class=" hover:text-red-500 text-gray-300 text-md">Gaming PCs</a></li>
+                    <li><a href="#" class=" hover:text-red-500 text-gray-300 text-md">Laptops</a></li>
+                    <li><a href="#" class=" hover:text-red-500 text-gray-300 text-md">Accessories</a></li>
+                    <li><a href="#" class=" hover:text-red-500 text-gray-300 text-md">Monitors</a></li>
                 </ul>
             </div>
 
             <div>
-                <h3 class="font-semibold text-md uppercase">Customer Support</h3>
+                <h3 class="font-semibold text-md uppercase text-white">Customer Support</h3>
                 <ul class="mt-2 space-y-1 text-sm">
-                    <li><a href="#" class=" hover:text-gray-900 text-gray-600 text-md">Help Center</a></li>
-                    <li><a href="#" class=" hover:text-gray-900 text-gray-600 text-md">Warranty & Returns</a></li>
-                    <li><a href="#" class=" hover:text-gray-900 text-gray-600 text-md">Shipping Info</a></li>
-                    <li><a href="#" class=" hover:text-gray-900 text-gray-600 text-md">Contact Us</a></li>
+                    <li><a href="#" class=" hover:text-red-500 text-gray-300 text-md">Help Center</a></li>
+                    <li><a href="#" class=" hover:text-red-500 text-gray-300 text-md">Warranty & Returns</a></li>
+                    <li><a href="#" class=" hover:text-red-500 text-gray-300 text-md">Shipping Info</a></li>
+                    <li><a href="#" class=" hover:text-red-500 text-gray-300 text-md">Contact Us</a></li>
                 </ul>
             </div>
 
             <div>
-                <h3 class="font-semibold text-md uppercase">Policies</h3>
+                <h3 class="font-semibold text-md uppercase text-white">Policies</h3>
                 <ul class="mt-2 space-y-1 text-sm ">
-                    <li><a href="#" class=" hover:text-md hover:text-gray-900 text-gray-600 text-md">Terms of Service</a></li>
-                    <li><a href="#" class=" hover:text-md hover:text-gray-900 text-gray-600 text-md">Privacy Policy</a></li>
-                    <li><a href="#" class=" hover:text-md hover:text-gray-900 text-gray-600 text-md">Refund Policy</a></li>
-                    <li><a href="#" class=" hover:text-md hover:text-gray-900 text-gray-600 text-md">Cookies</a></li>
+                    <li><a href="#" class=" hover:text-md hover:text-red-500 text-gray-300 text-md">Terms of Service</a></li>
+                    <li><a href="#" class=" hover:text-md hover:text-red-500 text-gray-300 text-md">Privacy Policy</a></li>
+                    <li><a href="#" class=" hover:text-md hover:text-red-500 text-gray-300 text-md">Refund Policy</a></li>
+                    <li><a href="#" class=" hover:text-md hover:text-red-500 text-gray-300 text-md">Cookies</a></li>
                 </ul>
             </div>
         </div>
