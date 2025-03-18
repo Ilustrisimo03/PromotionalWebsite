@@ -1,3 +1,5 @@
+
+// SIGNIN-SIGNUP
 function toggleForms() {
     const signInForm = document.getElementById('signin-form');
     const signUpForm = document.getElementById('signup-form');

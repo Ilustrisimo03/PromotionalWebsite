@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PC REX - Login</title>
 
-    <link rel="icon" type="image/x-icon" href="../ASSETS/Images/PCREXLOGO_FINAL.png"  sizes="100x100">>
+    <link rel="icon" type="image/x-icon" href="../ASSETS/Images/PCREXLOGO_FINAL.png"  sizes="100x100">
 
     <!-- TailwindCSS and other assets -->
     <link href="../CSS/input.css" rel="stylesheet">
@@ -24,23 +24,14 @@
 </style>
 
 <body class="flex items-center justify-center min-h-screen relative overflow-hidden">
-   
-   
-
-
-<!-- Background Image with Parallax Effect -->
-<div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('../ASSETS/Images/bg-image.jpg');"></div>
-
-<!-- Small Black Overlay with Low Opacity -->
-<div class="absolute inset-0 bg-black opacity-60 z-10"></div>
-
+  
 <!-- Logo to go back in website (Placed above everything else) -->
 <a href="index.html" class="absolute top-4 left-4 cursor-pointer z-20">
     <img src="../ASSETS/Images/PCREXLOGO_FINAL.png" alt="PC REX Logo" class="h-12">
 </a>
 
 <!-- Animated Floating Icons -->
-<div class="absolute bottom-10 right-10 text-white text-5xl animate-spin z-10">
+<div class="absolute bottom-10 right-10 text-red-600 text-5xl animate-spin z-10">
     <span class="material-icons text-[75px]">computer</span>
 </div>
 
@@ -63,11 +54,11 @@
                 <input id="signin-password" type="password" placeholder="Password" class="w-full p-3 border rounded-lg mb-2 focus:ring-4 focus:ring-red-500">
                 <i class="fas fa-eye absolute inset-y-4 right-3 cursor-pointer text-gray-500" onclick="togglePasswordVisibility('signin-password', this)"></i>
             </div>
-            <div class="text-right text-sm text-blue-500 cursor-pointer hover:underline">Forgot password?</div>
+            <div class="text-right text-sm text-red-600 cursor-pointer hover:underline">Forgot password?</div>
             <button class="w-full bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg mt-3 transition shadow-lg shadow-red-600/50">Sign In</button>
             <p class="text-center text-gray-500 mt-3">
                 Don't have an account? 
-                <span class="text-red-500 cursor-pointer hover:underline" onclick="toggleForms()">Sign Up</span>
+                <span class="text-red-600 cursor-pointer hover:underline" onclick="toggleForms()">Sign Up</span>
             </p>
         </div>
     </div>
@@ -95,12 +86,12 @@
 
             <div class="flex items-center text-sm text-gray-600 mb-2">
                 <input type="checkbox" id="privacy" class="mr-2">
-                <label for="privacy">I agree to the <span class="text-blue-500 cursor-pointer hover:underline">Privacy Policy</span></label>
+                <label for="privacy">I agree to the <span class="text-red-600 cursor-pointer hover:underline">Privacy Policy</span></label>
             </div>
             <button class="w-full bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg mt-3 transition shadow-lg shadow-red-600/50">Sign Up</button>
             <p class="text-center text-gray-500 mt-3">
                 Already have an account? 
-                <span class="text-red-500 cursor-pointer hover:underline" onclick="toggleForms()">Sign In</span>
+                <span class="text-red-600 cursor-pointer hover:underline" onclick="toggleForms()">Sign In</span>
             </p>
         </div>
     </div>

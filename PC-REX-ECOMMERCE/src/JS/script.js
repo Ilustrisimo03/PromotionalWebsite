@@ -1,3 +1,5 @@
+
+// NAVBAR MENU
 const mobileMenuButton = document.getElementById("mobile-menu-button");
 const mobileMenu = document.getElementById("mobile-menu");
 const mobileDropdownButton = document.getElementById("mobile-dropdown-button");
@@ -17,9 +19,30 @@ mobileDropdownButton.addEventListener("click", () => {
 
 
 
+// DROWPDOWN ABOUT US
+    const dropdownButton = document.getElementById('about-dropdown-button');
+    const dropdownMenu = document.getElementById('about-dropdown');
+
+    dropdownButton.addEventListener('click', () => {
+        dropdownMenu.classList.toggle('opacity-0');
+        dropdownMenu.classList.toggle('invisible');
+        dropdownMenu.classList.toggle('scale-95');
+        dropdownMenu.classList.toggle('scale-100');
+    });
+
+    // Close dropdown if clicked outside
+    window.addEventListener('click', (e) => {
+        if (!dropdownButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
+            dropdownMenu.classList.add('opacity-0', 'invisible', 'scale-95');
+            dropdownMenu.classList.remove('scale-100');
+        }
+    });
 
 
 
+
+
+// CAROUSEL HERO SECTIOn
     const images = [
         '../ASSETS/Images/pcblue.jpg',
         '../ASSETS/Images/pc.webp',
