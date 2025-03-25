@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PC REX</title>
 
-  <link rel="icon" type="image/x-icon" href="../ASSETS/Images/PCREXLOGO_FINAL.png"  sizes="100x100">
+  <link rel="icon" type="image/x-icon" href="../ASSETS/Images/PCREX (1).png"  sizes="100x100">
 
   <link href="../CSS/input.css" rel="stylesheet">
   <link href="../CSS/output.css" rel="stylesheet">
@@ -22,7 +22,7 @@
 <body class="bg-gray-50" >
 
  <!-- Navbar -->
-<nav class="bg-white shadow-md sticky top-2 left-2 right-2 rounded-2xl w-auto text-lg font-medium z-50">
+<nav class="bg-white shadow-md sticky top-2 left-2 right-2 rounded-2xl w-auto text-lg font-medium z-50 opacity-0 transition-opacity duration-1000 ease-in-out">
 
     <div class="p-6 py-2 sm:py-4 sm:p-20 flex justify-between items-center">
                         <!-- Logo -->
@@ -86,7 +86,7 @@
 
 <div class="p-6 sm:p-20 sm:py-8 space-y-16">
     <!-- Hero Section -->
-    <section id="home" class="h-[250px] sm:h-[350px] text-center flex items-center justify-center bg-gray-900 text-white bg-cover bg-center rounded-lg shadow-lg relative overflow-hidden">
+    <section id="home" class="h-[250px] sm:h-[350px] text-center flex items-center justify-center bg-gray-900 text-white bg-cover bg-center rounded-lg shadow-lg relative overflow-hidden opacity-0 transition-opacity duration-1000 ease-in-out">
         <div class="absolute inset-0 bg-cover bg-center bg-img show" id="hero-bg-1"></div>
         <div class="absolute inset-0 bg-cover bg-center bg-img" id="hero-bg-2"></div>
     </section>
@@ -97,9 +97,9 @@
 
 
 <!-- Categories Section -->
-<div class="p-6 dark:bg-gray-900 mb-5">
-    <h2 class="text-center text-3xl font-bold text-red-600 dark:text-white">Top Categories</h2>
-    <section id="categories" class=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-4 mt-6">
+<div class="p-6 dark:bg-gray-900 mb-5 ">
+    <h2 class="text-center text-3xl font-bold text-red-600 dark:text-white ">Top Categories</h2>
+    <section id="categories" class=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-4 mt-6 opacity-0 transition-opacity duration-1000 ease-in-out">
         
         <div class="flex flex-col items-center bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-md cursor-pointer hover:bg-red-500 hover:text-white transition-all">
             <img src="../ASSETS/Images/bg-image.jpg" alt="Processors" class="w-14 h-14 object-cover mb-2">
@@ -144,7 +144,7 @@
 
     
 <!-- About Us Section -->
-<section id="about" class="text-center text-white py-24 bg-product-section">
+<section id="about" class="text-center text-white py-24 bg-product-section opacity-0 transition-opacity duration-1000 ease-in-out">
     <div class="max-w-7xl mx-auto px-6 sm:px-10">
         <div class="flex flex-col lg:flex-row items-center gap-16">
             <div class="lg:w-1/2 mb-10 lg:mb-0">
@@ -169,12 +169,13 @@
                     <button id="showMoreBtn" class="text-red-600 underline cursor-pointer text-lg">Read More</button>
                 </div>
                 <div class="mt-10">
-                    <a href="#Contact" class="inline-block bg-red-600 hover:bg-red-700 text-white py-4 px-10 rounded-3xl text-xl transition duration-500">Contact Us</a>
+                    <a href="#Contact" class="inline-block bg-red-600 hover:bg-red-700 text-white py-2 px-2 rounded-2xl text-xl transition duration-500">Contact Us</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 
 <script>
     document.getElementById('showMoreBtn').addEventListener('click', function() {
@@ -192,7 +193,7 @@
 
 
 <!-- Services Section -->
-<section id="services" class="flex items-center justify-center overflow-hidden py-20">
+<section id="services" class="flex items-center justify-center overflow-hidden py-20 opacity-0 transition-opacity duration-1000 ease-in-out">
     <div class="text-center w-full">
         <h2 class="text-4xl font-extrabold text-red-500 mb-10">Our Services</h2>
 
@@ -293,7 +294,7 @@
 
 
 <div class="p-6 sm:p-20 text-black bg-gray-100">
-    <section id="products" class="text-center">
+    <section id="products" class="text-center opacity-0 transition-opacity duration-1000 ease-in-out">
         <h2 class="text-4xl font-extrabold text-red-600">Power Up Your Performance</h2>
         <p class="text-base mt-3 max-w-md mx-auto text-gray-500">
             Boost your PC experience with performance-driven components designed for excellence.
@@ -366,7 +367,7 @@
 
 <!-- Contact Section -->
 <div class="p-6 sm:p-20 py-12 bg-product-section">
-    <section class="mx-auto">
+    <section id="contact" class="mx-auto opacity-0 transition-opacity duration-1000 ease-in-out">
         <!-- Title -->
         <div class="text-center">
             <h2 class="text-3xl text-red-600 font-bold">Get in Touch</h2>
@@ -440,7 +441,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 <!-- Location Section -->
-<section id="location" class="flex items-center justify-center pt-20 pb-20">
+<section id="location" class="flex items-center justify-center pt-20 pb-20 opacity-0 transition-opacity duration-1000 ease-in-out">
     <div class="text-center w-screen">
         <h2 class="text-4xl font-extrabold text-red-500">Location</h2>
         <p class="mt-4 text-gray-600">Visit us at our store to explore our products in person.</p>
@@ -455,7 +456,7 @@
   
 
 <!-- Footer -->
-<footer class="bg-product-section text-black border-t border-gray-700">
+<footer id="footer" class="bg-product-section text-black border-t border-gray-700 opacity-0 transition-opacity duration-1000 ease-in-out">
     <div class="p-6 sm:p-20">
         <div class="flex flex-col md:flex-row items-center justify-between pb-4 border-b border-gray-300">
             <h3 class="text-md font-semibold text-white">Join our newsletter for the latest PC deals and updates!</h3>
