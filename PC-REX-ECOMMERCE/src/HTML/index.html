@@ -97,47 +97,86 @@
 
 
 <!-- Categories Section -->
-<section class="p-6 dark:bg-gray-900 mb-5 opacity-0 transition-opacity duration-1000 ease-in-out">
-    <h2 class="text-center text-3xl font-bold text-red-600 dark:text-white ">Top Categories</h2>
-    <div id="categories" class=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-4 mt-6 ">
-        
+<section class="p-4 dark:bg-gray-900 mb-3 opacity-0 transition-opacity duration-1000 ease-in-out bg-red-600">
+    <!-- Infinite Scrolling Wrapper -->
+    <div class="relative w-full overflow-hidden">
+        <div class="scroll-track flex">
+            <!-- Category Items (Repeated for Infinite Loop) -->
+            <div class="scroll-content flex gap-8">
+                <div class="category-item"><i class="fas fa-microchip"></i><span>Processors</span></div>
+                <div class="category-item"><i class="fas fa-video"></i><span>Graphics Cards</span></div>
+                <div class="category-item"><i class="fas fa-server"></i><span>Motherboards</span></div>
+                <div class="category-item"><i class="fas fa-memory"></i><span>RAM</span></div>
+                <div class="category-item"><i class="fas fa-hdd"></i><span>Storage</span></div>
+                <div class="category-item"><i class="fas fa-plug"></i><span>Power Supply</span></div>
+                <div class="category-item"><i class="fas fa-fan"></i><span>Cooling Systems</span></div>
+                <div class="category-item"><i class="fas fa-keyboard"></i><span>Keyboards</span></div>
+                <div class="category-item"><i class="fas fa-mouse"></i><span>Mice</span></div>
+                <div class="category-item"><i class="fas fa-desktop"></i><span>Monitors</span></div>
+                <div class="category-item"><i class="fas fa-headphones"></i><span>Headsets</span></div>
+                <div class="category-item"><i class="fas fa-gamepad"></i><span>Controllers</span></div>
+                <div class="category-item"><i class="fas fa-chair"></i><span>Gaming Chairs</span></div>
+            </div>
 
-        <div class="flex flex-col items-center bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-md cursor-pointer hover:bg-red-500 hover:text-white transition-all">
-            <img src="../ASSETS/Images/bg-image.jpg" alt="Processors" class="w-14 h-14 object-cover mb-2">
-            <h3 class="text-base font-semibold">Processors</h3>
-        </div>
-
-        <div class="flex flex-col items-center bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-md cursor-pointer hover:bg-red-500 hover:text-white transition-all">
-            <img src="../ASSETS/Images/bg-image.jpg" alt="Graphics Cards" class="w-14 h-14 object-cover mb-2">
-            <h3 class="text-base font-semibold">Graphics Cards</h3>
-        </div>
-
-        <div class="flex flex-col items-center bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-md cursor-pointer hover:bg-red-500 hover:text-white transition-all">
-            <img src="../ASSETS/Images/bg-image.jpg" alt="Motherboards" class="w-14 h-14 object-cover mb-2">
-            <h3 class="text-base font-semibold">Motherboards</h3>
-        </div>
-
-        <div class="flex flex-col items-center bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-md cursor-pointer hover:bg-red-500 hover:text-white transition-all">
-            <img src="../ASSETS/Images/bg-image.jpg" alt="RAM" class="w-14 h-14 object-cover mb-2">
-            <h3 class="text-base font-semibold">RAM</h3>
-        </div>
-
-        <div class="flex flex-col items-center bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-md cursor-pointer hover:bg-red-500 hover:text-white transition-all">
-            <img src="../ASSETS/Images/bg-image.jpg" alt="Storage" class="w-14 h-14 object-cover mb-2">
-            <h3 class="text-base font-semibold">Storage</h3>
-        </div>
-
-        <div class="flex flex-col items-center bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-md cursor-pointer hover:bg-red-500 hover:text-white transition-all">
-            <img src="../ASSETS/Images/bg-image.jpg" alt="Power Supply" class="w-14 h-14 object-cover mb-2">
-            <h3 class="text-base font-semibold">Power Supply</h3>
-        </div>
-
-        <div class="flex flex-col items-center bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-md cursor-pointer hover:bg-red-500 hover:text-white transition-all">
-            <img src="../ASSETS/Images/bg-image.jpg" alt="Cooling Systems" class="w-14 h-14 object-cover mb-2">
-            <h3 class="text-base font-semibold">Cooling Systems</h3>
+            <!-- Duplicate Content for Seamless Loop -->
+            <div class="scroll-content flex gap-8">
+                <div class="category-item"><i class="fas fa-microchip"></i><span>Processors</span></div>
+                <div class="category-item"><i class="fas fa-video"></i><span>Graphics Cards</span></div>
+                <div class="category-item"><i class="fas fa-server"></i><span>Motherboards</span></div>
+                <div class="category-item"><i class="fas fa-memory"></i><span>RAM</span></div>
+                <div class="category-item"><i class="fas fa-hdd"></i><span>Storage</span></div>
+                <div class="category-item"><i class="fas fa-plug"></i><span>Power Supply</span></div>
+                <div class="category-item"><i class="fas fa-fan"></i><span>Cooling Systems</span></div>
+                <div class="category-item"><i class="fas fa-keyboard"></i><span>Keyboards</span></div>
+                <div class="category-item"><i class="fas fa-mouse"></i><span>Mice</span></div>
+                <div class="category-item"><i class="fas fa-desktop"></i><span>Monitors</span></div>
+                <div class="category-item"><i class="fas fa-headphones"></i><span>Headsets</span></div>
+                <div class="category-item"><i class="fas fa-gamepad"></i><span>Controllers</span></div>
+                <div class="category-item"><i class="fas fa-chair"></i><span>Gaming Chairs</span></div>
+            </div>
         </div>
     </div>
 </section>
+
+<style>
+  /* Auto-scrolling animation */
+  @keyframes scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+  }
+  
+  .scroll-track {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      animation: scroll 15s linear infinite;
+      width: max-content;
+  }
+
+  .category-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-width: 80px;
+      cursor: pointer;
+      font-size: 14px;
+      color: white;
+      text-align: center;
+  }
+
+  .category-item i {
+      font-size: 24px;
+      margin-bottom: 4px;
+      color: white;
+  }
+</style>
+
+<!-- FontAwesome Icons -->
+<script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+
+
+
 
 
 
@@ -292,35 +331,36 @@
 
   
 
-
+<!-- Promotion -->
 <section class="p-6 sm:p-20 text-black opacity-0 transition-opacity duration-1000 ease-in-out">
-    <div id="promotions" class="text-center ">
+    <div id="promotions" class="text-center">
         <h2 class="text-4xl font-extrabold text-red-600">Exclusive PC Deals</h2>
-        <p class="text-base mt-2 max-w-sm mx-auto text-gray-500">
+        <p class="text-base mt-2 max-w-2xl mx-auto text-gray-500">
             Unlock massive discounts on top-tier PC components. Limited time only!
         </p>
 
-        <div class="grid md:grid-cols-2 gap-4 mt-6">
-            <div class="bg-white p-4 rounded-lg border-t-4 border-red-600 shadow-md flex items-center space-x-4">
-                <div class="w-2/3 text-left">
-                    <h3 class="text-lg font-bold text-black">Flat 25% Off</h3>
-                    <p class="text-gray-500 mt-1 text-sm font-medium">On High-Performance Processors</p>
-                    <button class="mt-3 px-3 py-1 bg-red-600 text-white text-sm font-semibold rounded-md">Shop Now →</button>
+        <div class="grid md:grid-cols-2 gap-6 mt-8">
+            <div class="relative bg-white rounded-lg border-t-4 border-red-600 shadow-md overflow-hidden w-full max-w-lg mx-auto">
+                <img src="../ASSETS/Images/pc.webp" alt="CPU Deal" class="w-full h-60 object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-start p-4">
+                    <h3 class="text-2xl font-bold text-white">Flat 25% Off</h3>
+                    <p class="text-gray-300 mt-1 text-sm font-medium">On High-Performance Processors</p>
+                    <button class="mt-3 px-4 py-2 bg-red-600 text-white text-sm font-semibold rounded-md">Shop Now →</button>
                 </div>
-                <img src="../ASSETS/Images/pc.webp" alt="CPU Deal" class="w-1/3 rounded-md">
             </div>
             
-            <div class="bg-white p-4 rounded-lg border-t-4 border-red-600 shadow-md flex items-center space-x-4">
-                <div class="w-2/3 text-left">
-                    <h3 class="text-lg font-bold text-black">Save Big on GPUs</h3>
-                    <p class="text-gray-500 mt-1 text-sm font-medium">Flat 20% Off on Graphics Cards</p>
-                    <button class="mt-3 px-3 py-1 bg-red-600 text-white text-sm font-semibold rounded-md">Shop Now →</button>
+            <div class="relative bg-white rounded-lg border-t-4 border-red-600 shadow-md overflow-hidden w-full max-w-lg mx-auto">
+                <img src="../ASSETS/Images/computer.jpg" alt="GPU Deal" class="w-full h-60 object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-start p-4">
+                    <h3 class="text-2xl font-bold text-white">Save Big on GPUs</h3>
+                    <p class="text-gray-300 mt-1 text-sm font-medium">Flat 20% Off on Graphics Cards</p>
+                    <button class="mt-3 px-4 py-2 bg-red-600 text-white text-sm font-semibold rounded-md">Shop Now →</button>
                 </div>
-                <img src="../ASSETS/Images/computer.jpg" alt="GPU Deal" class="w-1/3 rounded-md">
             </div>
         </div>
     </div>
 </section>
+
 <script src="https://cdn.tailwindcss.com"></script>
 
 
