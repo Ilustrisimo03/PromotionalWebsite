@@ -84,23 +84,24 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 
-<div class="p-6 sm:p-20 sm:py-8 space-y-16">
+<section class="p-6 sm:p-20 sm:py-8 space-y-16 opacity-0 transition-opacity duration-1000 ease-in-out">
     <!-- Hero Section -->
-    <section id="home" class="h-[250px] sm:h-[350px] text-center flex items-center justify-center bg-gray-900 text-white bg-cover bg-center rounded-lg shadow-lg relative overflow-hidden opacity-0 transition-opacity duration-1000 ease-in-out">
+    <div id="home" class="h-[250px] sm:h-[350px] text-center flex items-center justify-center bg-gray-900 text-white bg-cover bg-center rounded-lg shadow-lg relative overflow-hidden ">
         <div class="absolute inset-0 bg-cover bg-center bg-img show" id="hero-bg-1"></div>
         <div class="absolute inset-0 bg-cover bg-center bg-img" id="hero-bg-2"></div>
-    </section>
-</div>
+    </div>
+</section>
 
 
 
 
 
 <!-- Categories Section -->
-<div class="p-6 dark:bg-gray-900 mb-5 ">
+<section class="p-6 dark:bg-gray-900 mb-5 opacity-0 transition-opacity duration-1000 ease-in-out">
     <h2 class="text-center text-3xl font-bold text-red-600 dark:text-white ">Top Categories</h2>
-    <section id="categories" class=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-4 mt-6 opacity-0 transition-opacity duration-1000 ease-in-out">
+    <div id="categories" class=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-4 mt-6 ">
         
+
         <div class="flex flex-col items-center bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-md cursor-pointer hover:bg-red-500 hover:text-white transition-all">
             <img src="../ASSETS/Images/bg-image.jpg" alt="Processors" class="w-14 h-14 object-cover mb-2">
             <h3 class="text-base font-semibold">Processors</h3>
@@ -135,8 +136,8 @@
             <img src="../ASSETS/Images/bg-image.jpg" alt="Cooling Systems" class="w-14 h-14 object-cover mb-2">
             <h3 class="text-base font-semibold">Cooling Systems</h3>
         </div>
-    </section>
-</div>
+    </div>
+</section>
 
 
 
@@ -292,65 +293,34 @@
   
 
 
-
-<div class="p-6 sm:p-20 text-black bg-gray-100">
-    <section id="products" class="text-center opacity-0 transition-opacity duration-1000 ease-in-out">
-        <h2 class="text-4xl font-extrabold text-red-600">Power Up Your Performance</h2>
-        <p class="text-base mt-3 max-w-md mx-auto text-gray-500">
-            Boost your PC experience with performance-driven components designed for excellence.
+<section class="p-6 sm:p-20 text-black opacity-0 transition-opacity duration-1000 ease-in-out">
+    <div id="promotions" class="text-center ">
+        <h2 class="text-4xl font-extrabold text-red-600">Exclusive PC Deals</h2>
+        <p class="text-base mt-2 max-w-sm mx-auto text-gray-500">
+            Unlock massive discounts on top-tier PC components. Limited time only!
         </p>
 
-        <div class="grid md:grid-cols-3 gap-6 mt-8">
-            <div class="bg-white p-6 rounded-xl border-t-4 border-red-600 shadow-md">
-                <span class="material-icons text-red-600 text-4xl">speed</span>
-                <h3 class="text-xl font-bold text-black mt-3">Blazing-Fast CPUs</h3>
-                <p class="text-gray-500 mt-2">Unmatched speed for seamless gaming and multitasking.</p>
+        <div class="grid md:grid-cols-2 gap-4 mt-6">
+            <div class="bg-white p-4 rounded-lg border-t-4 border-red-600 shadow-md flex items-center space-x-4">
+                <div class="w-2/3 text-left">
+                    <h3 class="text-lg font-bold text-black">Flat 25% Off</h3>
+                    <p class="text-gray-500 mt-1 text-sm font-medium">On High-Performance Processors</p>
+                    <button class="mt-3 px-3 py-1 bg-red-600 text-white text-sm font-semibold rounded-md">Shop Now →</button>
+                </div>
+                <img src="../ASSETS/Images/pc.webp" alt="CPU Deal" class="w-1/3 rounded-md">
             </div>
-
-            <div class="bg-white p-6 rounded-xl border-t-4 border-red-600 shadow-md">
-                <span class="material-icons text-red-600 text-4xl">monitor</span>
-                <h3 class="text-xl font-bold text-black mt-3">Immersive Graphics</h3>
-                <p class="text-gray-500 mt-2">Crystal-clear visuals with high-performance GPUs.</p>
-            </div>
-
-            <div class="bg-white p-6 rounded-xl border-t-4 border-red-600 shadow-md">
-                <span class="material-icons text-red-600 text-4xl">memory</span>
-                <h3 class="text-xl font-bold text-black mt-3">High-Speed RAM</h3>
-                <p class="text-gray-500 mt-2">Faster data access for improved system performance.</p>
-            </div>
-        </div>
-
-        <div class="mt-10 text-center">
-            <h2 class="text-4xl font-extrabold text-black">Why <span class="text-red-600">PC REX?</span></h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-                <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl border-t-4 border-red-600 shadow-md">
-                    <span class="material-icons text-red-600 text-4xl">autorenew</span>
-                    <p class="mt-3 text-base text-gray-600 font-medium">Revolutionary Technology</p>
+            
+            <div class="bg-white p-4 rounded-lg border-t-4 border-red-600 shadow-md flex items-center space-x-4">
+                <div class="w-2/3 text-left">
+                    <h3 class="text-lg font-bold text-black">Save Big on GPUs</h3>
+                    <p class="text-gray-500 mt-1 text-sm font-medium">Flat 20% Off on Graphics Cards</p>
+                    <button class="mt-3 px-3 py-1 bg-red-600 text-white text-sm font-semibold rounded-md">Shop Now →</button>
                 </div>
-                <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl border-t-4 border-red-600 shadow-md">
-                    <span class="material-icons text-red-600 text-4xl">build</span>
-                    <p class="mt-3 text-base text-gray-600 font-medium">Built to Last</p>
-                </div>
-                <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl border-t-4 border-red-600 shadow-md">
-                    <span class="material-icons text-red-600 text-4xl">stars</span>
-                    <p class="mt-3 text-base text-gray-600 font-medium">Trusted by Pros Worldwide</p>
-                </div>
-                <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl border-t-4 border-red-600 shadow-md">
-                    <span class="material-icons text-red-600 text-4xl">security</span>
-                    <p class="mt-3 text-base text-gray-600 font-medium">Enhanced Security Solutions</p>
-                </div>
-                <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl border-t-4 border-red-600 shadow-md">
-                    <span class="material-icons text-red-600 text-4xl">support_agent</span>
-                    <p class="mt-3 text-base text-gray-600 font-medium">24/7 Customer Support</p>
-                </div>
-                <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl border-t-4 border-red-600 shadow-md">
-                    <span class="material-icons text-red-600 text-4xl">verified</span>
-                    <p class="mt-3 text-base text-gray-600 font-medium">Quality Assurance</p>
-                </div>
+                <img src="../ASSETS/Images/computer.jpg" alt="GPU Deal" class="w-1/3 rounded-md">
             </div>
         </div>
-    </section>
-</div>
+    </div>
+</section>
 <script src="https://cdn.tailwindcss.com"></script>
 
 
@@ -366,8 +336,8 @@
 
 
 <!-- Contact Section -->
-<div class="p-6 sm:p-20 py-12 bg-product-section">
-    <section id="contact" class="mx-auto opacity-0 transition-opacity duration-1000 ease-in-out">
+<section class="p-6 sm:p-20 py-12 bg-product-section opacity-0 transition-opacity duration-1000 ease-in-out">
+    <div id="contact" class="mx-auto ">
         <!-- Title -->
         <div class="text-center">
             <h2 class="text-3xl text-red-600 font-bold">Get in Touch</h2>
@@ -436,8 +406,8 @@
                 </div>
             </div>
         </div>
-    </section>
-</div>
+    </div>
+</section>
 <script src="https://cdn.tailwindcss.com"></script>
 
 <!-- Location Section -->
