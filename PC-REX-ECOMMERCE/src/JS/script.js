@@ -44,10 +44,10 @@ mobileDropdownButton.addEventListener("click", () => {
 
 // CAROUSEL HERO SECTIOn
     const images = [
-        '../ASSETS/Images/pcblue.jpg',
-        '../ASSETS/Images/pc.webp',
-        '../ASSETS/Images/pcblue.jpg',
-        '../ASSETS/Images/pc.webp'
+        '../ASSETS/Images/promotional1.png',
+        '../ASSETS/Images/promotional2.png',
+        '../ASSETS/Images/promotional3.png',
+        '../ASSETS/Images/promotional4.png'
       ];
       
       let index = 0;

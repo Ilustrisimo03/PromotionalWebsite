@@ -142,7 +142,7 @@ body {
 .service-box {
     background: #1E1E1E;
     border: 2px solid #DC2626;
-    border-radius: 1rem;
+    border-radius: 8px;
     padding: 1.5rem;
     text-align: center;
     transition: transform 0.3s ease, background 0.3s ease;
