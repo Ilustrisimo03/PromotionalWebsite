@@ -19,12 +19,12 @@
 
 
 </head>
-<body class="bg-gray-50" >
+<body  >
 
  <!-- Navbar -->
-<nav class="bg-white shadow-md sticky top-2 left-2 right-2 rounded-2xl w-auto text-lg font-medium z-50 opacity-0 transition-opacity duration-1000 ease-in-out">
+<nav class="bg-white shadow-md sticky top-0 left-0 right-0  w-auto text-lg font-medium z-50 opacity-0 transition-opacity duration-1000 ease-in-out">
 
-    <div class="p-6 py-2 sm:py-4 sm:p-20 flex justify-between items-center">
+    <div class="p-6 py-2 sm:py-4 sm:p-10 flex justify-between items-center">
                         <!-- Logo -->
         <a href="index.html" class="hover:opacity-80 transition">
             <img src="../ASSETS/Images/PCREXLOGO_FINAL.png" alt="PC REX Logo" class="h-12">
@@ -33,11 +33,11 @@
 
         <!-- Desktop Menu -->
         <div class="hidden md:flex items-center space-x-6">
-            <a href="index.html" class="text-black hover:text-red-700 transition">Home</a>
+            <a href="index.html" class="text-black hover:text-red-600 transition">Home</a>
             
            <!-- Dropdown Container -->
             <div class="relative">
-                <button id="about-dropdown-button" class="text-black hover:text-red-700 flex items-center transition cursor-pointer">
+                <button id="about-dropdown-button" class="text-black hover:text-red-600 flex items-center transition cursor-pointer">
                     About Us <span class="material-icons ml-1 text-sm">expand_more</span>
                 </button>
                 <div id="about-dropdown" class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible transform scale-95 transition-all duration-300">
@@ -48,12 +48,13 @@
             </div>
 
 
-            <a href="#services" class="text-black hover:text-red-700 transition">Services</a>
-            <a href="#contact" class="text-black hover:text-red-700 transition">Contact</a>
+            <a href="#services" class="text-black hover:text-red-600 transition">Services</a>
+            <a href="#contact" class="text-black hover:text-red-600 transition">Contact</a>
         </div>
 
         <!-- Login Button -->
-        <a href="loginPage.html" class="hidden md:block bg-red-500 text-white font-bold px-4 py-1 rounded-md shadow-md hover:bg-red-700 transition-all">Login</a>
+        <a href="loginPage.html" class="hidden md:block bg-custom-gradient text-white font-bold px-4 py-1 rounded-2xl shadow-md hover:bg-red-100 transition-all">Log in</a>
+
 
         <!-- Mobile Menu Button -->
         <button id="mobile-menu-button" class="md:hidden focus:outline-none cursor-pointer">
@@ -65,9 +66,9 @@
     <div id="mobile-menu" 
      class="invisible opacity-0 scale-95 absolute top-16 left-0 w-full bg-white shadow-md transition-all duration-300">
 
-        <a href="index.html" class="block py-2 text-black hover:text-red-700 transition">Home</a>
+        <a href="index.html" class="block py-2 text-black hover:text-red-600 transition">Home</a>
         <div class="relative">
-            <button id="mobile-dropdown-button" class="w-full text-left cursor-pointer py-2 text-black hover:text-red-700 flex justify-between transition">
+            <button id="mobile-dropdown-button" class="w-full text-left cursor-pointer py-2 text-black hover:text-red-600 flex justify-between transition">
                 About Us <span class="material-icons text-sm">expand_more</span>
             </button>
             <div id="mobile-dropdown" class="hidden bg-gray-50 rounded-md mt-1">
@@ -76,17 +77,17 @@
                 <a href="location.html" class="block px-4 py-2 hover:bg-red-600 hover:text-white hover:rounded-md transition">Our Location</a>
             </div>
         </div>
-        <a href="#" class="block py-2 text-black hover:text-red-700 hover:rounded-md transition">Services</a>
-        <a href="#" class="block py-2 text-black hover:text-red-700 hover:rounded-md transition">Contact</a>
+        <a href="#" class="block py-2 text-black hover:text-red-600 hover:rounded-md transition">Services</a>
+        <a href="#" class="block py-2 text-black hover:text-red-600 hover:rounded-md transition">Contact</a>
         <a href="#" class="block py-2 bg-red-500 text-white font-bold text-center rounded-md shadow-md hover:text-red-700 transition">Login</a>
     </div>
 </nav>
 <script src="https://cdn.tailwindcss.com"></script>
 
 
-<section class="p-6 sm:p-20 sm:py-8 space-y-16 opacity-0 transition-opacity duration-1000 ease-in-out">
+<section class="sm:p-0 p-6 sm:py-0 space-y-12 opacity-0 transition-opacity duration-1000 ease-in-out">
     <!-- Hero Section -->
-    <div id="home" class="h-[250px] sm:h-[450px] text-center flex items-center justify-center bg-gray-900 text-white bg-cover bg-center rounded-md shadow-lg relative overflow-hidden ">
+    <div id="home" class="h-[250px] sm:h-[550px] text-center flex items-center justify-center bg-gray-900 text-white bg-fixed  relative overflow-hidden ">
         <div class="absolute inset-0 bg-cover bg-center bg-img show" id="hero-bg-1"></div>
         <div class="absolute inset-0 bg-cover bg-center bg-img" id="hero-bg-2"></div>
     </div>
@@ -97,7 +98,7 @@
 
 
 <!-- Categories Section -->
-<section class="p-2 dark:bg-black mb-8 opacity-0 transition-opacity duration-1000 ease-in-out bg-red-600">
+<section class="p-2  dark:bg-black opacity-0 transition-opacity duration-1000 ease-in-out bg-custom-gradient">
     <!-- Infinite Scrolling Wrapper -->
     <div class="relative w-full overflow-hidden">
         <div class="scroll-track flex">
@@ -186,21 +187,21 @@
 
     
 <!-- About Us Section -->
-<section id="about" class="text-center text-white py-24 bg-product-section opacity-0 transition-opacity duration-1000 ease-in-out">
-    <div class="max-w-7xl mx-auto px-6 sm:px-10">
+<section id="about" class="text-center text-white  bg-product-section opacity-0 transition-opacity duration-1000 ease-in-out">
+    <div class="max-w-full mx-auto p-6 sm:p-10">
         <div class="flex flex-col lg:flex-row items-center gap-16">
-            <div class="lg:w-1/2 mb-10 lg:mb-0">
+            <div class="lg:w-1/2 lg:mb-0">
                 <img src="../ASSETS/Images/bg-image.jpg" alt="PC REX" class="rounded-3xl shadow-3xl border-4 border-red-600">
             </div>
             <div class="lg:w-1/2 text-left">
-                <h2 class="text-7xl font-extrabold text-red-600 mb-10">About PC REX</h2>
-                <p class="text-lg leading-relaxed text-white mb-8">
+                <h2 class="sm:text-7xl text-5xl font-extrabold text-red-600 mb-10 ">About PC REX</h2>
+                <p class="sm:text-lg text-md leading-relaxed text-white mb-8">
                     At <span class="text-red-600 font-semibold">PC REX</span>, we specialize in building high-performance custom PCs tailored for gamers, creators, and professionals seeking top-tier performance. Our systems deliver both power and precision to meet your demands.
                 </p>
-                <p class="text-lg leading-relaxed text-white mb-8">
+                <p class="sm:text-lg text-md leading-relaxed text-white mb-8">
                     Each PC is crafted using premium components and optimized for maximum performance, advanced cooling, and sleek aesthetics. Our goal is to deliver a system that performs as great as it looks.
                 </p>
-                <div id="hiddenContent" class="hidden text-lg leading-relaxed text-white">
+                <div id="hiddenContent" class="hidden sm:text-lg text-md leading-relaxed text-white">
                     <p class="mb-8">
                         Our personalized approach ensures that each build matches your exact requirements. We provide expert guidance from start to finish, ensuring your PC is both powerful and cost-effective.
                     </p>
@@ -208,7 +209,7 @@
                     <p>Experience the difference with <span class="text-red-600 font-semibold">PC REX</span> — where innovation meets performance.</p>
                 </div>
                 <div class="mt-6">
-                    <button id="showMoreBtn" class="text-red-600 underline cursor-pointer text-lg">Read More</button>
+                    <button id="showMoreBtn" class="text-red-600 underline cursor-pointer sm:text-lg text-md">Read More</button>
                 </div>
                 <div class="mt-10">
                     <a href="#Contact" class="inline-block bg-red-600 hover:bg-red-700 text-white py-2 px-2 rounded-md text-xl transition duration-500">Contact Us</a>
@@ -249,42 +250,42 @@
                     <!-- Custom PC Builds -->
                     <div class="service-box">
                         <span class="material-icons text-4xl text-red-500">build</span>
-                        <h3 class="text-lg font-semibold mt-3 text-red-500">Custom PC Builds</h3>
+                        <h3 class="sm:text-lg text-md font-semibold mt-3 text-red-500">Custom PC Builds</h3>
                         <p class="mt-1 text-gray-600 text-sm">Let us build a PC tailored to your needs.</p>
                     </div>
 
                     <!-- PC Repair & Maintenance -->
                     <div class="service-box">
                         <span class="material-icons text-4xl text-red-500">handyman</span>
-                        <h3 class="text-lg font-semibold mt-3 text-red-500">PC Repair & Maintenance</h3>
+                        <h3 class="sm:text-lg text-md font-semibold mt-3 text-red-500">PC Repair & Maintenance</h3>
                         <p class="mt-1 text-gray-600 text-sm">Professional repair services for all PC issues.</p>
                     </div>
 
                     <!-- Tech Consultation -->
                     <div class="service-box">
                         <span class="material-icons text-4xl text-red-500">support_agent</span>
-                        <h3 class="text-lg font-semibold mt-3 text-red-500">Tech Consultation</h3>
+                        <h3 class="sm:text-lg text-md font-semibold mt-3 text-red-500">Tech Consultation</h3>
                         <p class="mt-1 text-gray-600 text-sm">Get expert advice on the best PC parts and setups.</p>
                     </div>
 
                     <!-- Gaming Setup Optimization -->
                     <div class="service-box">
                         <span class="material-icons text-4xl text-red-500">sports_esports</span>
-                        <h3 class="text-lg font-semibold mt-3 text-red-500">Gaming Setup Optimization</h3>
+                        <h3 class="sm:text-lg text-md font-semibold mt-3 text-red-500">Gaming Setup Optimization</h3>
                         <p class="mt-1 text-gray-600 text-sm">Maximize performance with optimized gaming setups.</p>
                     </div>
 
                     <!-- Networking & Setup -->
                     <div class="service-box">
                         <span class="material-icons text-4xl text-red-500">wifi</span>
-                        <h3 class="text-lg font-semibold mt-3 text-red-500">Networking & Setup</h3>
+                        <h3 class="sm:text-lg text-md font-semibold mt-3 text-red-500">Networking & Setup</h3>
                         <p class="mt-1 text-gray-600 text-sm">Complete networking solutions for homes & offices.</p>
                     </div>
 
                     <!-- Software Installation -->
                     <div class="service-box">
                         <span class="material-icons text-4xl text-red-500">file_download</span>
-                        <h3 class="text-lg font-semibold mt-3 text-red-500">Software Installation</h3>
+                        <h3 class="sm:text-lg text-md font-semibold mt-3 text-red-500">Software Installation</h3>
                         <p class="mt-1 text-gray-600 text-sm">Get the latest software installed & configured.</p>
                     </div>
 
@@ -294,32 +295,32 @@
                 <div class="service-list flex space-x-6">
                     <div class="service-box">
                         <span class="material-icons text-4xl text-red-500">build</span>
-                        <h3 class="text-lg font-semibold mt-3 text-red-500">Custom PC Builds</h3>
+                        <h3 class="sm:text-lg text-md font-semibold mt-3 text-red-500">Custom PC Builds</h3>
                         <p class="mt-1 text-gray-600 text-sm">Let us build a PC tailored to your needs.</p>
                     </div>
                     <div class="service-box">
                         <span class="material-icons text-4xl text-red-500">handyman</span>
-                        <h3 class="text-lg font-semibold mt-3 text-red-500">PC Repair & Maintenance</h3>
+                        <h3 class="sm:text-lg text-md font-semibold mt-3 text-red-500">PC Repair & Maintenance</h3>
                         <p class="mt-1 text-gray-600 text-sm">Professional repair services for all PC issues.</p>
                     </div>
                     <div class="service-box">
                         <span class="material-icons text-4xl text-red-500">support_agent</span>
-                        <h3 class="text-lg font-semibold mt-3 text-red-500">Tech Consultation</h3>
+                        <h3 class="sm:text-lg text-md font-semibold mt-3 text-red-500">Tech Consultation</h3>
                         <p class="mt-1 text-gray-600 text-sm">Get expert advice on the best PC parts and setups.</p>
                     </div>
                     <div class="service-box">
                         <span class="material-icons text-4xl text-red-500">sports_esports</span>
-                        <h3 class="text-lg font-semibold mt-3 text-red-500">Gaming Setup Optimization</h3>
+                        <h3 class="sm:text-lg text-md font-semibold mt-3 text-red-500">Gaming Setup Optimization</h3>
                         <p class="mt-1 text-gray-600 text-sm">Maximize performance with optimized gaming setups.</p>
                     </div>
                     <div class="service-box">
                         <span class="material-icons text-4xl text-red-500">wifi</span>
-                        <h3 class="text-lg font-semibold mt-3 text-red-500">Networking & Setup</h3>
+                        <h3 class="sm:text-lg text-md font-semibold mt-3 text-red-500">Networking & Setup</h3>
                         <p class="mt-1 text-gray-600 text-sm">Complete networking solutions for homes & offices.</p>
                     </div>
                     <div class="service-box">
                         <span class="material-icons text-4xl text-red-500">file_download</span>
-                        <h3 class="text-lg font-semibold mt-3 text-red-500">Software Installation</h3>
+                        <h3 class="sm:text-lg text-md font-semibold mt-3 text-red-500">Software Installation</h3>
                         <p class="mt-1 text-gray-600 text-sm">Get the latest software installed & configured.</p>
                     </div>
                 </div>
@@ -334,64 +335,65 @@
   
 
 <!-- Promotion -->
-<section class="p-6 sm:py-20  text-black opacity-0 transition-opacity duration-1000 ease-in-out">
+<section class="p-6 sm:p-10  text-black opacity-0 transition-opacity duration-1000 ease-in-out">
     <div id="promotions" class="text-center">
         <h2 class="text-4xl font-extrabold text-red-600">Exclusive PC Deals</h2>
-        <div class="grid md:grid-cols-2 gap-6 mt-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
             <!-- First Image -->
-            <div class="relative bg-white rounded-md border-t-4 border-red-600 shadow-md overflow-hidden w-full max-w-lg mx-auto">
-                <img src="../ASSETS/Images/promotional1.png" alt="CPU Deal" class="w-full h-60 object-cover">
+            <div class="relative bg-white rounded-md border-t-4 border-red-600 shadow-md overflow-hidden max-w-full">
+                <img src="../ASSETS/Images/promotional1.png" alt="CPU Deal" class="w-full h-80 object-cover">
             </div>
-
+        
             <!-- Second Image -->
-            <div class="relative bg-white rounded-md border-t-4 border-red-600 shadow-md overflow-hidden w-full max-w-lg mx-auto">
-                <img src="../ASSETS/Images/promotional3.png" alt="GPU Deal" class="w-full h-60 object-cover">
+            <div class="relative bg-white rounded-md border-t-4 border-red-600 shadow-md overflow-hidden max-w-full">
+                <img src="../ASSETS/Images/promotional3.png" alt="GPU Deal" class="w-full h-80 object-cover">
             </div>
         </div>
+        
                <!-- Why Choose Us Section -->
         
-                <div class="mt-16 px-4 py-8">
-                    <h3 class="text-3xl font-extrabold text-center text-red-600 mb-8">Why Choose Us?</h3>
+                <div class="mt-16 ">
+                    <h3 class="text-4xl font-extrabold text-center text-red-600 mb-8">Why Choose Us?</h3>
                     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
                         <!-- Card 1 -->
-                        <div class="flex items-center justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-md transition-shadow duration-300">
+                        <div class="flex items-center justify-center p-6 bg-white border-t-4 border-red-600 rounded-lg shadow-md hover:shadow-md transition-shadow duration-300">
                             <div class="flex items-center justify-center w-16 h-16  text-red-600 rounded-full">
                                 <i class="fas fa-cogs text-xl"></i>
                             </div>
-                            <div class="ml-4">
+                            <div class="ml-4 ">
                                 <h4 class="text-lg font-semibold text-gray-700">Premium Quality Components</h4>
                                 <p class="text-gray-500">We offer top-tier, reliable parts for your PC builds.</p>
                             </div>
                         </div>
 
                         <!-- Card 2 -->
-                        <div class="flex items-center justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-md transition-shadow duration-300">
+                        <div class="flex items-center justify-center p-6 bg-white border-t-4 border-red-600 rounded-lg shadow-md hover:shadow-md transition-shadow duration-300">
                             <div class="flex items-center justify-center w-16 h-16  text-red-600 rounded-full">
                                 <i class="fas fa-tags text-xl"></i>
                             </div>
-                            <div class="ml-4">
+                            <div class="ml-4 ">
                                 <h4 class="text-lg font-semibold text-gray-700">Unbeatable Prices & Discounts</h4>
                                 <p class="text-gray-500">Our deals can't be beaten when it comes to value.</p>
                             </div>
                         </div>
 
                         <!-- Card 3 -->
-                        <div class="flex items-center justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-md transition-shadow duration-300">
+                        <div class="flex items-center justify-center p-6 bg-white border-t-4 border-red-600 rounded-lg shadow-md hover:shadow-md transition-shadow duration-300">
                             <div class="flex items-center justify-center w-16 h-16  text-red-600 rounded-full">
                                 <i class="fas fa-shipping-fast text-xl"></i>
                             </div>
-                            <div class="ml-4">
+                            <div class="ml-4 ">
                                 <h4 class="text-lg font-semibold text-gray-700">Fast and Reliable Shipping</h4>
                                 <p class="text-gray-500">Get your orders delivered quickly and safely to your door.</p>
                             </div>
                         </div>
 
                         <!-- Card 4 -->
-                        <div class="flex items-center justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-md transition-shadow duration-300">
+                        <div class="flex items-center justify-center p-6 bg-white border-t-4 border-red-600 rounded-lg shadow-md hover:shadow-md transition-shadow duration-300">
                             <div class="flex items-center justify-center w-16 h-16  text-red-600 rounded-full">
                                 <i class="fas fa-headset text-xl"></i>
                             </div>
-                            <div class="ml-4">
+                            <div class="ml-4 ">
                                 <h4 class="text-lg font-semibold text-gray-700">Exceptional Customer Support</h4>
                                 <p class="text-gray-500">Our team is ready to assist you with any questions or issues.</p>
                             </div>
@@ -418,11 +420,11 @@
 
 
 <!-- Contact Section -->
-<section class="p-6 sm:p-20 py-12 bg-product-section opacity-0 transition-opacity duration-1000 ease-in-out">
+<section class="p-6 sm:p-10 py-12 bg-product-section opacity-0 transition-opacity duration-1000 ease-in-out">
     <div id="contact" class="mx-auto ">
         <!-- Title -->
         <div class="text-center">
-            <h2 class="text-3xl text-red-600 font-bold">Get in Touch</h2>
+            <h2 class="text-4xl text-red-600 font-bold">Get in Touch</h2>
             <p class="text-base mt-3 max-w-2xl text-gray-300 mx-auto">
                 We're here to assist you. Feel free to contact us for inquiries or collaborations.
             </p>
@@ -497,7 +499,7 @@
     <div class="text-center w-screen">
         <h2 class="text-4xl font-extrabold text-red-500">Location</h2>
         <p class="mt-4 text-gray-600">Visit us at our store to explore our products in person.</p>
-        <iframe class="mt-6 w-full h-64" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509315!2d144.9537353153159!3d-37.81720997975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c920fd286a9f%3A0x1c6e3463e77d131d!2sPC%20Rex%20Computer%20Sales!5e0!3m2!1sen!2us!4v1640174211445" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="mt-6 w-full h-96" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509315!2d144.9537353153159!3d-37.81720997975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c920fd286a9f%3A0x1c6e3463e77d131d!2sPC%20Rex%20Computer%20Sales!5e0!3m2!1sen!2us!4v1640174211445" allowfullscreen="" loading="lazy"></iframe>
     </div>
 </section>
 <script src="https://cdn.tailwindcss.com"></script>
@@ -509,7 +511,7 @@
 
 <!-- Footer -->
 <footer id="footer" class="bg-product-section text-black border-t border-gray-700 opacity-0 transition-opacity duration-1000 ease-in-out">
-    <div class="p-6 sm:p-20">
+    <div class="p-6 sm:p-10">
         <div class="flex flex-col md:flex-row items-center justify-between pb-4 border-b border-gray-300">
             <h3 class="text-md font-semibold text-white">Join our newsletter for the latest PC deals and updates!</h3>
             <div class="flex mt-3 md:mt-0">
@@ -564,7 +566,7 @@
     </div>
 
     <!-- Footer Bottom -->
-    <div class="bg-custom-gradient text-white flex justify-between items-center w-full mt-4 p-6 text-xs border-t border-gray-700">
+    <div class="bg-custom-gradient text-white flex justify-between items-center w-full mt-4 p-6 text-lg border-t border-gray-700">
         <p>&copy; <span id="year"></span> REX PC Inc.</p>
         <script>
             document.getElementById('year').textContent = new Date().getFullYear();

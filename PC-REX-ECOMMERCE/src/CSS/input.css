@@ -3,8 +3,15 @@
 
 
 .bg-custom-gradient {
-    background: linear-gradient(to right, #DC2626, #B91C1C); /* Tailwind's red-600 shade */
+    background: linear-gradient(to right, #DC2626, #B91C1C); /* Original Red Gradient */
+    transition: background 0.3s ease; /* Smooth transition for the hover effect */
 }
+
+.bg-custom-gradient:hover {
+    background: linear-gradient(to right, #dd3636, #dd3636); /* Red to White Gradient on hover */
+}
+
+
 
 .bg-product-section{
     background: #1E1E1E;
@@ -181,4 +188,13 @@ body {
 
 
 .visible { opacity: 1; transform: translateY(0); }
+
+
+
+
+
+
+
+
+
 
