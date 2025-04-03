@@ -7,11 +7,9 @@
     transition: background 0.3s ease; /* Smooth transition for the hover effect */
 }
 
-.bg-custom-gradient:hover {
-    background: linear-gradient(to right, #dd3636, #dd3636); /* Red to White Gradient on hover */
+.bg-custom-gradient-hover:hover {
+    background: #bb2121;
 }
-
-
 
 .bg-product-section{
     background: #1E1E1E;
