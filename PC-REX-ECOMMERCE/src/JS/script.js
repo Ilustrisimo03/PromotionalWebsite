@@ -42,45 +42,6 @@ mobileDropdownButton.addEventListener("click", () => {
 
 
 
-// CAROUSEL HERO SECTIOn
-    const images = [
-        '../ASSETS/Images/promotional1.png',
-        '../ASSETS/Images/promotional2.png',
-        '../ASSETS/Images/promotional3.png',
-        '../ASSETS/Images/promotional4.png'
-      ];
-      
-      let index = 0;
-      const bg1 = document.getElementById('hero-bg-1');
-      const bg2 = document.getElementById('hero-bg-2');
-      
-      bg1.style.backgroundImage = `url(${images[0]})`;
-      bg1.classList.add('show');
-      
-      function preloadImage(url) {
-        return new Promise((resolve) => {
-          const img = new Image();
-          img.src = url;
-          img.onload = () => resolve(url);
-        });
-      }
-      
-      async function changeHeroImage() {
-        index = (index + 1) % images.length;
-        const nextImage = await preloadImage(images[index]);
-      
-        if (bg1.classList.contains('show')) {
-          bg2.style.backgroundImage = `url(${nextImage})`;
-          bg2.classList.add('show');
-          bg1.classList.remove('show');
-        } else {
-          bg1.style.backgroundImage = `url(${nextImage})`;
-          bg1.classList.add('show');
-          bg2.classList.remove('show');
-        }
-      }
-      
-      setInterval(changeHeroImage, 4000);
 
 
 

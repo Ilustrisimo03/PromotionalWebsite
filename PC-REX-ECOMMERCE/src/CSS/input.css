@@ -3,9 +3,14 @@
 
 
 .bg-custom-gradient {
-    background: linear-gradient(to right, #DC2626, #B91C1C); /* Original Red Gradient */
+    background: linear-gradient(to right, #b92b27, #E50914);
     transition: background 0.3s ease; /* Smooth transition for the hover effect */
 }
+
+.text-color-main{
+    color: #E50914 ;
+}
+
 
 .bg-custom-gradient-hover:hover {
     background: #bb2121;
