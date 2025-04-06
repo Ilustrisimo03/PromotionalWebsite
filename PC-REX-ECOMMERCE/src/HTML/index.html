@@ -15,7 +15,15 @@
   
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- FONT Roboto -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- FONT Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+
 
 
 </head>
@@ -53,7 +61,7 @@
         </div>
 
         <!-- Login Button -->
-        <a href="loginPage.html" class="hidden md:block bg-red-500 text-white font-bold px-4 py-1  hover:scale-110 transition-transform duration-300 ease-in-out rounded-2xl shadow-md hover:bg-red-600">Log in</a>
+        <a href="loginPage.html" class="hidden md:block bg-red-600 text-white font-bold px-4 py-1  rounded-lg shadow-md hover:bg-red-500">Log in</a>
 
 
         <!-- Mobile Menu Button -->
@@ -91,7 +99,7 @@
     <!-- Background Text -->
     <div class="absolute p-6 py-2 sm:py-4 sm:p-10 inset-0 z-0 flex items-center justify-center pointer-events-none select-none">
         <!-- INCREASED FONT SIZE SIGNIFICANTLY and changed text -->
-        <h2 class="text-[90px] sm:text-[100px] md:text-[100px] lg:text-[250px] font-extrabold text-gray-200/60 leading-none -translate-y-4">
+        <h2 class="text-[90px] sm:text-[100px] md:text-[100px] lg:text-[230px] heading text-gray-200/60 leading-none -translate-y-4">
             COMPUTER
         </h2>
     </div>
@@ -103,7 +111,7 @@
         <!-- Text Content -->
         <div class="text-center sm:text-left space-y-4 sm:space-y-5 sm:w-1/2 lg:w-2/5">
             <h3 class="text-lg sm:text-xl text-gray-600 font-semibold">PC REX</h3>
-            <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight text-black">
+            <h1 class=" text-5xl sm:text-6xl md:text-7xl heading  text-red-600">
                 CUSTOM BUILDS
             </h1>
            <!-- Facebook Button -->
@@ -140,7 +148,7 @@
 
 
 <!-- Categories Section -->
-<section class="bg-red-100 p-4 opacity-0 transition-opacity duration-1000 ease-in-out overflow-hidden">
+<section class="p-4 opacity-0 transition-opacity duration-1000 ease-in-out overflow-hidden">
     <div class="relative w-full">
         <div class="scroll-track flex">
             <div class="scroll-content flex gap-8 text-black text-xl font-bold">
@@ -200,84 +208,87 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 
+
+
+
 <!-- Promoted Categories Section -->
 <section id="promoted-categories" class="">
     <div class="max-w-full mx-auto p-6 sm:p-10">
         <!-- Category Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
-            <!-- Category Card 1: Earphone -->
+            <!-- Category Card 1: Motherboard -->
             <div class="bg-emerald-400 rounded-2xl overflow-hidden text-white group relative flex flex-col justify-between min-h-[250px] sm:min-h-[300px] sm:col-span-2 lg:col-span-2">
-                <img src="../ASSETS/Images/PCHERO.png" alt="Earphone" class="w-1/2 sm:w-1/3 max-w-[150px] absolute top-5 right-0 group-hover:scale-105 transition-transform duration-300 -mr-4 sm:-mr-8 z-10">
+                <img src="../ASSETS/Images/ProductImage/motherboard.png" alt="Motherboard" class="w-1/2 sm:w-1/2 max-w-[400px] absolute top-5 right-0 group-hover:scale-105 transition-transform duration-300 -mr-4 sm:-mr-8 z-10">
                 <div class="p-6 sm:p-8 flex flex-col justify-between h-full z-0">
                     <div>
-                        <p class="text-sm font-medium text-emerald-300">Listen</p>
-                        <p class="text-sm font-medium text-emerald-300">In Style</p>
-                        <h3 class="text-2xl sm:text-3xl font-bold uppercase mt-1">Earphone</h3>
+                        <p class="text-sm font-medium text-emerald-300">The Heart</p>
+                        <p class="text-sm font-medium text-emerald-300">Of Your PC</p>
+                        <h3 class="text-2xl sm:text-3xl font-bold uppercase mt-1">Motherboard</h3>
                     </div>
                     <a href="#" class="mt-6 bg-emerald-600 text-white px-5 py-2 rounded-md text-sm font-semibold hover:bg-emerald-700 transition duration-150 ease-in-out self-start">Browse</a>
                 </div>
             </div>
 
-            <!-- Category Card 2: Wearable Gadget -->
+            <!-- Category Card 2: Graphics Card (GPU) -->
             <div class="bg-pink-400 rounded-2xl overflow-hidden text-white group relative flex flex-col justify-between min-h-[250px] sm:min-h-[300px]">
-                 <img src="../ASSETS/Images/PCHERO.png" alt="Wearable Gadget" class="w-1/2 sm:w-1/3 max-w-[150px] absolute top-5 right-0 group-hover:scale-105 transition-transform duration-300 -mr-4 sm:-mr-8 z-10">
+                 <img src="../ASSETS/Images/ProductImage/GPU.png" alt="Graphics Card (GPU)" class="w-1/2 sm:w-1/2 max-w-[300px] absolute bottom-0 right-0 group-hover:scale-105 transition-transform duration-300 mb-4 mr-4 z-10">
                  <div class="p-6 sm:p-8 flex flex-col justify-between h-full z-0">
                     <div>
-                        <p class="text-sm font-medium text-pink-300">Smart &</p>
-                        <h3 class="text-2xl sm:text-3xl font-bold uppercase mt-1">Wearable</h3>
-                        <h3 class="text-2xl sm:text-3xl font-bold uppercase">Gadget</h3>
+                        <p class="text-sm font-medium text-pink-300">Boost Your</p>
+                        <h3 class="text-2xl sm:text-3xl font-bold uppercase mt-1">Graphics</h3>
+                        <h3 class="text-2xl sm:text-3xl font-bold uppercase">Card (GPU)</h3>
                     </div>
                     <a href="#" class="mt-6 bg-white text-pink-600 px-5 py-2 rounded-md text-sm font-semibold hover:bg-pink-100 transition duration-150 ease-in-out self-start">Browse</a>
                 </div>
             </div>
 
-            <!-- Category Card 3: Laptop -->
+            <!-- Category Card 3: Processor (CPU) -->
             <div class="bg-indigo-500 rounded-2xl overflow-hidden text-white group relative flex flex-col justify-between min-h-[250px] sm:min-h-[300px]">
-                 <img src="../ASSETS/Images/PCHERO.png" alt="Laptop" class="w-1/2 sm:w-1/3 max-w-[180px] absolute top-5 right-0 group-hover:scale-105 transition-transform duration-300 -mr-4 sm:-mr-8 z-10">
+                 <img src="../ASSETS/Images/ProductImage/Processorr.png" alt="Processor (CPU)" class="w-1/2 sm:w-1/2 max-w-[300px] absolute bottom-0 right-0 group-hover:scale-105 transition-transform duration-300 mb-4 mr-4 z-10">
                  <div class="p-6 sm:p-8 flex flex-col justify-between h-full z-0">
                     <div>
-                        <p class="text-sm font-medium text-indigo-100">High-end</p>
-                        <h3 class="text-2xl sm:text-3xl font-bold uppercase mt-1">Laptop</h3>
+                        <p class="text-sm font-medium text-indigo-100">Speed and</p>
+                        <h3 class="text-2xl sm:text-3xl font-bold uppercase mt-1">Processor</h3>
+                        <h3 class="text-2xl sm:text-3xl font-bold uppercase">(CPU)</h3>
                     </div>
                     <a href="#" class="mt-6 bg-white text-indigo-600 px-5 py-2 rounded-md text-sm font-semibold hover:bg-indigo-100 transition duration-150 ease-in-out self-start">Browse</a>
                 </div>
             </div>
 
-            <!-- Category Card 4: Gaming Console -->
+            <!-- Category Card 4: RAM -->
             <div class="bg-yellow-400 rounded-2xl overflow-hidden text-white group relative flex flex-col justify-between min-h-[250px] sm:min-h-[300px]">
-                 <img src="../ASSETS/Images/PCHERO.png" alt="Gaming Console" class="w-1/2 sm:w-1/3 max-w-[180px] absolute bottom-0 right-0 group-hover:scale-105 transition-transform duration-300 mb-4 mr-4 z-10">
+                 <img src="../ASSETS/Images/ProductImage/RAM.png" alt="RAM" class="w-1/2 sm:w-1/2 max-w-[300px] absolute bottom-0 right-0 group-hover:scale-105 transition-transform duration-300 mb-4 mr-4 z-10">
                  <div class="p-6 sm:p-8 flex flex-col justify-between h-full z-0">
                     <div>
-                        <p class="text-sm font-medium text-yellow-100">Next-gen</p>
-                        <h3 class="text-2xl sm:text-3xl font-bold uppercase mt-1">Gaming</h3>
-                        <h3 class="text-2xl sm:text-3xl font-bold uppercase">Console</h3>
+                        <p class="text-sm font-medium text-yellow-100">Faster</p>
+                        <h3 class="text-2xl sm:text-3xl font-bold uppercase mt-1">RAM</h3>
                     </div>
                     <a href="#" class="mt-6 bg-white text-yellow-600 px-5 py-2 rounded-md text-sm font-semibold hover:bg-yellow-100 transition duration-150 ease-in-out self-start">Browse</a>
                 </div>
             </div>
 
-            <!-- Category Card 5: Oculus / VR -->
+            <!-- Category Card 5: Storage (SSD/HDD) -->
             <div class="bg-teal-500 rounded-2xl overflow-hidden text-white group relative flex flex-col justify-between min-h-[250px] sm:min-h-[300px]">
-                 <img src="../ASSETS/Images/PCHERO.png" alt="Oculus VR" class="w-1/2 sm:w-1/3 max-w-[160px] absolute bottom-0 right-0 group-hover:scale-105 transition-transform duration-300 mb-4 mr-4 z-10">
+                 <img src="../ASSETS/Images/ProductImage/SSD.png" alt="Storage (SSD/HDD)" class="w-1/2 sm:w-1/2 max-w-[300px] absolute bottom-0 right-0 group-hover:scale-105 transition-transform duration-300 mb-4 mr-4 z-10">
                  <div class="p-6 sm:p-8 flex flex-col justify-between h-full z-0">
                     <div>
-                        <p class="text-sm font-medium text-teal-100">Virtual</p>
-                        <h3 class="text-2xl sm:text-3xl font-bold uppercase mt-1">Oculus</h3>
-                        <h3 class="text-2xl sm:text-3xl font-bold uppercase">VR</h3>
+                        <p class="text-sm font-medium text-teal-100">Store More</p>
+                        <h3 class="text-2xl sm:text-3xl font-bold uppercase mt-1">Storage</h3>
+                        <h3 class="text-2xl sm:text-3xl font-bold uppercase">(SSD/HDD)</h3>
                     </div>
                      <a href="#" class="mt-6 bg-white text-teal-600 px-5 py-2 rounded-md text-sm font-semibold hover:bg-teal-100 transition duration-150 ease-in-out self-start">Browse</a>
                 </div>
             </div>
 
-            <!-- Category Card 6: Amazon Speaker -->
+            <!-- Category Card 6: Power Supply (PSU) -->
             <div class="bg-gray-600 rounded-2xl overflow-hidden text-white group relative flex flex-col justify-between min-h-[250px] sm:min-h-[300px] sm:col-span-2 lg:col-span-2">
-                 <img src="../ASSETS/Images/PCHERO.png" alt="Amazon Speaker" class="w-1/2 sm:w-1/3 max-w-[140px] absolute bottom-0 right-0 group-hover:scale-105 transition-transform duration-300 mb-4 mr-4 z-10">
+                 <img src="../ASSETS/Images/ProductImage/PSU.png" alt="Power Supply (PSU)" class="w-1/2 sm:w-1/2 max-w-[400px] absolute bottom-0 right-0 group-hover:scale-105 transition-transform duration-300 mb-4 mr-4 z-10">
                  <div class="p-6 sm:p-8 flex flex-col justify-between h-full z-0">
                     <div>
-                        <p class="text-sm font-medium text-gray-200">Top</p>
-                        <h3 class="text-2xl sm:text-3xl font-bold uppercase mt-1">Amazon</h3>
-                        <h3 class="text-2xl sm:text-3xl font-bold uppercase">Speaker</h3>
+                        <p class="text-sm font-medium text-gray-200">Reliable</p>
+                        <h3 class="text-2xl sm:text-3xl font-bold uppercase mt-1">Power</h3>
+                        <h3 class="text-2xl sm:text-3xl font-bold uppercase">Supply (PSU)</h3>
                     </div>
                     <a href="#" class="mt-6 bg-white text-gray-700 px-5 py-2 rounded-md text-sm font-semibold hover:bg-gray-100 transition duration-150 ease-in-out self-start">Browse</a>
                 </div>
@@ -291,81 +302,29 @@
 
 
 
-<script>
-    // --- Read More / Read Less Functionality ---
-    const toggleBtn = document.getElementById('toggleMoreInfoBtn');
-    const moreInfo = document.getElementById('moreInfo');
-    const arrowDown = document.getElementById('arrowDown');
-    const arrowUp = document.getElementById('arrowUp');
-    const btnText = toggleBtn.querySelector('span');
-
-    toggleBtn.addEventListener('click', () => {
-        const isHidden = moreInfo.classList.contains('hidden');
-        if (isHidden) {
-            moreInfo.classList.remove('hidden');
-            // Optional: Add smooth reveal animation classes if desired
-            btnText.innerText = 'Read Less';
-            arrowDown.classList.add('hidden');
-            arrowUp.classList.remove('hidden');
-        } else {
-            moreInfo.classList.add('hidden');
-            btnText.innerText = 'Read More';
-            arrowDown.classList.remove('hidden');
-            arrowUp.classList.add('hidden');
-        }
-    });
-
-    // --- Intersection Observer for Fade-in Animation ---
-    const animatedSection = document.getElementById('about-modern');
-
-    const observerOptions = {
-        root: null, // relative to document viewport
-        rootMargin: '0px',
-        threshold: 0.1 // trigger when 10% of the element is visible
-    };
-
-    const observerCallback = (entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.remove('opacity-0', 'translate-y-5');
-                entry.target.classList.add('opacity-100', 'translate-y-0');
-                observer.unobserve(entry.target); // Stop observing once animated
-            }
-        });
-    };
-
-    const intersectionObserver = new IntersectionObserver(observerCallback, observerOptions);
-
-    if (animatedSection) {
-        intersectionObserver.observe(animatedSection);
-    } else {
-        console.warn("Element with ID 'about-modern' not found for Intersection Observer.");
-    }
-
-</script>
 
 
 
-<!--  Services Section -->
-<section id="services-modern" class=" bg-gray-50 overflow-hidden opacity-0 transition-opacity duration-1000 ease-in-out">
+
+<!-- Services Section -->
+<section id="services-modern" class="bg-gray-50 overflow-hidden opacity-0 transition-opacity duration-1000 ease-in-out">
     <div class="max-w-full mx-auto p-6 sm:p-10">
         <div class="text-center">
-            <h2 class="text-4xl md:text-5xl  font-semibold text-red-600 uppercase tracking-wider">Our Expertise</h2>
-            <p class="mt-4 max-w-2xl mx-auto text-lg md:text-md  text-gray-500">
+            <h2 class="text-4xl md:text-5xl font-semibold text-red-600 uppercase tracking-wider">Our Expertise</h2>
+            <p class="mt-4 max-w-2xl mx-auto text-lg md:text-md text-gray-500">
                 From custom builds to ongoing support, we've got you covered.
             </p>
         </div>
 
-        <!-- Services Grid -->
-        <div class="mt-16 grid grid-cols-1 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 sm:gap-x-6 lg:gap-x-8 lg:gap-y-12">
+        <!-- Services Grid (Updated to 6 columns) -->
+        <div class="mt-16 grid grid-cols-1 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 sm:gap-x-6 lg:gap-x-8 lg:gap-y-12">
 
             <!-- Service Card 1: Custom PC Builds -->
-            <div class="group relative bg-white p-6 rounded-xl shadow-lg">
+            <div class="group relative bg-white p-6 rounded-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] transition-all">
                 <div class="flex justify-center">
-                     <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red-100">
-                        <!-- Font Awesome: Wrench icon -->
+                    <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red-100">
                         <i class="fas fa-wrench text-red-600"></i>
-                     </span>
+                    </span>
                 </div>
                 <h3 class="mt-5 text-lg font-semibold text-gray-900 text-center">Custom PC Builds</h3>
                 <p class="mt-2 text-base text-gray-500 text-center">
@@ -374,11 +333,10 @@
             </div>
 
             <!-- Service Card 2: PC Repair & Maintenance -->
-            <div class="group relative bg-white p-6 rounded-xl shadow-lg">
+            <div class="group relative bg-white p-6 rounded-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] transition-all">
                 <div class="flex justify-center">
-                     <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red-100">
-                        <!-- Font Awesome: Cogs icon -->
-                         <i class="fas fa-cogs text-red-600"></i>
+                    <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red-100">
+                        <i class="fas fa-cogs text-red-600"></i>
                     </span>
                 </div>
                 <h3 class="mt-5 text-lg font-semibold text-gray-900 text-center">PC Repair & Maintenance</h3>
@@ -388,10 +346,9 @@
             </div>
 
             <!-- Service Card 3: Tech Consultation -->
-            <div class="group relative bg-white p-6 rounded-xl shadow-lg">
+            <div class="group relative bg-white p-6 rounded-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] transition-all">
                 <div class="flex justify-center">
-                     <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red-100">
-                        <!-- Font Awesome: Comment-Dots icon -->
+                    <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red-100">
                         <i class="fas fa-comment-dots text-red-600"></i>
                     </span>
                 </div>
@@ -401,11 +358,10 @@
                 </p>
             </div>
 
-             <!-- Service Card 4: Gaming Setup Optimization -->
-            <div class="group relative bg-white p-6 rounded-xl shadow-lg">
+            <!-- Service Card 4: Gaming Setup Optimization -->
+            <div class="group relative bg-white p-6 rounded-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] transition-all">
                 <div class="flex justify-center">
-                     <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red-100">
-                        <!-- Font Awesome: Rocket icon -->
+                    <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red-100">
                         <i class="fas fa-rocket text-red-600"></i>
                     </span>
                 </div>
@@ -415,11 +371,10 @@
                 </p>
             </div>
 
-             <!-- Service Card 5: Networking & Setup -->
-            <div class="group relative bg-white p-6 rounded-xl shadow-lg">
+            <!-- Service Card 5: Networking & Setup -->
+            <div class="group relative bg-white p-6 rounded-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] transition-all">
                 <div class="flex justify-center">
-                     <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red-100">
-                         <!-- Font Awesome: Wifi icon -->
+                    <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red-100">
                         <i class="fas fa-wifi text-red-600"></i>
                     </span>
                 </div>
@@ -429,11 +384,10 @@
                 </p>
             </div>
 
-             <!-- Service Card 6: Software Installation -->
-            <div class="group relative bg-white p-6 rounded-xl shadow-lg">
+            <!-- Service Card 6: Software Installation -->
+            <div class="group relative bg-white p-6 rounded-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] transition-all">
                 <div class="flex justify-center">
-                     <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red-100">
-                        <!-- Font Awesome: Download icon -->
+                    <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red-100">
                         <i class="fas fa-arrow-down text-red-600"></i>
                     </span>
                 </div>
@@ -443,14 +397,50 @@
                 </p>
             </div>
 
-        </div> <!-- End Grid -->
+        </div> <!-- End Services Grid -->
 
+        <!-- Why Choose Us Section -->
+        <div class="mt-16 text-center">
+            <h2 class="text-4xl md:text-5xl font-semibold text-red-600 tracking-wider">Why Choose Us?</h2>
+            <p class="mt-4 max-w-2xl mx-auto text-lg md:text-md text-gray-500">
+                Our expertise, customer-centric approach, and commitment to excellence set us apart.
+            </p>
+            <div class="mt-8 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+                <!-- Reason 1 -->
+                <div class="flex flex-col items-center bg-white p-6 rounded-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] transition-all">
+                    <i class="fas fa-shield-alt text-red-600 text-4xl"></i>
+                    <h3 class="mt-5 text-lg font-semibold text-gray-900 text-center">Trusted Experts</h3>
+                    <p class="mt-2 text-base text-gray-500 text-center">
+                        Over 10 years of experience in delivering top-quality tech services.
+                    </p>
+                </div>
+
+                <!-- Reason 2 -->
+                <div class="flex flex-col items-center bg-white p-6 rounded-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] transition-all">
+                    <i class="fas fa-headset text-red-600 text-4xl"></i>
+                    <h3 class="mt-5 text-lg font-semibold text-gray-900 text-center">24/7 Support</h3>
+                    <p class="mt-2 text-base text-gray-500 text-center">
+                        Always available to help with your tech needs, no matter the time.
+                    </p>
+                </div>
+
+                <!-- Reason 3 -->
+                <div class="flex flex-col items-center bg-white p-6 rounded-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] transition-all">
+                    <i class="fas fa-thumbs-up text-red-600 text-4xl"></i>
+                    <h3 class="mt-5 text-lg font-semibold text-gray-900 text-center">Customer Satisfaction</h3>
+                    <p class="mt-2 text-base text-gray-500 text-center">
+                        We prioritize your satisfaction with every service we provide.
+                    </p>
+                </div>
+            </div>
+        </div> 
     </div>
 </section>
 
 
 
 
+<!-- CONTACT Section -->
 <section id="contact-section" class="bg-product-section text-gray-100 opacity-0 transition-opacity duration-1000 ease-in-out">
     <div id="contact" class="max-w-full mx-auto p-6 sm:p-10">
         <div class="text-center mb-12 md:mb-16">
@@ -492,7 +482,7 @@
                         <label for="message" class="sr-only">Message</label>
                         <textarea id="message" placeholder="Your Message" class="w-full px-4 py-2.5 bg-gray-50 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 h-36 transition duration-200"></textarea>
                     </div>
-                    <button type="submit" class="w-full bg-red-600 text-white py-3 px-6 rounded-md font-semibold shadow-md hover:bg-red-700 transition duration-300 ease-in-out flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+                    <button type="submit" class="w-full bg-red-600 text-white py-3 px-6 rounded-md font-semibold shadow-md hover:bg-red-500 transition duration-300 ease-in-out flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
                         <i class="fas fa-paper-plane mr-2"></i> Send Message
                     </button>
                 </form>
@@ -502,7 +492,7 @@
                 <div>
                     <h3 class="text-2xl font-semibold text-gray-900">Visit Our Location</h3>
                     <p class="mt-3 text-gray-600">Come see us in person and explore our products firsthand.</p>
-                    <a href="location.html" class="mt-4 inline-flex items-center justify-center bg-red-600 text-white px-5 py-2.5 rounded-md shadow-md font-semibold transition duration-300 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+                    <a href="location.html" class="mt-4 inline-flex items-center justify-center bg-red-600 text-white px-5 py-2.5 rounded-md shadow-md font-semibold transition duration-300 hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
                         <i class="fas fa-map-marker-alt mr-2"></i> Find Us
                     </a>
                 </div>
@@ -531,13 +521,13 @@
                 <div class="mt-auto pt-6">
                     <h3 class="text-xl font-semibold text-gray-900">Stay Connected</h3>
                     <div class="flex space-x-4 mt-4">
-                        <a href="#" aria-label="Facebook" class="bg-red-600 text-white p-2 rounded-full shadow-md flex items-center justify-center w-10 h-10 hover:bg-red-700 hover:scale-110 transition duration-300 ease-in-out">
+                        <a href="#" aria-label="Facebook" class="bg-red-600 text-white p-2 rounded-full shadow-md flex items-center justify-center w-10 h-10 hover:bg-red-500 hover:scale-110 transition duration-300 ease-in-out">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#" aria-label="Instagram" class="bg-red-600 text-white p-2 rounded-full shadow-md flex items-center justify-center w-10 h-10 hover:bg-red-700 hover:scale-110 transition duration-300 ease-in-out">
+                        <a href="#" aria-label="Instagram" class="bg-red-600 text-white p-2 rounded-full shadow-md flex items-center justify-center w-10 h-10 hover:bg-red-500 hover:scale-110 transition duration-300 ease-in-out">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" aria-label="Twitter / X" class="bg-red-600 text-white p-2 rounded-full shadow-md flex items-center justify-center w-10 h-10 hover:bg-red-700 hover:scale-110 transition duration-300 ease-in-out">
+                        <a href="#" aria-label="Twitter / X" class="bg-red-600 text-white p-2 rounded-full shadow-md flex items-center justify-center w-10 h-10 hover:bg-red-500 hover:scale-110 transition duration-300 ease-in-out">
                             <i class="fab fa-twitter"></i>
                         </a>
                     </div>
@@ -574,7 +564,7 @@
                     placeholder="Enter your email" 
                     class="px-3 py-1 border bg-white text-red-700 border-gray-600 rounded-l-md focus:outline-none focus:ring-2 focus:ring-red-500 text-sm">
                 <button 
-                    class="bg-red-600 text-white px-3 py-1 rounded-r-md hover:bg-red-700 shadow-md transition text-sm">
+                    class="bg-red-600 text-white px-3 py-1 rounded-r-md hover:bg-red-500 shadow-md transition text-sm">
                     Subscribe
                 </button>
             </div>
@@ -620,7 +610,7 @@
     </div>
 
     <!-- Footer Bottom -->
-    <div class="bg-custom-gradient text-white flex justify-between items-center w-full mt-4 p-6 text-lg border-t border-gray-700">
+    <div class="bg-red-600 text-white flex justify-between items-center w-full mt-4 p-6 text-lg border-t border-gray-700">
         <p>&copy; <span id="year"></span> REX PC Inc.</p>
         <script>
             document.getElementById('year').textContent = new Date().getFullYear();

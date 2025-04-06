@@ -45,7 +45,10 @@ body {
     font-weight: 550;
 }
 
-
+.heading{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
 
 .bold {
     font-family: 'Roboto', sans-serif;
