@@ -3,294 +3,300 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PC REX</title>
+  <title>PC REX - Modern Tech Solutions</title>
 
-  <link rel="icon" type="image/x-icon" href="../ASSETS/Images/PCREX (1).png"  sizes="100x100">
+  <link rel="icon" type="image/x-icon" href="../ASSETS/Images/PCREX (1).png" sizes="100x100">
 
-  <link href="../CSS/input.css" rel="stylesheet">
-  <link href="../CSS/output.css" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Link your input/output CSS if you have customizations -->
+  <!-- <link href="../CSS/input.css" rel="stylesheet"> -->
+  <!-- <link href="../CSS/output.css" rel="stylesheet"> -->
 
-  
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  
 
+  <!-- Google Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!-- FONT Roboto -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-
-  <!-- FONT Montserrat -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
 
-
+  <style>
+   
+    .heading {
+      font-family: 'Montserrat', sans-serif; /* Font for specific headings */
+      font-weight: 800; /* Example weight */
+    }
+    /* Scrolling animation */
+    @keyframes scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+    .scroll-track {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      animation: scroll 15s linear infinite; /* Slightly slower scroll */
+      width: max-content;
+    }
+    .scroll-content {
+      display: flex;
+      align-items: center;
+    }
+    .category-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 180px; /* Adjust as needed */
+      padding: 0 1rem; /* Add some padding */
+      cursor: pointer;
+      text-align: center;
+    }
+  </style>
 
 </head>
-<body  >
+<body class="bg-gray-50 text-gray-800 antialiased">
 
  <!-- Navbar -->
-<nav class="bg-white shadow-md sticky top-0 left-0 right-0  w-auto text-lg font-medium z-50 opacity-0 transition-opacity duration-1000 ease-in-out">
-
-    <div class="p-6 py-2 sm:py-4 sm:p-10 flex justify-between items-center">
-                        <!-- Logo -->
-        <a href="index.html" class="hover:opacity-80 transition">
-            <img src="../ASSETS/Images/PCREXLOGO_FINAL.png" alt="PC REX Logo" class="h-12">
+<nav class="bg-white shadow-lg sticky top-0 left-0 right-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <a href="index.html" class="flex-shrink-0 flex items-center hover:opacity-85 transition">
+          <img src="../ASSETS/Images/PCREXLOGO_FINAL.png" alt="PC REX Logo" class="h-10 w-auto">
         </a>
-
-
+  
         <!-- Desktop Menu -->
-        <div class="hidden md:flex items-center space-x-6">
-            <a href="index.html" class="text-black hover:text-color-main transition">Home</a>
-            
-           <!-- Dropdown Container -->
-            <div class="relative">
-                <button id="about-dropdown-button" class="text-black hover:text-color-main flex items-center transition cursor-pointer">
-                    About Us <span class="material-icons ml-1 text-sm">expand_more</span>
-                </button>
-                <div id="about-dropdown" class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible transform scale-95 transition-all duration-300">
-                    <a href="#" class="block px-4 py-2 hover:bg-red-600 hover:rounded-md hover:text-white transition">Our Story</a>
-                    <a href="#" class="block px-4 py-2 hover:bg-red-600 hover:rounded-md hover:text-white transition">Our Products</a>
-                    <a href="location.html" class="block px-4 py-2 hover:bg-red-600 hover:text-white transition">Our Location</a>
-                </div>
-            </div>
-
-
-            <a href="#services" class="text-black hover:text-color-main transition">Services</a>
-            <a href="#contact" class="text-black hover:text-color-main transition">Contact</a>
-        </div>
-
-        <!-- Login Button -->
-        <a href="loginPage.html" class="hidden md:block bg-red-600 text-white font-bold px-4 py-1  rounded-lg shadow-md hover:bg-red-500">Log in</a>
-
-
-        <!-- Mobile Menu Button -->
-        <button id="mobile-menu-button" class="md:hidden focus:outline-none cursor-pointer">
-            <span class="material-icons text-3xl text-color-main">menu</span>
-        </button>
-    </div>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" 
-     class="invisible opacity-0  scale-95 absolute top-16 left-0 w-full bg-white shadow-md transition-all duration-300">
-
-        <a href="index.html" class="block py-2 text-black hover:text-color-main transition">Home</a>
-        <div class="relative">
-            <button id="mobile-dropdown-button" class="w-full text-left cursor-pointer py-2 text-black hover:text-color-main flex justify-between transition">
-                About Us <span class="material-icons text-sm">expand_more</span>
+        <div class="hidden md:flex items-center space-x-7">
+          <a href="index.html" class="text-gray-700 hover:text-red-600 transition duration-150 ease-in-out font-semibold">Home</a>
+  
+          <!-- About Us Dropdown -->
+          <div class="relative group">
+            <button class="text-gray-700 hover:text-red-600 flex items-center transition font-semibold">
+              About Us <span class="material-icons ml-1 text-base group-hover:rotate-180 transition-transform">expand_more</span>
             </button>
-            <div id="mobile-dropdown" class="hidden bg-gray-50 rounded-md mt-1">
-                <a href="#" class="block px-4 py-2 hover:bg-red-600 hover:text-white hover:rounded-md transition">Our Story</a>
-                <a href="#" class="block px-4 py-2 hover:bg-red-600 hover:text-white hover:rounded-md transition">Our Products</a>
-                <a href="location.html" class="block px-4 py-2 hover:bg-red-600 hover:text-white hover:rounded-md transition">Our Location</a>
+            <div class="absolute left-0 mt-2 w-48 bg-white shadow-xl rounded-md ring-1 ring-black ring-opacity-5 py-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-out origin-top-left">
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-red-500 hover:text-white rounded-t-md">Our Story</a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-red-500 hover:text-white">Our Products</a>
+              <a href="location.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-red-500 hover:text-white rounded-b-md">Our Location</a>
             </div>
+          </div>
+  
+          <a href="#services-modern" class="text-gray-700 hover:text-red-600 font-semibold transition">Services</a>
+          <a href="#contact-section" class="text-gray-700 hover:text-red-600 font-semibold transition">Contact</a>
         </div>
-        <a href="#" class="block py-2 text-black hover:text-color-main hover:rounded-md transition">Services</a>
-        <a href="#" class="block py-2 text-black hover:text-color-main hover:rounded-md transition">Contact</a>
-        <a href="#" class="block py-2 bg-red-500 text-white font-bold text-center rounded-md shadow-md hover:text-red-700 transition">Login</a>
+  
+        <!-- Login + Mobile Button -->
+        <div class="flex items-center">
+          <a href="loginPage.html" class="hidden md:inline-block bg-red-600 text-white font-semibold px-5 py-2 rounded-lg shadow-md hover:bg-red-700 text-sm">Log in</a>
+          <button id="burger" class="md:hidden ml-4 p-2 rounded-md text-gray-500 hover:text-red-600 focus:outline-none">
+            <span class="material-icons text-3xl">menu</span>
+          </button>
+        </div>
+      </div>
     </div>
-</nav>
-<script src="https://cdn.tailwindcss.com"></script>
+  </nav>
+  
+  <!-- Sidebar -->
+  <div id="mobileSidebar" class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg z-50 transform -translate-x-full transition-transform duration-300 ease-in-out">
+    <div class="flex justify-between items-center p-4 border-b">
+      <h2 class="text-lg font-semibold text-gray-800">PC REX SHOP</h2>
+      <button id="closeSidebar" class="text-gray-600 hover:text-red-600">
+        <span class="material-icons text-2xl">close</span>
+      </button>
+    </div>
+    <div class="p-4 space-y-3">
+      <a href="index.html" class="block text-gray-700 hover:text-red-600 font-semibold">Home</a>
+  
+      <!-- About Us (with nested links) -->
+      <div>
+        <p class="text-gray-700 font-semibold mb-1">About Us</p>
+        <div class="pl-4 space-y-1 text-sm">
+          <a href="#" class="block text-gray-600 hover:text-red-500 font-semibold ">Our Story</a>
+          <a href="#" class="block text-gray-600 hover:text-red-500 font-semibold">Our Products</a>
+          <a href="location.html" class="block text-gray-600 hover:text-red-500 font-semibold">Our Location</a>
+        </div>
+      </div>
+  
+      <a href="#services-modern" class="block text-gray-700 hover:text-red-600 font-semibold">Services</a>
+      <a href="#contact-section" class="block text-gray-700 hover:text-red-600 font-semibold">Contact</a>
+  
+      <a href="loginPage.html" class="block w-full text-center mt-4 bg-red-600 text-white font-semibold px-5 py-2 rounded-lg shadow-md hover:bg-red-700 text-sm">Log in</a>
+    </div>
+  </div>
+  
+  <!-- Backdrop -->
+  <div id="sidebarBackdrop" class="fixed inset-0 bg-black bg-opacity-30 z-40 hidden"></div>
+  
+  <script src="../JS/nav.js"></script>
 
 
 <!-- Hero Section -->
-<section class="bg-gray-100 relative w-full h-[550px] p-6 py-2 sm:py-4 sm:p-10 flex items-center justify-center bg-gradient-to-r from-gray-50 to-gray-100 px-6 overflow-hidden opacity-0 transition-opacity duration-1000 ease-in-out">
-
+<section class="relative bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 w-full min-h-[550px] flex items-center overflow-hidden opacity-0 transition-opacity duration-1000 ease-in-out">
     <!-- Background Text -->
-    <div class="absolute p-6 py-2 sm:py-4 sm:p-10 inset-0 z-0 flex items-center justify-center pointer-events-none select-none">
-        <!-- INCREASED FONT SIZE SIGNIFICANTLY and changed text -->
-        <h2 class="text-[90px] sm:text-[100px] md:text-[100px] lg:text-[230px] heading text-gray-200/60 leading-none -translate-y-4">
+    <div class="absolute inset-0 z-0 flex items-center justify-center pointer-events-none select-none opacity-60">
+        <h2 class="text-[100px] sm:text-[150px] md:text-[200px] lg:text-[250px] heading text-gray-200 leading-none -translate-y-5 whitespace-nowrap">
             COMPUTER
         </h2>
     </div>
 
     <!-- Main Content Container -->
-    <!-- Added justify-between back -->
-    <div class="relative p-6 py-2 sm:py-4 sm:p-0 z-10 max-w-7xl w-full flex flex-col-reverse sm:flex-row items-center justify-between gap-10">
+    <div class="relative z-10 max-w-7xl mx-auto w-full flex flex-col-reverse md:flex-row items-center justify-between gap-10 px-6 lg:px-8 py-16 sm:py-24">
 
         <!-- Text Content -->
-        <div class="text-center sm:text-left space-y-4 sm:space-y-5 sm:w-1/2 lg:w-2/5">
-            <h3 class="text-lg sm:text-xl text-gray-600 font-semibold">PC REX</h3>
-            <h1 class=" text-5xl sm:text-6xl md:text-7xl heading  text-red-600">
+        <div class="text-center md:text-left space-y-5 sm:space-y-6 md:w-1/2 lg:w-2/5 mt-10 md:mt-0">
+            <h3 class="text-xl sm:text-2xl text-red-600 font-semibold tracking-wide uppercase">PC REX</h3>
+            <h1 class="text-5xl sm:text-6xl md:text-7xl heading text-gray-800 leading-tight">
                 CUSTOM BUILDS
             </h1>
-           <!-- Facebook Button -->
-                <a href="https://www.facebook.com" class="inline-block bg-blue-600 text-white font-bold py-3 px-5 rounded-full shadow-md hover:bg-blue-700 hover:scale-105 hover:shadow-lg transition-all duration-300 mt-4 mr-4">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                
-                <!-- Telegram Button -->
-                <a href="https://t.me" class="inline-block bg-blue-500 text-white font-bold py-3 px-4 rounded-full shadow-md hover:bg-blue-600 hover:scale-105 hover:shadow-lg transition-all duration-300 mt-4 mr-4">
-                    <i class="fab fa-telegram-plane"></i>
-                </a>
-
-                <!-- TikTok Button -->
-                <a href="https://www.tiktok.com" class="inline-block bg-black text-white font-bold py-3 px-4 rounded-full shadow-md hover:bg-gray-800 hover:scale-105 hover:shadow-lg transition-all duration-300 mt-4">
-                    <i class="fab fa-tiktok"></i>
-                </a>
-
-        </div>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
-        <!-- Headphone Image -->
-        <div class="sm:w-1/2 lg:w-3/5 flex justify-center sm:justify-end items-center relative pr-0 sm:pr-5 lg:pr-10">
-             <!-- Adjusted max-width for a larger look like the example, REMOVED hover effect from img -->
-             <!-- IMPORTANT: Replace placeholder src with your actual image path -->
-            <img src="../ASSETS/Images/PCHERO.png" alt="Beats Solo Wireless Headphones"
-                 class="w-full max-w-xs  sm:max-w-sm  lg:max-w-md  drop-shadow-2xl">
-             <!-- Example placeholder: https://via.placeholder.com/600x600/000000/FFFFFF?text=Headphones -->
+            <p class="text-lg text-gray-600 max-w-md mx-auto md:mx-0">
+                Performance PCs tailored to your needs. Built by experts, powered by passion.
+            </p>
+            <!-- Social Media Icons -->
+             <div class="flex justify-center md:justify-start space-x-4 mt-6">
+                 <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-300 w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transform">
+                    <i class="fab fa-facebook-f text-xl"></i>
+                 </a>
+                 <a href="https://t.me" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="text-white bg-sky-500 hover:bg-sky-600 transition-colors duration-300 w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transform">
+                     <i class="fab fa-telegram-plane text-xl"></i>
+                 </a>
+                 <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="text-white bg-black hover:bg-gray-800 transition-colors duration-300 w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transform">
+                    <i class="fab fa-tiktok text-xl"></i>
+                 </a>
+             </div>
         </div>
 
-       
+        <!-- PC Image -->
+        <div class="md:w-1/2 lg:w-3/5 flex justify-center md:justify-end items-center relative">
+            <img src="../ASSETS/Images/PCHERO.png" alt="Custom Built PC"
+                 class="w-full max-w-sm sm:max-w-md lg:max-w-lg drop-shadow-2xl">
+        </div>
     </div>
 </section>
 
 
-
-<!-- Categories Section -->
-<section class="p-4 opacity-0 transition-opacity duration-1000 ease-in-out overflow-hidden">
+<!-- Categories Scrolling Section -->
+<section class="py-4 bg-white border-y border-gray-200 opacity-0 transition-opacity duration-1000 ease-in-out overflow-hidden">
     <div class="relative w-full">
         <div class="scroll-track flex">
-            <div class="scroll-content flex gap-8 text-black text-xl font-bold">
-                <i class="fas fa-desktop text-3xl"></i>
-                <div class="category-item">RAM</div>
-                <i class="fas fa-desktop text-3xl"></i>
-                <div class="category-item">Graphics Cards</div>
-                <i class="fas fa-desktop text-3xl"></i>
-                <div class="category-item">Processors</div>
-                <i class="fas fa-desktop text-3xl"></i>
-                <div class="category-item">Motherboards</div>
-                
+            <div class="scroll-content flex gap-6 text-gray-700 text-lg font-semibold items-center">
+                <i class="fas fa-desktop text-2xl text-red-500 mx-2"></i>
+                <div class="category-item hover:text-red-600 transition-colors">RAM</div>
+                <i class="fas fa-microchip text-2xl text-red-500 mx-2"></i>
+                <div class="category-item hover:text-red-600 transition-colors">Graphics Cards</div>
+                <i class="fas fa-memory text-2xl text-red-500 mx-2"></i>
+                <div class="category-item hover:text-red-600 transition-colors">Processors</div>
+                <i class="fas fa-server text-2xl text-red-500 mx-2"></i>
+                <div class="category-item hover:text-red-600 transition-colors">Motherboards</div>
+                 <i class="fas fa-hdd text-2xl text-red-500 mx-2"></i>
+                <div class="category-item hover:text-red-600 transition-colors">Storage</div>
+                <i class="fas fa-plug text-2xl text-red-500 mx-2"></i>
+                <div class="category-item hover:text-red-600 transition-colors">Power Supplies</div>
+
                 <!-- Duplicated Content for Smooth Infinite Scroll -->
-                <i class="fas fa-desktop text-3xl"></i>
-                <div class="category-item">RAM</div>
-                <i class="fas fa-desktop text-3xl"></i>
-                <div class="category-item">Graphics Cards</div>
-                <i class="fas fa-desktop text-3xl"></i>
-                <div class="category-item">Processors</div>
-                <i class="fas fa-desktop text-3xl"></i>
-                <div class="category-item">Motherboards</div>
+                <i class="fas fa-desktop text-2xl text-red-500 mx-2"></i>
+                <div class="category-item hover:text-red-600 transition-colors">RAM</div>
+                 <i class="fas fa-microchip text-2xl text-red-500 mx-2"></i>
+                <div class="category-item hover:text-red-600 transition-colors">Graphics Cards</div>
+                <i class="fas fa-memory text-2xl text-red-500 mx-2"></i>
+                <div class="category-item hover:text-red-600 transition-colors">Processors</div>
+                <i class="fas fa-server text-2xl text-red-500 mx-2"></i>
+                <div class="category-item hover:text-red-600 transition-colors">Motherboards</div>
+                 <i class="fas fa-hdd text-2xl text-red-500 mx-2"></i>
+                <div class="category-item hover:text-red-600 transition-colors">Storage</div>
+                 <i class="fas fa-plug text-2xl text-red-500 mx-2"></i>
+                <div class="category-item hover:text-red-600 transition-colors">Power Supplies</div>
             </div>
         </div>
     </div>
 </section>
-
-<style>
-  @keyframes scroll {
-      from { transform: translateX(0); }
-      to { transform: translateX(-50%); }
-  }
-
-  .scroll-track {
-      display: flex;
-      align-items: center;
-      white-space: nowrap;
-      animation: scroll 10s linear infinite;
-      width: max-content;
-  }
-
-  .scroll-content {
-      display: flex;
-      align-items: center;
-  }
-
-  .category-item {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 180px;
-      cursor: pointer;
-      text-align: center;
-  }
-</style>
-
-<script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
-<script src="https://cdn.tailwindcss.com"></script>
-
-
-
 
 
 <!-- Promoted Categories Section -->
-<section id="promoted-categories" class="">
-    <div class="max-w-full mx-auto p-6 sm:p-10">
+<section id="promoted-categories" class="py-16 sm:py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+         <div class="text-center mb-12 md:mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold heading text-gray-900">Shop By Category</h2>
+            <p class="mt-3 text-lg text-gray-600 max-w-2xl mx-auto">Find the perfect components for your next build or upgrade.</p>
+        </div>
         <!-- Category Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
 
-            <!-- Category Card 1: Motherboard -->
-            <div class="bg-emerald-400 rounded-2xl overflow-hidden text-white group relative flex flex-col justify-between min-h-[250px] sm:min-h-[300px] sm:col-span-2 lg:col-span-2">
-                <img src="../ASSETS/Images/ProductImage/motherboard.png" alt="Motherboard" class="w-1/2 sm:w-1/2 max-w-[400px] absolute top-5 right-0 group-hover:scale-105 transition-transform duration-300 -mr-4 sm:-mr-8 z-10">
-                <div class="p-6 sm:p-8 flex flex-col justify-between h-full z-0">
+            <!-- Card 1: Motherboard -->
+            <div class="bg-emerald-500 rounded-xl overflow-hidden text-white group relative flex flex-col justify-between min-h-[280px] sm:min-h-[320px] sm:col-span-2 lg:col-span-2 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="../ASSETS/Images/ProductImage/motherboard.png" alt="Motherboard" class="w-1/2 sm:w-2/5 max-w-[350px] absolute top-4 right-2 group-hover:scale-105 group-hover:rotate-[-3deg] transition-transform duration-300 -mr-4 sm:-mr-6 z-10 drop-shadow-lg">
+                <div class="p-6 sm:p-8 flex flex-col justify-between h-full z-0 relative">
                     <div>
-                        <p class="text-sm font-medium text-emerald-300">The Heart</p>
-                        <p class="text-sm font-medium text-emerald-300">Of Your PC</p>
-                        <h3 class="text-2xl sm:text-3xl font-bold uppercase mt-1">Motherboard</h3>
+                        <p class="text-sm font-semibold text-emerald-200 uppercase tracking-wider">The Core</p>
+                        <h3 class="text-2xl sm:text-3xl font-bold uppercase mt-1 heading">Motherboards</h3>
+                        <p class="text-emerald-100 mt-2 text-sm max-w-[60%]">The essential foundation for every PC build.</p>
                     </div>
-                    <a href="#" class="mt-6 bg-emerald-600 text-white px-5 py-2 rounded-md text-sm font-semibold hover:bg-emerald-700 transition duration-150 ease-in-out self-start">Browse</a>
+                    <a href="#" class="mt-6 bg-white text-emerald-600 px-5 py-2 rounded-md text-sm font-semibold hover:bg-emerald-100 transition duration-150 ease-in-out self-start shadow-sm hover:shadow-md">Browse</a>
                 </div>
             </div>
 
-            <!-- Category Card 2: Graphics Card (GPU) -->
-            <div class="bg-pink-400 rounded-2xl overflow-hidden text-white group relative flex flex-col justify-between min-h-[250px] sm:min-h-[300px]">
-                 <img src="../ASSETS/Images/ProductImage/GPU.png" alt="Graphics Card (GPU)" class="w-1/2 sm:w-1/2 max-w-[300px] absolute bottom-0 right-0 group-hover:scale-105 transition-transform duration-300 mb-4 mr-4 z-10">
-                 <div class="p-6 sm:p-8 flex flex-col justify-between h-full z-0">
+            <!-- Card 2: Graphics Card (GPU) -->
+             <div class="bg-pink-500 rounded-xl overflow-hidden text-white group relative flex flex-col justify-between min-h-[280px] sm:min-h-[320px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+                 <img src="../ASSETS/Images/ProductImage/GPU.png" alt="Graphics Card (GPU)" class="w-2/3 sm:w-3/4 max-w-[250px] absolute bottom-2 right-2 group-hover:scale-105 group-hover:rotate-[4deg] transition-transform duration-300 mb-2 mr-2 z-10 drop-shadow-lg">
+                 <div class="p-6 sm:p-8 flex flex-col justify-between h-full z-0 relative">
                     <div>
-                        <p class="text-sm font-medium text-pink-300">Boost Your</p>
-                        <h3 class="text-2xl sm:text-3xl font-bold uppercase mt-1">Graphics</h3>
-                        <h3 class="text-2xl sm:text-3xl font-bold uppercase">Card (GPU)</h3>
+                        <p class="text-sm font-semibold text-pink-200 uppercase tracking-wider">Visual Power</p>
+                        <h3 class="text-2xl sm:text-3xl font-bold uppercase mt-1 heading">Graphics Cards</h3>
                     </div>
-                    <a href="#" class="mt-6 bg-white text-pink-600 px-5 py-2 rounded-md text-sm font-semibold hover:bg-pink-100 transition duration-150 ease-in-out self-start">Browse</a>
+                    <a href="#" class="mt-6 bg-white text-pink-600 px-5 py-2 rounded-md text-sm font-semibold hover:bg-pink-100 transition duration-150 ease-in-out self-start shadow-sm hover:shadow-md">Browse</a>
                 </div>
             </div>
 
-            <!-- Category Card 3: Processor (CPU) -->
-            <div class="bg-indigo-500 rounded-2xl overflow-hidden text-white group relative flex flex-col justify-between min-h-[250px] sm:min-h-[300px]">
-                 <img src="../ASSETS/Images/ProductImage/Processorr.png" alt="Processor (CPU)" class="w-1/2 sm:w-1/2 max-w-[300px] absolute bottom-0 right-0 group-hover:scale-105 transition-transform duration-300 mb-4 mr-4 z-10">
-                 <div class="p-6 sm:p-8 flex flex-col justify-between h-full z-0">
+            <!-- Card 3: Processor (CPU) -->
+            <div class="bg-indigo-600 rounded-xl overflow-hidden text-white group relative flex flex-col justify-between min-h-[280px] sm:min-h-[320px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+                 <img src="../ASSETS/Images/ProductImage/Processorr.png" alt="Processor (CPU)" class="w-1/2 sm:w-2/3 max-w-[200px] absolute bottom-2 right-2 group-hover:scale-110 transition-transform duration-300 mb-3 mr-3 z-10 drop-shadow-lg">
+                 <div class="p-6 sm:p-8 flex flex-col justify-between h-full z-0 relative">
                     <div>
-                        <p class="text-sm font-medium text-indigo-100">Speed and</p>
-                        <h3 class="text-2xl sm:text-3xl font-bold uppercase mt-1">Processor</h3>
-                        <h3 class="text-2xl sm:text-3xl font-bold uppercase">(CPU)</h3>
+                        <p class="text-sm font-semibold text-indigo-200 uppercase tracking-wider">The Brain</p>
+                        <h3 class="text-2xl sm:text-3xl font-bold uppercase mt-1 heading">Processors</h3>
                     </div>
-                    <a href="#" class="mt-6 bg-white text-indigo-600 px-5 py-2 rounded-md text-sm font-semibold hover:bg-indigo-100 transition duration-150 ease-in-out self-start">Browse</a>
+                    <a href="#" class="mt-6 bg-white text-indigo-700 px-5 py-2 rounded-md text-sm font-semibold hover:bg-indigo-100 transition duration-150 ease-in-out self-start shadow-sm hover:shadow-md">Browse</a>
                 </div>
             </div>
 
-            <!-- Category Card 4: RAM -->
-            <div class="bg-yellow-400 rounded-2xl overflow-hidden text-white group relative flex flex-col justify-between min-h-[250px] sm:min-h-[300px]">
-                 <img src="../ASSETS/Images/ProductImage/RAM.png" alt="RAM" class="w-1/2 sm:w-1/2 max-w-[300px] absolute bottom-0 right-0 group-hover:scale-105 transition-transform duration-300 mb-4 mr-4 z-10">
-                 <div class="p-6 sm:p-8 flex flex-col justify-between h-full z-0">
+            <!-- Card 4: RAM -->
+             <div class="bg-yellow-500 rounded-xl overflow-hidden text-white group relative flex flex-col justify-between min-h-[280px] sm:min-h-[320px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+                 <img src="../ASSETS/Images/ProductImage/RAM.png" alt="RAM" class="w-1/2 sm:w-2/3 max-w-[220px] absolute bottom-2 right-2 group-hover:scale-105 group-hover:translate-x-1 transition-transform duration-300 mb-2 mr-2 z-10 drop-shadow-lg">
+                 <div class="p-6 sm:p-8 flex flex-col justify-between h-full z-0 relative">
                     <div>
-                        <p class="text-sm font-medium text-yellow-100">Faster</p>
-                        <h3 class="text-2xl sm:text-3xl font-bold uppercase mt-1">RAM</h3>
+                        <p class="text-sm font-semibold text-yellow-100 uppercase tracking-wider">Multitask Faster</p>
+                        <h3 class="text-2xl sm:text-3xl font-bold uppercase mt-1 heading text-yellow-900">RAM</h3>
                     </div>
-                    <a href="#" class="mt-6 bg-white text-yellow-600 px-5 py-2 rounded-md text-sm font-semibold hover:bg-yellow-100 transition duration-150 ease-in-out self-start">Browse</a>
+                    <a href="#" class="mt-6 bg-white text-yellow-700 px-5 py-2 rounded-md text-sm font-semibold hover:bg-yellow-100 transition duration-150 ease-in-out self-start shadow-sm hover:shadow-md">Browse</a>
                 </div>
             </div>
 
-            <!-- Category Card 5: Storage (SSD/HDD) -->
-            <div class="bg-teal-500 rounded-2xl overflow-hidden text-white group relative flex flex-col justify-between min-h-[250px] sm:min-h-[300px]">
-                 <img src="../ASSETS/Images/ProductImage/SSD.png" alt="Storage (SSD/HDD)" class="w-1/2 sm:w-1/2 max-w-[300px] absolute bottom-0 right-0 group-hover:scale-105 transition-transform duration-300 mb-4 mr-4 z-10">
-                 <div class="p-6 sm:p-8 flex flex-col justify-between h-full z-0">
+            <!-- Card 5: Storage (SSD/HDD) -->
+            <div class="bg-teal-600 rounded-xl overflow-hidden text-white group relative flex flex-col justify-between min-h-[280px] sm:min-h-[320px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+                 <img src="../ASSETS/Images/ProductImage/SSD.png" alt="Storage (SSD/HDD)" class="w-1/2 sm:w-2/3 max-w-[200px] absolute bottom-2 right-2 group-hover:scale-110 group-hover:rotate-[3deg] transition-transform duration-300 mb-3 mr-3 z-10 drop-shadow-lg">
+                 <div class="p-6 sm:p-8 flex flex-col justify-between h-full z-0 relative">
                     <div>
-                        <p class="text-sm font-medium text-teal-100">Store More</p>
-                        <h3 class="text-2xl sm:text-3xl font-bold uppercase mt-1">Storage</h3>
-                        <h3 class="text-2xl sm:text-3xl font-bold uppercase">(SSD/HDD)</h3>
+                        <p class="text-sm font-semibold text-teal-100 uppercase tracking-wider">Load Instantly</p>
+                        <h3 class="text-2xl sm:text-3xl font-bold uppercase mt-1 heading">Storage</h3>
                     </div>
-                     <a href="#" class="mt-6 bg-white text-teal-600 px-5 py-2 rounded-md text-sm font-semibold hover:bg-teal-100 transition duration-150 ease-in-out self-start">Browse</a>
+                     <a href="#" class="mt-6 bg-white text-teal-700 px-5 py-2 rounded-md text-sm font-semibold hover:bg-teal-100 transition duration-150 ease-in-out self-start shadow-sm hover:shadow-md">Browse</a>
                 </div>
             </div>
 
-            <!-- Category Card 6: Power Supply (PSU) -->
-            <div class="bg-gray-600 rounded-2xl overflow-hidden text-white group relative flex flex-col justify-between min-h-[250px] sm:min-h-[300px] sm:col-span-2 lg:col-span-2">
-                 <img src="../ASSETS/Images/ProductImage/PSU.png" alt="Power Supply (PSU)" class="w-1/2 sm:w-1/2 max-w-[400px] absolute bottom-0 right-0 group-hover:scale-105 transition-transform duration-300 mb-4 mr-4 z-10">
-                 <div class="p-6 sm:p-8 flex flex-col justify-between h-full z-0">
+            <!-- Card 6: Power Supply (PSU) -->
+            <div class="bg-gray-700 rounded-xl overflow-hidden text-white group relative flex flex-col justify-between min-h-[280px] sm:min-h-[320px] sm:col-span-2 lg:col-span-2 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                 <img src="../ASSETS/Images/ProductImage/PSU.png" alt="Power Supply (PSU)" class="w-1/2 sm:w-2/5 max-w-[350px] absolute bottom-2 right-2 group-hover:scale-105 transition-transform duration-300 mb-2 mr-2 z-10 drop-shadow-lg">
+                 <div class="p-6 sm:p-8 flex flex-col justify-between h-full z-0 relative">
                     <div>
-                        <p class="text-sm font-medium text-gray-200">Reliable</p>
-                        <h3 class="text-2xl sm:text-3xl font-bold uppercase mt-1">Power</h3>
-                        <h3 class="text-2xl sm:text-3xl font-bold uppercase">Supply (PSU)</h3>
+                        <p class="text-sm font-semibold text-gray-300 uppercase tracking-wider">Reliable Power</p>
+                        <h3 class="text-2xl sm:text-3xl font-bold uppercase mt-1 heading">Power Supplies</h3>
+                         <p class="text-gray-200 mt-2 text-sm max-w-[60%]">Stable and efficient energy for peak performance.</p>
                     </div>
-                    <a href="#" class="mt-6 bg-white text-gray-700 px-5 py-2 rounded-md text-sm font-semibold hover:bg-gray-100 transition duration-150 ease-in-out self-start">Browse</a>
+                    <a href="#" class="mt-6 bg-white text-gray-800 px-5 py-2 rounded-md text-sm font-semibold hover:bg-gray-200 transition duration-150 ease-in-out self-start shadow-sm hover:shadow-md">Browse</a>
                 </div>
             </div>
 
@@ -298,238 +304,245 @@
     </div>
 </section>
 
-
-
-
-
-
-
-
-
 <!-- Services Section -->
-<section id="services-modern" class="bg-gray-50 overflow-hidden opacity-0 transition-opacity duration-1000 ease-in-out">
-    <div class="max-w-full mx-auto p-6 sm:p-10">
+<section id="services-modern" class="py-16 sm:py-24 bg-white overflow-hidden opacity-0 transition-opacity duration-1000 ease-in-out">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-            <h2 class="text-4xl md:text-5xl font-semibold text-red-600 uppercase tracking-wider">Our Expertise</h2>
-            <p class="mt-4 max-w-2xl mx-auto text-lg md:text-md text-gray-500">
-                From custom builds to ongoing support, we've got you covered.
+            <h2 class="text-base font-semibold text-red-600 tracking-wide uppercase">Our Services</h2>
+            <p class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl heading">
+                Comprehensive Tech Expertise
+            </p>
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
+                From custom builds to reliable repairs and expert advice, we ensure your tech works for you.
             </p>
         </div>
 
-        <!-- Services Grid (Updated to 6 columns) -->
-        <div class="mt-16 grid grid-cols-1 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 sm:gap-x-6 lg:gap-x-8 lg:gap-y-12">
+        <!-- Services Grid -->
+        <div class="mt-16 grid grid-cols-1 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 sm:gap-x-6 lg:gap-x-8 lg:gap-y-12">
 
-            <!-- Service Card 1: Custom PC Builds -->
-            <div class="group relative bg-white p-6 rounded-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] transition-all">
-                <div class="flex justify-center">
-                    <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red-100">
-                        <i class="fas fa-wrench text-red-600"></i>
+            <!-- Service Card Template -->
+            <div class="group relative bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100 hover:border-gray-200">
+                <div class="flex justify-center mb-5">
+                    <span class="inline-flex items-center justify-center h-14 w-14 rounded-full bg-red-100 ring-4 ring-white">
+                        <i class="fas fa-wrench text-2xl text-red-600"></i>
                     </span>
                 </div>
-                <h3 class="mt-5 text-lg font-semibold text-gray-900 text-center">Custom PC Builds</h3>
+                <h3 class="text-lg font-semibold text-gray-900 text-center heading">Custom PC Builds</h3>
                 <p class="mt-2 text-base text-gray-500 text-center">
-                    High-performance systems built precisely for your gaming, creative, or professional needs.
+                    High-performance systems tailored precisely for your gaming, creative, or professional needs.
                 </p>
             </div>
 
-            <!-- Service Card 2: PC Repair & Maintenance -->
-            <div class="group relative bg-white p-6 rounded-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] transition-all">
-                <div class="flex justify-center">
-                    <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red-100">
-                        <i class="fas fa-cogs text-red-600"></i>
+             <div class="group relative bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100 hover:border-gray-200">
+                <div class="flex justify-center mb-5">
+                    <span class="inline-flex items-center justify-center h-14 w-14 rounded-full bg-red-100 ring-4 ring-white">
+                        <i class="fas fa-tools text-2xl text-red-600"></i>
                     </span>
                 </div>
-                <h3 class="mt-5 text-lg font-semibold text-gray-900 text-center">PC Repair & Maintenance</h3>
+                <h3 class="text-lg font-semibold text-gray-900 text-center heading">PC Repair & Maintenance</h3>
                 <p class="mt-2 text-base text-gray-500 text-center">
-                    Expert diagnosis and repair services to keep your system running smoothly.
+                    Expert diagnosis and repair services to keep your system running smoothly and efficiently.
                 </p>
             </div>
 
-            <!-- Service Card 3: Tech Consultation -->
-            <div class="group relative bg-white p-6 rounded-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] transition-all">
-                <div class="flex justify-center">
-                    <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red-100">
-                        <i class="fas fa-comment-dots text-red-600"></i>
+             <div class="group relative bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100 hover:border-gray-200">
+                <div class="flex justify-center mb-5">
+                    <span class="inline-flex items-center justify-center h-14 w-14 rounded-full bg-red-100 ring-4 ring-white">
+                        <i class="fas fa-comments text-2xl text-red-600"></i>
                     </span>
                 </div>
-                <h3 class="mt-5 text-lg font-semibold text-gray-900 text-center">Tech Consultation</h3>
+                <h3 class="text-lg font-semibold text-gray-900 text-center heading">Tech Consultation</h3>
                 <p class="mt-2 text-base text-gray-500 text-center">
-                    Personalized advice to help you choose the right components and configurations.
+                    Personalized advice to help you choose the right components, configurations, and upgrades.
                 </p>
             </div>
 
-            <!-- Service Card 4: Gaming Setup Optimization -->
-            <div class="group relative bg-white p-6 rounded-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] transition-all">
-                <div class="flex justify-center">
-                    <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red-100">
-                        <i class="fas fa-rocket text-red-600"></i>
+             <div class="group relative bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100 hover:border-gray-200">
+                <div class="flex justify-center mb-5">
+                    <span class="inline-flex items-center justify-center h-14 w-14 rounded-full bg-red-100 ring-4 ring-white">
+                        <i class="fas fa-gamepad text-2xl text-red-600"></i>
                     </span>
                 </div>
-                <h3 class="mt-5 text-lg font-semibold text-gray-900 text-center">Gaming Setup Optimization</h3>
+                <h3 class="text-lg font-semibold text-gray-900 text-center heading">Gaming Setup Optimization</h3>
                 <p class="mt-2 text-base text-gray-500 text-center">
-                    Unlock maximum FPS and smooth gameplay with our expert optimization services.
+                    Unlock maximum FPS and smooth gameplay with our expert optimization and tuning services.
                 </p>
             </div>
 
-            <!-- Service Card 5: Networking & Setup -->
-            <div class="group relative bg-white p-6 rounded-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] transition-all">
-                <div class="flex justify-center">
-                    <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red-100">
-                        <i class="fas fa-wifi text-red-600"></i>
+             <div class="group relative bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100 hover:border-gray-200">
+                <div class="flex justify-center mb-5">
+                    <span class="inline-flex items-center justify-center h-14 w-14 rounded-full bg-red-100 ring-4 ring-white">
+                        <i class="fas fa-network-wired text-2xl text-red-600"></i>
                     </span>
                 </div>
-                <h3 class="mt-5 text-lg font-semibold text-gray-900 text-center">Networking & Setup</h3>
+                <h3 class="text-lg font-semibold text-gray-900 text-center heading">Networking & Setup</h3>
                 <p class="mt-2 text-base text-gray-500 text-center">
-                    Reliable home and office network setup, configuration, and troubleshooting.
+                    Reliable home and office network setup, configuration, and troubleshooting solutions.
                 </p>
             </div>
 
-            <!-- Service Card 6: Software Installation -->
-            <div class="group relative bg-white p-6 rounded-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] transition-all">
-                <div class="flex justify-center">
-                    <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-red-100">
-                        <i class="fas fa-arrow-down text-red-600"></i>
+             <div class="group relative bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100 hover:border-gray-200">
+                <div class="flex justify-center mb-5">
+                    <span class="inline-flex items-center justify-center h-14 w-14 rounded-full bg-red-100 ring-4 ring-white">
+                        <i class="fas fa-download text-2xl text-red-600"></i>
                     </span>
                 </div>
-                <h3 class="mt-5 text-lg font-semibold text-gray-900 text-center">Software Installation</h3>
+                <h3 class="text-lg font-semibold text-gray-900 text-center heading">Software Installation</h3>
                 <p class="mt-2 text-base text-gray-500 text-center">
-                    Hassle-free installation and setup of operating systems, drivers, and applications.
+                    Hassle-free installation and setup of operating systems, essential drivers, and applications.
                 </p>
             </div>
-
-        </div> <!-- End Services Grid -->
+        </div>
 
         <!-- Why Choose Us Section -->
-        <div class="mt-16 text-center">
-            <h2 class="text-4xl md:text-5xl font-semibold text-red-600 tracking-wider">Why Choose Us?</h2>
-            <p class="mt-4 max-w-2xl mx-auto text-lg md:text-md text-gray-500">
-                Our expertise, customer-centric approach, and commitment to excellence set us apart.
+        <div class="mt-24 text-center">
+             <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl heading">Why Choose PC Rex?</h2>
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
+                 Experience, dedication, and a passion for technology set us apart.
             </p>
-            <div class="mt-8 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+            <div class="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
                 <!-- Reason 1 -->
-                <div class="flex flex-col items-center bg-white p-6 rounded-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] transition-all">
-                    <i class="fas fa-shield-alt text-red-600 text-4xl"></i>
-                    <h3 class="mt-5 text-lg font-semibold text-gray-900 text-center">Trusted Experts</h3>
-                    <p class="mt-2 text-base text-gray-500 text-center">
-                        Over 10 years of experience in delivering top-quality tech services.
+                <div class="flex flex-col items-center p-6">
+                    <div class="flex-shrink-0">
+                         <div class="flex items-center justify-center h-12 w-12 rounded-md bg-red-500 text-white shadow-md">
+                             <i class="fas fa-shield-alt text-2xl"></i>
+                         </div>
+                    </div>
+                    <h3 class="mt-5 text-lg font-semibold text-gray-900 heading">Trusted Expertise</h3>
+                    <p class="mt-2 text-base text-gray-500">
+                         Years of experience delivering top-quality custom builds and tech services you can rely on.
                     </p>
                 </div>
 
                 <!-- Reason 2 -->
-                <div class="flex flex-col items-center bg-white p-6 rounded-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] transition-all">
-                    <i class="fas fa-headset text-red-600 text-4xl"></i>
-                    <h3 class="mt-5 text-lg font-semibold text-gray-900 text-center">24/7 Support</h3>
-                    <p class="mt-2 text-base text-gray-500 text-center">
-                        Always available to help with your tech needs, no matter the time.
+                 <div class="flex flex-col items-center p-6">
+                    <div class="flex-shrink-0">
+                         <div class="flex items-center justify-center h-12 w-12 rounded-md bg-red-500 text-white shadow-md">
+                             <i class="fas fa-headset text-2xl"></i>
+                         </div>
+                    </div>
+                    <h3 class="mt-5 text-lg font-semibold text-gray-900 heading">Dedicated Support</h3>
+                    <p class="mt-2 text-base text-gray-500">
+                         We're here to help with your tech needs, offering support and advice when you need it.
                     </p>
                 </div>
 
                 <!-- Reason 3 -->
-                <div class="flex flex-col items-center bg-white p-6 rounded-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] transition-all">
-                    <i class="fas fa-thumbs-up text-red-600 text-4xl"></i>
-                    <h3 class="mt-5 text-lg font-semibold text-gray-900 text-center">Customer Satisfaction</h3>
-                    <p class="mt-2 text-base text-gray-500 text-center">
-                        We prioritize your satisfaction with every service we provide.
+                <div class="flex flex-col items-center p-6">
+                    <div class="flex-shrink-0">
+                         <div class="flex items-center justify-center h-12 w-12 rounded-md bg-red-500 text-white shadow-md">
+                             <i class="fas fa-thumbs-up text-2xl"></i>
+                         </div>
+                    </div>
+                    <h3 class="mt-5 text-lg font-semibold text-gray-900 heading">Customer Satisfaction</h3>
+                    <p class="mt-2 text-base text-gray-500">
+                        Your satisfaction is our priority. We strive to exceed expectations with every interaction.
                     </p>
                 </div>
             </div>
-        </div> 
+        </div>
     </div>
 </section>
 
-
-
-
 <!-- CONTACT Section -->
-<section id="contact-section" class="bg-product-section text-gray-100 opacity-0 transition-opacity duration-1000 ease-in-out">
-    <div id="contact" class="max-w-full mx-auto p-6 sm:p-10">
+<section id="contact-section" class="bg-black text-gray-100 py-16 sm:py-24 opacity-0 transition-opacity duration-1000 ease-in-out">
+    <div id="contact" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12 md:mb-16">
-            <h2 class="text-4xl md:text-5xl font-bold text-white">Get in Touch</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-white heading">Get in Touch</h2>
             <p class="text-lg mt-4 max-w-2xl text-gray-400 mx-auto">
-                We're here to assist you. Feel free to contact us for inquiries or collaborations.
+                Have questions or need assistance? Contact us today – we're ready to help.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
-            <div class="bg-white p-8 rounded-xl shadow-lg">
-                <h3 class="text-2xl font-semibold text-gray-900 mb-6">Send Us a Message</h3>
-                <form class="space-y-5 text-gray-800">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start">
+            <!-- Contact Form -->
+            <div class="bg-neutral-900 p-8 rounded-xl shadow-xl">
+                <h3 class="text-2xl font-semibold text-white mb-6 heading">Send Us a Message</h3>
+                <form class="space-y-5">
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                         <div>
                             <label for="first-name" class="sr-only">First Name</label>
-                            <input type="text" id="first-name" placeholder="First Name" class="w-full px-4 py-2.5 bg-gray-50 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 transition duration-200">
+                            <input type="text" id="first-name" name="first-name" placeholder="First Name" required class="w-full px-4 py-2.5 bg-black text-gray-100 border border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 transition duration-200 placeholder-gray-400">
                         </div>
                         <div>
                             <label for="last-name" class="sr-only">Last Name</label>
-                            <input type="text" id="last-name" placeholder="Last Name" class="w-full px-4 py-2.5 bg-gray-50 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 transition duration-200">
+                            <input type="text" id="last-name" name="last-name" placeholder="Last Name" required class="w-full px-4 py-2.5 bg-black text-gray-100 border border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 transition duration-200 placeholder-gray-400">
                         </div>
                     </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                        <div>
-                            <label for="email" class="sr-only">Email</label>
-                            <input type="email" id="email" placeholder="Email Address" class="w-full px-4 py-2.5 bg-gray-50 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 transition duration-200">
-                        </div>
-                        <div>
-                            <label for="phone" class="sr-only">Phone Number</label>
-                            <input type="tel" id="phone" placeholder="Phone Number (Optional)" class="w-full px-4 py-2.5 bg-gray-50 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 transition duration-200">
-                        </div>
+                     <div>
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email Address" required class="w-full px-4 py-2.5 bg-black text-gray-100 border border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 transition duration-200 placeholder-gray-400">
+                    </div>
+                    <div>
+                        <label for="phone" class="sr-only">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number (Optional)" class="w-full px-4 py-2.5 bg-black text-gray-100 border border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 transition duration-200 placeholder-gray-400">
                     </div>
                     <div>
                         <label for="subject" class="sr-only">Subject</label>
-                        <input type="text" id="subject" placeholder="Subject" class="w-full px-4 py-2.5 bg-gray-50 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 transition duration-200">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required class="w-full px-4 py-2.5 bg-black text-gray-100 border border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 transition duration-200 placeholder-gray-400">
                     </div>
                     <div>
                         <label for="message" class="sr-only">Message</label>
-                        <textarea id="message" placeholder="Your Message" class="w-full px-4 py-2.5 bg-gray-50 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 h-36 transition duration-200"></textarea>
+                        <textarea id="message" name="message" placeholder="Your Message" required class="w-full px-4 py-2.5 bg-black text-gray-100 border border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 h-36 transition duration-200 placeholder-gray-400 resize-none"></textarea>
                     </div>
-                    <button type="submit" class="w-full bg-red-600 text-white py-3 px-6 rounded-md font-semibold shadow-md hover:bg-red-500 transition duration-300 ease-in-out flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+                    <button type="submit" class="w-full bg-red-600 text-white py-3 px-6 rounded-lg font-semibold shadow-md hover:bg-red-700 transition duration-300 ease-in-out flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-red-500">
                         <i class="fas fa-paper-plane mr-2"></i> Send Message
                     </button>
                 </form>
             </div>
 
-            <div class="bg-white text-gray-800 p-8 rounded-xl shadow-lg flex flex-col">
-                <div>
-                    <h3 class="text-2xl font-semibold text-gray-900">Visit Our Location</h3>
-                    <p class="mt-3 text-gray-600">Come see us in person and explore our products firsthand.</p>
-                    <a href="location.html" class="mt-4 inline-flex items-center justify-center bg-red-600 text-white px-5 py-2.5 rounded-md shadow-md font-semibold transition duration-300 hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
-                        <i class="fas fa-map-marker-alt mr-2"></i> Find Us
-                    </a>
-                </div>
-
-                <div class="mt-8 pt-8 border-t border-gray-200">
-                    <h3 class="text-xl font-semibold text-gray-900">Contact Details</h3>
-                    <div class="mt-4 space-y-3 text-gray-700">
-                        <p class="flex items-center">
-                            <i class="fas fa-phone-alt text-red-600 mr-3"></i>
-                            +012 345 6789
+            <!-- Contact Info & Location -->
+            <div class="space-y-8">
+                 <div class="bg-neutral-900 text-gray-100 p-8 rounded-xl shadow-xl">
+                    <h3 class="text-2xl font-semibold text-white heading">Contact Details</h3>
+                    <div class="mt-5 space-y-4 text-gray-300">
+                        <p class="flex items-center text-lg">
+                            <i class="fas fa-map-marker-alt text-red-400 w-6 mr-3 text-center"></i>
+                            123 Tech Street, Silicon Valley, CA 94000
                         </p>
-                        <p class="flex items-center">
-                            <i class="fas fa-envelope text-red-600 mr-3"></i>
-                            example@email.com
+                        <p class="flex items-center text-lg">
+                            <i class="fas fa-phone-alt text-red-400 w-6 mr-3 text-center"></i>
+                            <a href="tel:+0123456789" class="hover:text-red-400 transition">+012 345 6789</a>
+                        </p>
+                        <p class="flex items-center text-lg">
+                            <i class="fas fa-envelope text-red-400 w-6 mr-3 text-center"></i>
+                             <a href="mailto:support@pcrex.com" class="hover:text-red-400 transition">support@pcrex.com</a>
+                        </p>
+                    </div>
+
+                     <div class="mt-6 pt-6 border-t border-neutral-700">
+                        <h4 class="text-xl font-semibold text-white heading">Business Hours</h4>
+                        <p class="mt-3 flex items-center text-gray-300 text-lg">
+                            <i class="fas fa-clock text-red-400 w-6 mr-3 text-center"></i> Mon - Fri: 9:00 AM - 7:00 PM
+                        </p>
+                         <p class="mt-1 flex items-center text-gray-300 text-lg">
+                            <i class="fas fa-clock text-red-400 w-6 mr-3 text-center opacity-0"></i> Sat: 10:00 AM - 5:00 PM
+                        </p>
+                         <p class="mt-1 flex items-center text-gray-300 text-lg">
+                            <i class="fas fa-clock text-red-400 w-6 mr-3 text-center opacity-0"></i> Sun: Closed
                         </p>
                     </div>
                 </div>
 
-                <div class="mt-6">
-                    <h3 class="text-xl font-semibold text-gray-900">Business Hours</h3>
-                    <p class="mt-3 flex items-center text-gray-700">
-                        <i class="fas fa-clock text-red-600 mr-3"></i> Mon - Fri: 8:00 AM - 8:00 PM
-                    </p>
-                </div>
-
-                <div class="mt-auto pt-6">
-                    <h3 class="text-xl font-semibold text-gray-900">Stay Connected</h3>
-                    <div class="flex space-x-4 mt-4">
-                        <a href="#" aria-label="Facebook" class="bg-red-600 text-white p-2 rounded-full shadow-md flex items-center justify-center w-10 h-10 hover:bg-red-500 hover:scale-110 transition duration-300 ease-in-out">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" aria-label="Instagram" class="bg-red-600 text-white p-2 rounded-full shadow-md flex items-center justify-center w-10 h-10 hover:bg-red-500 hover:scale-110 transition duration-300 ease-in-out">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" aria-label="Twitter / X" class="bg-red-600 text-white p-2 rounded-full shadow-md flex items-center justify-center w-10 h-10 hover:bg-red-500 hover:scale-110 transition duration-300 ease-in-out">
-                            <i class="fab fa-twitter"></i>
-                        </a>
+                 <div class="bg-neutral-900 text-gray-100 p-8 rounded-xl shadow-xl">
+                    <h3 class="text-2xl font-semibold text-white heading">Visit Our Store</h3>
+                    <p class="mt-3 text-gray-300">Find us easily using the map below or click for directions.</p>
+                    <a href="location.html" class="mt-5 inline-flex items-center justify-center bg-red-600 text-white px-6 py-2.5 rounded-lg shadow-md font-semibold transition duration-300 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-red-500">
+                        <i class="fas fa-map-marked-alt mr-2"></i> View Location Page
+                    </a>
+                     <div class="mt-6">
+                        <h4 class="text-xl font-semibold text-white heading">Stay Connected</h4>
+                        <div class="flex space-x-4 mt-4">
+                            <a href="#" aria-label="Facebook" class="bg-neutral-800 text-white p-2 rounded-full shadow-md flex items-center justify-center w-10 h-10 hover:bg-red-600 hover:scale-110 transition duration-300 ease-in-out">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" aria-label="Instagram" class="bg-neutral-800 text-white p-2 rounded-full shadow-md flex items-center justify-center w-10 h-10 hover:bg-red-600 hover:scale-110 transition duration-300 ease-in-out">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" aria-label="Twitter / X" class="bg-neutral-800 text-white p-2 rounded-full shadow-md flex items-center justify-center w-10 h-10 hover:bg-red-600 hover:scale-110 transition duration-300 ease-in-out">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -538,99 +551,203 @@
 </section>
 
 
-<!-- Location Section -->
-<section id="location" class="flex items-center justify-center pt-20 pb-20 opacity-0 transition-opacity duration-1000 ease-in-out">
-    <div class="text-center w-screen">
-        <h2 class="text-4xl md:text-5xl font-bold text-red-600">Our Location</h2>
-        <p class="mt-4 text-gray-600">Visit us at our store to explore our products in person.</p>
-        <iframe class="mt-6 w-full h-96" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509315!2d144.9537353153159!3d-37.81720997975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c920fd286a9f%3A0x1c6e3463e77d131d!2sPC%20Rex%20Computer%20Sales!5e0!3m2!1sen!2us!4v1640174211445" allowfullscreen="" loading="lazy"></iframe>
+<!-- Location Map Section -->
+<section id="location" class="py-16 sm:py-24 bg-gray-100 opacity-0 transition-opacity duration-1000 ease-in-out">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 heading">Our Store Location</h2>
+        <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Visit us in person to explore our products and talk to our experts.</p>
+        <div class="mt-10 rounded-lg overflow-hidden shadow-xl border border-gray-200">
+             <iframe
+                class="w-full h-96 md:h-[500px]"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509315!2d144.9537353153159!3d-37.81720997975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c920fd286a9f%3A0x1c6e3463e77d131d!2sPC%20Rex%20Computer%20Sales!5e0!3m2!1sen!2us!4v1640174211445"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Google Map Location">
+             </iframe>
+             <!-- Note: Replaced the src with a generic placeholder URL. Use your specific embed URL -->
+        </div>
     </div>
 </section>
-<script src="https://cdn.tailwindcss.com"></script>
-
-
-
-  
-  
 
 <!-- Footer -->
-<footer id="footer" class="bg-product-section text-black border-t border-gray-700 opacity-0 transition-opacity duration-1000 ease-in-out">
-    <div class="p-6 sm:p-10">
-        <div class="flex flex-col md:flex-row items-center justify-between pb-4 border-b border-gray-300">
-            <h3 class="text-md font-semibold text-white">Join our newsletter for the latest PC deals and updates!</h3>
-            <div class="flex mt-3 md:mt-0">
-                <input 
-                    type="email" 
-                    placeholder="Enter your email" 
-                    class="px-3 py-1 border bg-white text-red-700 border-gray-600 rounded-l-md focus:outline-none focus:ring-2 focus:ring-red-500 text-sm">
-                <button 
-                    class="bg-red-600 text-white px-3 py-1 rounded-r-md hover:bg-red-500 shadow-md transition text-sm">
+<footer id="footer" class="bg-black text-gray-300 opacity-0 transition-opacity duration-1000 ease-in-out">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Newsletter Signup -->
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4 pb-8 mb-8 border-b border-gray-700">
+            <h3 class="text-lg font-semibold text-white text-center md:text-left">Join our newsletter for deals & updates!</h3>
+            <form class="flex w-full max-w-md mt-3 md:mt-0">
+                <label for="footer-email" class="sr-only">Email address</label>
+                <input
+                    type="email"
+                    id="footer-email"
+                    name="footer-email"
+                    placeholder="Enter your email"
+                    required
+                    class="flex-grow px-4 py-2 border bg-black text-white border-gray-600 rounded-l-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 text-sm placeholder-gray-400">
+                <button
+                    type="submit"
+                    class="bg-red-600 text-white px-4 py-2 rounded-r-md hover:bg-red-700 shadow-md transition text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-red-500">
                     Subscribe
                 </button>
-            </div>
+            </form>
         </div>
 
-        <div class="grid md:grid-cols-4 gap-6 mt-4 text-sm">
+        <!-- Footer Links Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+            <!-- Company Info -->
             <div>
-                <h1 class="text-3xl font-semibold text-white">REX PC</h1>
-                <p class="mt-2 text-gray-300">Your go-to store for high-performance PCs and accessories.</p>
-                <p class="mt-2 text-gray-400">&copy; 2025 REX PC Inc.</p>
+                <h4 class="text-lg font-semibold text-white heading">PC REX</h4>
+                <p class="mt-3 text-gray-400 leading-relaxed">Your destination for high-performance custom PCs, components, and expert tech support.</p>
             </div>
 
+            <!-- Shop Links -->
             <div>
-                <h3 class="font-semibold uppercase text-white">Shop</h3>
-                <ul class="mt-2 space-y-1">
-                    <li><a href="#" class="hover:text-red-500 text-gray-300">Gaming PCs</a></li>
-                    <li><a href="#" class="hover:text-red-500 text-gray-300">Laptops</a></li>
-                    <li><a href="#" class="hover:text-red-500 text-gray-300">Accessories</a></li>
-                    <li><a href="#" class="hover:text-red-500 text-gray-300">Monitors</a></li>
+                <h5 class="font-semibold uppercase text-gray-400 tracking-wider">Shop</h5>
+                <ul class="mt-3 space-y-2">
+                    <li><a href="#" class="hover:text-red-400 transition duration-150 ease-in-out">Custom Builds</a></li>
+                    <li><a href="#" class="hover:text-red-400 transition duration-150 ease-in-out">Components</a></li>
+                    <li><a href="#" class="hover:text-red-400 transition duration-150 ease-in-out">Peripherals</a></li>
+                    <li><a href="#" class="hover:text-red-400 transition duration-150 ease-in-out">Pre-builts</a></li>
                 </ul>
             </div>
 
+            <!-- Customer Support Links -->
             <div>
-                <h3 class="font-semibold uppercase text-white">Customer Support</h3>
-                <ul class="mt-2 space-y-1">
-                    <li><a href="#" class="hover:text-red-500 text-gray-300">Help Center</a></li>
-                    <li><a href="#" class="hover:text-red-500 text-gray-300">Warranty & Returns</a></li>
-                    <li><a href="#" class="hover:text-red-500 text-gray-300">Shipping Info</a></li>
-                    <li><a href="#" class="hover:text-red-500 text-gray-300">Contact Us</a></li>
+                <h5 class="font-semibold uppercase text-gray-400 tracking-wider">Support</h5>
+                <ul class="mt-3 space-y-2">
+                    <li><a href="#contact-section" class="hover:text-red-400 transition duration-150 ease-in-out">Contact Us</a></li>
+                    <li><a href="#" class="hover:text-red-400 transition duration-150 ease-in-out">FAQs</a></li>
+                    <li><a href="#" class="hover:text-red-400 transition duration-150 ease-in-out">Warranty Info</a></li>
+                    <li><a href="#" class="hover:text-red-400 transition duration-150 ease-in-out">Returns Policy</a></li>
                 </ul>
             </div>
 
+            <!-- Policies Links -->
             <div>
-                <h3 class="font-semibold uppercase text-white">Policies</h3>
-                <ul class="mt-2 space-y-1">
-                    <li><a href="#" class="hover:text-red-500 text-gray-300">Terms of Service</a></li>
-                    <li><a href="#" class="hover:text-red-500 text-gray-300">Privacy Policy</a></li>
-                    <li><a href="#" class="hover:text-red-500 text-gray-300">Refund Policy</a></li>
-                    <li><a href="#" class="hover:text-red-500 text-gray-300">Cookies</a></li>
+                <h5 class="font-semibold uppercase text-gray-400 tracking-wider">Company</h5>
+                <ul class="mt-3 space-y-2">
+                    <li><a href="#" class="hover:text-red-400 transition duration-150 ease-in-out">About Us</a></li>
+                    <li><a href="#" class="hover:text-red-400 transition duration-150 ease-in-out">Terms of Service</a></li>
+                    <li><a href="#" class="hover:text-red-400 transition duration-150 ease-in-out">Privacy Policy</a></li>
+                    <li><a href="location.html" class="hover:text-red-400 transition duration-150 ease-in-out">Our Location</a></li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <!-- Footer Bottom -->
-    <div class="bg-red-600 text-white flex justify-between items-center w-full mt-4 p-6 text-lg border-t border-gray-700">
-        <p>&copy; <span id="year"></span> REX PC Inc.</p>
-        <script>
-            document.getElementById('year').textContent = new Date().getFullYear();
-        </script>
+    <!-- Footer Bottom Bar -->
+    <div class="bg-red-700 text-white py-4 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-sm">
+            <p>© <span id="year"></span> PC REX Inc. All Rights Reserved.</p>
+            <script>
+                document.getElementById('year').textContent = new Date().getFullYear();
+            </script>
 
-        <div class="flex space-x-3">
-            <a href="#" class="text-white">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="text-white">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" class="text-white">
-                <i class="fab fa-instagram"></i>
-            </a>
+            <div class="flex space-x-5 mt-3 sm:mt-0">
+                <a href="#" aria-label="Facebook" class="hover:text-red-200 transition duration-150 ease-in-out">
+                    <i class="fab fa-facebook-f text-lg"></i>
+                </a>
+                <a href="#" aria-label="Twitter" class="hover:text-red-200 transition duration-150 ease-in-out">
+                    <i class="fab fa-twitter text-lg"></i>
+                </a>
+                <a href="#" aria-label="Instagram" class="hover:text-red-200 transition duration-150 ease-in-out">
+                    <i class="fab fa-instagram text-lg"></i>
+                </a>
+            </div>
         </div>
     </div>
 </footer>
 
-  
+  <!-- Your Custom JS -->
   <script src="../JS/script.js"></script>
+
+  <script>
+    // Basic JS for dropdowns and mobile menu (example)
+    document.addEventListener('DOMContentLoaded', function() {
+        // Desktop Dropdown
+        const aboutButton = document.getElementById('about-dropdown-button');
+        const aboutDropdown = document.getElementById('about-dropdown');
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden', 'opacity-0', 'scale-95');
+                mobileMenu.classList.add('opacity-100', 'scale-100');
+            } else {
+                mobileMenu.classList.remove('opacity-100', 'scale-100');
+                mobileMenu.classList.add('opacity-0', 'scale-95');
+                // Use setTimeout to hide after transition
+                setTimeout(() => {
+                    mobileMenu.classList.add('hidden');
+                }, 300); // Match duration-300
+            }
+        });
+
+        // Mobile Dropdown Toggle
+        const mobileDropdownButton = document.getElementById('mobile-dropdown-button');
+        const mobileDropdown = document.getElementById('mobile-dropdown');
+        mobileDropdownButton.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent closing the main mobile menu
+            mobileDropdown.classList.toggle('hidden');
+             // Optional: Rotate icon
+            mobileDropdownButton.querySelector('.material-icons').classList.toggle('rotate-180');
+        });
+
+        // Fade-in sections on load/scroll (Simple Example)
+        const sections = document.querySelectorAll('.opacity-0.transition-opacity');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.remove('opacity-0');
+                    entry.target.classList.add('opacity-100');
+                    // Optional: stop observing once visible
+                    // observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 }); // Trigger when 10% visible
+
+         // Apply fade-in to Navbar immediately
+        const navbar = document.querySelector('nav.opacity-0');
+        if (navbar) {
+            setTimeout(() => {
+                navbar.classList.remove('opacity-0');
+                navbar.classList.add('opacity-100');
+            }, 100); // Small delay
+        }
+
+        // Observe other sections
+        sections.forEach(section => {
+            // Don't observe the navbar again if it was handled separately
+            if (!section.matches('nav')) {
+                 observer.observe(section);
+            }
+        });
+
+         // Close dropdowns if clicking outside
+        document.addEventListener('click', function(event) {
+            // Desktop
+            if (aboutButton && !aboutButton.contains(event.target) && aboutDropdown && !aboutDropdown.contains(event.target)) {
+               // Handled by group-hover, no JS needed for closing typically
+            }
+             // Mobile (close if clicking outside the mobile menu itself)
+            if (mobileMenuButton && !mobileMenuButton.contains(event.target) && mobileMenu && !mobileMenu.contains(event.target)) {
+                 if (!mobileMenu.classList.contains('hidden')) {
+                      mobileMenu.classList.remove('opacity-100', 'scale-100');
+                      mobileMenu.classList.add('opacity-0', 'scale-95');
+                      setTimeout(() => mobileMenu.classList.add('hidden'), 300);
+                      // Also hide sub-dropdown if open
+                      if (!mobileDropdown.classList.contains('hidden')) {
+                         mobileDropdown.classList.add('hidden');
+                          mobileDropdownButton.querySelector('.material-icons').classList.remove('rotate-180');
+                      }
+                 }
+            }
+        });
+    });
+  </script>
 </body>
 </html>
